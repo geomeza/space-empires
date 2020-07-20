@@ -10,6 +10,7 @@ class Colony(Unit):
     
     def __init__(self, coords, player, name, unit_num):
         super().__init__( coords, player, name, unit_num)
+        self.bases = []
         self.shipyards = []
         self.shipyard_count = 0
         self.builders = 0
