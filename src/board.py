@@ -1,18 +1,18 @@
-from Units.Unit import Unit 
-from Units.Dreadnaught import Dreadnaught 
-from Units.Scout import Scout 
-from Units.Battlecruiser import Battlecruiser 
-from Units.Battleship import Battleship 
-from Units.Colony import Colony 
-from Units.Colonyship import Colonyship 
-from Units.Cruiser import Cruiser 
-from Units.Destroyer import Destroyer 
-from Units.Shipyard import Shipyard 
-from board_space import board_space
-from Planets.Planet import Planet
+from units.unit import Unit 
+from units.dreadnaught import Dreadnaught 
+from units.scout import Scout 
+from units.battlecruiser import Battlecruiser 
+from units.battleship import Battleship 
+from units.colony import Colony 
+from units.colonyship import Colonyship 
+from units.cruiser import Cruiser 
+from units.destroyer import Destroyer 
+from units.shipyard import Shipyard 
+from board_space import BoardSpace
+from planets.planet import Planet
 import random
 
-class Board():
+class Board:
 
     def __init__(self, size):
         self.dimensions = size
@@ -32,7 +32,7 @@ class Board():
     def generate(self):
         for x in range(self.dimensions[0]):
             for y in range(self.dimensions[1]):
-                self.grid.update({(x,y): board_space([x,y])})
+                self.grid.update({(x,y): BoardSpace([x,y])})
     
     def space(self,coords):
         coord = tuple(coords)
