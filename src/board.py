@@ -65,6 +65,8 @@ class Board:
                     break
             planet_coords.append(coords)
             self.grid[tuple(coords)].planet = Planet(coords)
+        for coord in player_coords:
+            self.grid[tuple(coords)].planet = Planet(coords)
 
 
 

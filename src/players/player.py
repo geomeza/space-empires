@@ -14,7 +14,7 @@ import random
 
 class Player:
     def __init__(self, player_num):
-        self.tech_lvls = [0, 0, 1, 1]
+        self.tech_lvls = [0, 0, 1, 1, 1]
         self.unit_count = 0
         self.player_type = 'Player'
         self.unit_counter = 0
@@ -32,7 +32,10 @@ class Player:
         print('--------------')
         total_cp = 0
         for colony in self.colonies:
-            total_cp += colony.capacity
+            if colony.colony_type == 'Normal':
+                total_cp += colony.capacity
+            else:
+                total_cp += 20
         self.com_points += total_cp
         print('Added', total_cp, 'Combat Points from Colonies to Player', self.player_num)
         print('New Total:',self.com_points)
@@ -84,12 +87,6 @@ class Player:
         colony.base = Base(coords, self, 'Base', self.base_count, colony)
         self.com_points -= 12
 
-        
-    # def destroy_colony(self, colony):
-    #     if colony in self.colonies:
-    #         self.colonies.remove(colony)
-    #         self.colony_count -= 1
-
     def destroy_colony(self, colony, planet, board_space):
         if colony in self.colonies:
             self.colonies.remove(colony)
@@ -121,6 +118,8 @@ class Player:
             build = sum([shipyard.build_capacity for shipyard in colony.shipyards])
             colony.builders = build
 
+    # def create_unit(self, )
+
     def initialize_units(self, coords):
         self.coordins = coords
         for r in range(3):
@@ -138,9 +137,10 @@ class Player:
         self.com_points = 20
         self.colonies.append(0)
         self.colony_count += 1
-        self.colonies[self.colony_count - 1] = Colony(coords, self, 'Colony',self.colony_count)
+        self.colonies[self.colony_count - 1] = Colony(coords, self, 'Colony',self.colony_count, colony_type = 'Home')
         for i in range(4):
             self.buy_shipyard(coords, self.colonies[self.colony_count - 1])
+
 
     def show_unit_coords(self):
         for unit in self.units:

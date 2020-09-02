@@ -4,3 +4,4 @@ class Planet:
         self.colonized = False
         self.player = player
         self.colony = None
+        self.colony_type = 'Normal'

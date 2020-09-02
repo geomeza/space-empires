@@ -20,6 +20,39 @@ class CombatPlayer(Player):
         self.buy_count = 0
         self.grid_size = grid_size
 
+    def sort(self):
+        for i in range(len(self.units)):
+            for j in range(i + 1, len(self.units)):
+                unit1 = self.units[i]
+                unit2 = self.units[j]
+                u1_tactics = unit1.player.tech_lvls[0] + unit1.player.tech_lvls[1]
+                u2_tactics = unit2.player.tech_lvls[0] + unit2.player.tech_lvls[1]
+                if (unit1.class_num + u1_tactics) < (unit2.class_num + u2_tactics):
+                    self.units[i], self.units[j] = self.units[j], self.units[i]
+        return self.units
+
+    def pay_maintenance(self):
+        self.sort()
+        print('--------------')
+        for unit in self.units:
+            if unit.name != 'Colony Ship':
+                unit.maint = unit.hull_size
+            else:
+                continue
+            if (self.com_points-unit.maint) < 0:
+                print('------')
+                print('Maintenance could not be payed for Player',self.player_num,unit.name)
+                print(unit.name,': Destroyed!')
+                print('------')
+                unit.destroy()
+                continue
+            print('------')
+            self.com_points -= unit.maint
+            print('Player',self.player_num,'Paid Maintenance for',unit.name,', Paid',unit.maint)
+            print('New Total',self.com_points)
+            print('------')
+        print('--------------')
+
     def move_units(self,grid_size, range_of_movements):
         for unit in self.units:
             before_coords = unit.coords   
@@ -35,19 +68,24 @@ class CombatPlayer(Player):
     def generate_units(self, coords, colony, only_once = False):
         if only_once is True:
             only_once = False
-        if self.tech_lvls[3] < 1.5:
+        if self.tech_lvls[4] < 2:
             self.buy_tech()
             return None
         if self.buy_count % 2 == 0:
             all_units = [Destroyer]
         else:
             all_units = [Scout]
-        possible_units = [unit for unit in all_units if unit.hull_size <= colony.builders]
+        possible_units = [unit for unit in all_units if unit.hull_size <= colony.builders and self.tech_lvls[4] >= unit.hull_size]
         self.coordins = coords
         if self.com_points < 6 or len(possible_units) == 0:
             print('Couldnt afford to buy any units')
             return None
         while self.com_points >= 6:
+            if self.buy_count % 2 == 0:
+                all_units = [Destroyer]
+            else:
+                all_units = [Scout]
+            possible_units = [unit for unit in all_units if unit.hull_size <= colony.builders and self.tech_lvls[4] >= unit.hull_size]
             affordable_units = all_units
             unit_choice = 0
             if all_units[0].cost > self.com_points:
@@ -70,28 +108,25 @@ class CombatPlayer(Player):
                 break 
 
     def buy_tech(self):
-        tech_num = 4
+        tech_num = 5
         tech = tech_num - 1
         upgraded = 0
+        if tech_num == 5 and self.tech_lvls[tech] != 2:
+            tech_lvl = self.tech_lvls[tech] - 1
+            cost = [10, 25, 45, 70, 100]
+            if tech_lvl == 5:
+                print('Ship Size technology Maxed Out')    
+            if self.com_points < cost[tech_lvl]:
+                print('Not enough combat points')
+                return
+            if self.com_points >= cost[tech_lvl]:
+                self.tech_lvls[tech] += 1
+                self.com_points -= cost[tech_lvl]
+            print('Ship Size Technology Upgraded')
         if self.tech_lvls[tech] == 2:
             colony = random.choice(self.colonies)
             self.generate_units(colony.coords, colony)
             return None
-        if tech_num == 4:    
-            if self.com_points < 20:
-                print('Not enough combat points')
-                return
-            if self.com_points >= 20 and self.tech_lvls[tech] == 1 and upgraded == 0:
-                self.tech_lvls[tech] = 1.5
-                self.upgrade_shipyards()
-                self.com_points -= 20
-                upgraded = 1
-            if self.com_points >= 50 and self.tech_lvls[tech] == 1.5 and upgraded == 0:
-                self.tech_lvls[tech] = 2
-                self.upgrade_shipyards()
-                self.com_points -= 50
-                upgraded = 1
-            print('Shipyard Technology Upgraded')
 
     def unit_preference(self, units):
-        return units[-1]
+        return units[0]

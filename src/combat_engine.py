@@ -13,13 +13,28 @@ import random
 
 class CombatEngine:
 
-    def __init__(self, board):
+    def __init__(self, board, dice_type = None):
         self.units = []
         self.battle_order = []
         self.enemies = []
         self.team_units = []
         self.game_board = board
-        self.dice = 1
+        if dice_type == 'Ascending':
+            self.dice = 1
+        elif dice_type == 'Descending':
+            self.dice = 6
+        self.over = False
+        self.dice_type = dice_type
+
+    def check_dice_roll(self):
+        if self.dice_type == 'Descending':
+            self.dice -= 1
+            if self.dice == 0:
+                self.dice = 6
+        elif self.dice_type == 'Ascending':
+            self.dice += 1
+            if self.dice > 6:
+                self.dice = 1
 
     def attack_colony(self, player):
         for unit in player.units:
@@ -61,8 +76,11 @@ class CombatEngine:
                 unit2 = units[j]
                 u1_tactics = unit1.player.tech_lvls[0] + unit1.player.tech_lvls[1]
                 u2_tactics = unit2.player.tech_lvls[0] + unit2.player.tech_lvls[1]
-                if (unit1.class_num + u1_tactics) > (unit2.class_num + u2_tactics):
+                if (unit1.class_num + u1_tactics) < (unit2.class_num + u2_tactics):
                     units[i], units[j] = units[j], units[i]
+                elif (unit1.class_num + u1_tactics) == (unit2.class_num + u2_tactics):
+                    if unit1.player.player_num > unit2.player.player_num:
+                        units[i], units[j] = units[j], units[i]
         return units
 
     def sort(self, units, player):
@@ -104,6 +122,7 @@ class CombatEngine:
                     print('------')
                     print('Player',fight_order[0].player.player_num, fight_order[0].name,'Was Hit!')
                     fight_order[0].armor -= 1
+                    self.check_dice_roll()
                     print('------')
                 else:
                     print('------')
@@ -125,15 +144,16 @@ class CombatEngine:
 
     def unit_shot(self, attacker, defender):
         first = self.class_supremacy(attacker,defender)
-        fight_order = [attacker, defender]
-        if first == 2:
-            fight_order.reverse()
+        fight_order = [defender, attacker]
         print('-------------')
         print('Player',fight_order[1].player.player_num,fight_order[1].name,'Shoots At:')
         print('Player', fight_order[0].player.player_num, fight_order[0].name)
         threshold = self.hit_threshold(fight_order[1],fight_order[0]) 
-        # dice_roll = random.randint(1,6)
-        dice_roll = self.dice
+        if self.dice_type is None:
+            dice_roll = random.randint(1,6)
+        else:
+            dice_roll = self.dice
+        print('Dice',dice_roll)
         if dice_roll <= threshold or dice_roll == 1:
             if fight_order[0].armor > 1:
                 print('------')
@@ -144,74 +164,88 @@ class CombatEngine:
                 print('------')
                 print('Player',fight_order[0].player.player_num, fight_order[0].name,' Was Destroyed!')
                 print('Survivor: Player', fight_order[1].player.player_num, ',',fight_order[1].name)
-                self.units.remove(fight_order[0])
+                self.battle_order.remove(fight_order[0])
                 fight_order[0].destroy()
-                self.dice += 1
-                if self.dice == 7:
-                    self.dice = 1
+                self.check_dice_roll()
                 return fight_order[1]
         else:
             print('------')
             print('Player',fight_order[0].player.player_num, fight_order[0].name,' Was Missed!')
             print('------')
-        self.dice += 1
-        if self.dice == 7:
-            self.dice = 1
+            self.check_dice_roll()
 
     def check_battle_status(self, units):
         if len(units) >= 2:
             for unit in units:
                 self.sort(units, unit.player)
                 if len(self.enemies) == 0:
-                    return True
-            return False
+                    self.over = True
+                    return
+            if self.over is not True:
+                self.over = False
+                return
         else:
-            return True
+            self.over = True
+            return
  
     def preferred_unit(self, player):
         self.enemies = self.supremacy(self.enemies)
         return player.unit_preference(self.enemies)
 
-    # def screen_units:
-        
+    def check_for_battle(self, units):
+        self.over = False
+        self.check_battle_status(units)
+        if self.over is False:
+            self.battle(units)
+        else:
+            return None
+
+    def remove_non_fighters(self, units):
+        colony_ships = []
+        for unit in units:
+            if unit.name == 'Colony Ship':
+                print('---------------')
+                print('Player',unit.player.player_num,'Colony Ship Encountered Enemy')
+                print('Colony Ship Destroyed')
+                print('---------------')
+                unit.destroy()
+                colony_ships.append(unit)
+        for c in colony_ships:
+            units.remove(c)
+        return units
         
     def battle(self, units):
-        status = self.check_battle_status(units)
-        if status is False:
+        units = self.remove_non_fighters(units)
+        self.check_battle_status(units)
+        if self.over is False:
             print('--------------------------')
-            remove_colony_ships = []
-            print('Combat At', units[0].coords)
-            for unit in units:
-                if unit.name == 'Colony Ship':
-                    print('---------------')
-                    print('Player',unit.player.player_num,'Colony Ship Encountered Enemy')
-                    print('Colony Ship Destroyed')
-                    print('---------------')
-                    unit.destroy()
-                    remove_colony_ships.append(unit)
-            for c in remove_colony_ships:
-                units.remove(c)
+            self.over = False
+            self.units = units
+            self.check_battle_status(self.units)
+            if self.over == True:
+                return
+            self.battle_order = self.supremacy(self.units)
             print('In Combat:')
             for unit in units:
                 print('Player',unit.player.player_num,unit.name)
-            self.units = units
-            over = False
-            while over is False:
+            while self.over is False:
                 self.battle_order = self.supremacy(self.units)
-                self.battle_order.reverse()
                 for unit in self.battle_order:
                     self.sort(self.units, unit.player)
                     enemy = self.preferred_unit(unit.player)
                     self.unit_shot(unit, enemy)
-                    status = self.check_battle_status(self.units)
-                    if status is True:
-                        over = True
-                        print('-------------------')
-                        print('The Battle Is Over!')
-                        unit_choice = random.choice(self.units)
-                        print('Player', unit_choice.player.player_num, 'Units Win')
-                        print('-------------------')
-                        print('--------------------------')
-                        break
+                    self.check_battle_status(self.units)
+                    if self.over is True:
+                        if len(units) >= 1:
+                            print('-------------------')
+                            print('The Battle Is Over!')
+                            unit_choice = random.choice(self.units)
+                            print('Player', unit_choice.player.player_num, 'Units Win:')
+                            for unit in units:
+                                print(unit.name)
+                            print('-------------------')
+                            print('--------------------------')
+                            return
+            return
         else:
             return None  

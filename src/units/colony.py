@@ -9,9 +9,10 @@ class Colony(Unit):
     defense = 1
     capacity = 3
     
-    def __init__(self, coords, player, name, unit_num):
+    def __init__(self, coords, player, name, unit_num, colony_type = 'Normal'):
         super().__init__( coords, player, name, unit_num)
         self.base = None
         self.shipyards = []
         self.shipyard_count = 0
         self.builders = 0
+        self.colony_type = colony_type

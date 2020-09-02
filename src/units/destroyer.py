@@ -10,4 +10,4 @@ class Destroyer(Unit):
     name = 'Destroyer'
     armor = 1
     speed = 1
-    hull_size = 2
+    hull_size = 1

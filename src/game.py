@@ -31,7 +31,7 @@ def enablePrint():
 
 
 class Game:
-    def __init__(self, players=2, player_coords=[[0, 2], [4, 2]], grid_size=[5,5], max_turns=100, planets=8,player_type = 'Random',logging = True):
+    def __init__(self, players=2, player_coords=[[0, 2], [4, 2]], grid_size=[5,5], max_turns=100, planets=8,player_type = 'Random',logging = True, die_rolls = None):
         self.turn_count = 0
         self.player_count = players
         self.turns = 0
@@ -45,6 +45,7 @@ class Game:
         self.player_type = player_type
         self.combat_engine = None
         self.complete = False
+        self.die_rolls = die_rolls
         if logging is False:
             blockPrint()
 
@@ -75,7 +76,7 @@ class Game:
         self.board = Board(self.grid_size)
         self.board.generate()
         self.board.generate_planets(self.player_coords, self.num_planets)
-        self.combat_engine = CombatEngine(self.board)
+        self.combat_engine = CombatEngine(self.board, dice_type = self.die_rolls)
 
     def update_board(self):
         all_units = []
@@ -129,8 +130,8 @@ class Game:
                         player.create_colony(unit.coords, space.planet, space)
 
     def start(self):
-        self.generate_players()
         self.create_board()
+        self.generate_players()
         self.update_board()
         for s in range(len(self.players)):
             print('----------------------------------')
@@ -246,7 +247,7 @@ class Game:
 
     def remove_dead_players(self):
         for player in self.players:
-            if len(player.units) == 0:
+            if len(player.units) == 0 and len(player.colonies) == 0:
                 print('-------------------------------------------')
                 print('PLAYER',player.player_num,'HAD NO MORE SHIPS')
                 print('PLAYER',player.player_num,'DIED')
@@ -270,7 +271,8 @@ class Game:
                 all_units.append(unit)
         occupants = self.board.occupy(all_units)
         for o in occupants:
-            self.combat_engine.battle(o)
+            if len(o) >= 2:
+                self.combat_engine.check_for_battle(o)
     
     def state(self):
         for player in self.players:

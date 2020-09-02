@@ -30,68 +30,59 @@ class RandomPlayer(Player):
         tech = tech_num - 1
         upgraded = 0
         if tech_num == 1 or tech_num == 2:
-            if self.com_points < 20:
+            tech_lvl = self.tech_lvls[tech]
+            cost = [20, 50, 90]
+            if self.com_points < cost[tech_lvl]:
                 print('Could not afford attack/defense')
                 return
-            if self.com_points >= 20 and self.tech_lvls[tech] == 0 and upgraded == 0:
+            if tech_lvl == len(cost):
+                if tech_num == 1:
+                    print('Attack Maxed Out!')
+                else:
+                    print('Defense Maxed Out!')
+                return None
+            if self.com_points >= cost[tech_lvl]:
                 self.tech_lvls[tech] += 1
-                self.com_points -= 20
-                upgraded = 1
-            if self.com_points >= 50 and self.tech_lvls[tech] == 1 and upgraded == 0:
-                self.tech_lvls[tech] += 1
-                self.com_points -= 50
-                upgraded = 1
-            if self.com_points >= 90 and self.tech_lvls[tech] == 2 and upgraded == 0:
-                self.tech_lvls[tech] += 1 
-                self.com_points -= 90
-                upgraded = 1
-            if self.tech_lvls[tech] == 3:
-                print('Attack or Defense maxed out!')
-                return
+                self.com_points -= cost[tech_lvl]
             if tech_num == 1:
                 print('Attack Upgraded')
             if tech_num == 2:
                 print('Defense Upgraded')
         if tech_num == 3:
-            if self.com_points < 20:
-                print('could not afford movement')
+            tech_lvl = self.tech_lvls[tech] - 1
+            cost = [20, 50, 90, 130, 170]
+            if self.com_points < cost[tech_lvl]:
+                print('Could not afford movement technology')
                 return
-            if self.com_points >= 20 and self.tech_lvls[tech] == 1 and upgraded == 0:
+            if tech_lvl == len(cost):
+                print('Movement Technology Maxed Out')
+                return None
+            if self.com_points >= cost[tech_lvl]:
                 self.tech_lvls[tech] += 1
-                self.com_points -= 20
-            if self.com_points >= 50 and self.tech_lvls[tech] == 2 and upgraded == 0:
-                self.tech_lvls[tech] += 1
-                self.com_points -= 50
-            if self.com_points >= 90 and self.tech_lvls[tech] == 3 and upgraded == 0:
-                self.tech_lvls[tech] += 1
-                self.com_points -= 90
-            if self.com_points >= 130 and self.tech_lvls[tech] == 4 and upgraded == 0:
-                self.tech_lvls[tech] += 1
-                self.com_points -= 130
-            if self.com_points >= 170 and self.tech_lvls[tech] == 5 and upgraded == 0:
-                self.tech_lvls[tech] += 1
-                self.com_points -= 170
-            if self.tech_lvls[tech] == 6 and upgraded == 0:
-                print('Movement technology maxed out!')
-                return
-            print('Movement Upgraded')
+                self.com_points -= cost[tech_lvl]
+            print('Movement Technology Upgraded')
+            return None
         if tech_num == 4: 
-            if self.com_points < 20:
+            cost = [20, 50]
+            if self.tech_lvls[tech] == 1.5:
+                tech_lvl = 1
+            elif self.tech_lvls[tech] == 2.0:
+                tech_lvl = 2
+            else:
+                tech_lvl = 0
+            if self.com_points < cost[tech_lvl]:
                 print('Could not upgrade  shipyards')
                 return
-            if self.com_points >= 20 and self.tech_lvls[tech] == 1 and upgraded == 0:
-                self.tech_lvls[tech] = 1.5
-                self.upgrade_shipyards()
-                self.com_points -= 20
-            if self.com_points >= 50 and self.tech_lvls[tech] == 1.5 and upgraded == 0:
-                self.tech_lvls[tech] = 2
-                self.upgrade_shipyards()
-                self.com_points -= 50
             if self.tech_lvls[tech] == 2:
                 print('Shipyard technology maxed out!')
                 return
+            if self.com_points >= cost[tech_lvl]:
+                self.tech_lvls[tech] += 0.5
+                self.upgrade_shipyards()
+                self.com_points -= cost[tech_lvl]
             print('Shipyard Technology Upgraded')
 
+    
     def generate_units(self, coords, colony, only_once = False):
         choicer = random.randint(1,2)
         all_units = [Scout,Colonyship,Destroyer,Cruiser,Battlecruiser,Battleship,Dreadnaught]
