@@ -134,7 +134,7 @@ class Player:
             self.units.append(0)
             self.units[self.unit_count - 1] = Colonyship(coords, self, 'Colony Ship',self.unit_counter)
             self.units[self.unit_count - 1].maint = sum(self.tech_lvls)
-        self.com_points = 20
+        self.com_points = 0
         self.colonies.append(0)
         self.colony_count += 1
         self.colonies[self.colony_count - 1] = Colony(coords, self, 'Colony',self.colony_count, colony_type = 'Home')

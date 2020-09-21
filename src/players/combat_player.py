@@ -129,4 +129,7 @@ class CombatPlayer(Player):
             return None
 
     def unit_preference(self, units):
+        for unit in units:
+            if unit.alive is True:
+                return unit
         return units[0]
