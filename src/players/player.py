@@ -12,8 +12,31 @@ from units.base import Base
 from planets.planet import Planet 
 import random
 
+def directional_input(current, goal):
+    directions = [[1, 0],[-1, 0],[0, 1],[0, -1]]
+    distances = []
+    for i in range(len(directions)):
+        new_loc = [current[0] + directions[i][0], current[1] + directions[i][1]]
+        dist = distance(new_loc, goal)
+        distances.append(dist)
+    closest = min(distances)
+    index = distances.index(closest)
+    return directions[index]
+
+def distance(current, goal):
+    return ((current[0] - goal[0])**2 + (current[1] - goal[1])**2)**(0.5)
+
+def fastest_route(current, goal):
+    route = []
+    while(current != goal):
+        direc = directional_input(current, goal)
+        route.append(direc)
+        current  = [current[0] + direc[0], current[1] + direc[1]]
+    return route
+
 class Player:
-    def __init__(self, player_num):
+    def __init__(self, player_num, strategy = None):
+        self.strategy = strategy
         self.tech_lvls = [0, 0, 1, 1, 1]
         self.unit_count = 0
         self.player_type = 'Player'
@@ -95,8 +118,7 @@ class Player:
         planet.colonized = False
         planet.player = None
         planet.colony = None
-        
-            
+     
     def buy_shipyard(self, coords, colony):
         self.shipyard_count += 1
         colony.shipyards.append(0)
@@ -105,7 +127,7 @@ class Player:
         colony.shipyards[colony.shipyard_count - 1].build_capacity = self.tech_lvls[3]
         build = sum([shipyard.build_capacity for shipyard in colony.shipyards])
         colony.builders = build
-        
+
     def destroy_shipyard(self, shipyard, colony):
         if shipyard in colony.shipyards:
             colony.shipyard_count -= 1
@@ -117,8 +139,6 @@ class Player:
                 shipyard.build_capacity = self.tech_lvls[3]
             build = sum([shipyard.build_capacity for shipyard in colony.shipyards])
             colony.builders = build
-
-    # def create_unit(self, )
 
     def initialize_units(self, coords):
         self.coordins = coords
@@ -137,7 +157,7 @@ class Player:
         self.com_points = 0
         self.colonies.append(0)
         self.colony_count += 1
-        self.colonies[self.colony_count - 1] = Colony(coords, self, 'Colony',self.colony_count, colony_type = 'Home')
+        self.colonies[self.colony_count - 1] = Colony(coords, self, 'Colony',self.colony_count, colony_type = 'Home Colony')
         for i in range(4):
             self.buy_shipyard(coords, self.colonies[self.colony_count - 1])
 
@@ -146,3 +166,21 @@ class Player:
         for unit in self.units:
             print(unit.name,':',unit.coords)
 
+    def will_colonize(self, colonyship, planets, game):
+        distances = []
+        for planet in planets:
+            if planet.colonized is False:
+                distances.append(distance(colonyship.coords, planet.coords))
+        min_dist_ind = distances.index(min(distances))
+        colonyship.set_route(planet[min_dist_ind].coords)
+
+    def decide_movement(self, planets, game):
+        for unit in self.units:
+            planet_distances = []
+            for planet in self.planets:
+                if planet.colonized is True:
+                    planet_distances.append(distance(unit.coords, planet.coords))
+            if len(planet_distances) < 1:
+                break
+            min_dist_ind = planet_distances.index(min(planet_distances))
+            unit.set_route(planets[min_dist_ind].coords)

@@ -58,4 +58,4 @@ print('Turn Two Combat Test:')
 coords_one = [[2,2],[2,2],[2,2], [2,2],[2,2], [2,2]]
 assertion(g.players[0], coords_one, 3)
 
-##I DIDNT DO DESCENDING ROLLS BECUA
+##I DIDNT DO DESCENDING ROLLS BECAUSE OF BUG

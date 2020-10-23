@@ -133,3 +133,14 @@ class RandomPlayer(Player):
 
     def unit_preference(self, units):
         return random.choice(units)
+
+    def will_colonize(self):
+        return True
+
+    def upgrade(self):
+        num = random.int(1,2)
+        if num == 1:
+            self.buy_tech()
+        elif num == 2:
+            colony_choice = random.choice(self.colonies)
+            self.generate_units(colony_choice.coords, colony_choice, only_once =True)

@@ -1,3 +1,6 @@
+def distance(current, goal):
+    return ((current[0] - goal[0])**2 + (current[1] - goal[1])**2)**(0.5)
+
 from units.unit import Unit 
 
 class Colonyship(Unit):
@@ -11,3 +14,5 @@ class Colonyship(Unit):
     armor = 0
     class_type = 'Z'
     hull_size = 1
+
+    # def find_closest_planet(self):

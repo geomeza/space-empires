@@ -107,6 +107,9 @@ class CombatPlayer(Player):
             if only_once == True:
                 break 
 
+    def upgrade(self):
+        self.buy_tech()
+
     def buy_tech(self):
         tech_num = 5
         tech = tech_num - 1
@@ -133,3 +136,6 @@ class CombatPlayer(Player):
             if unit.alive is True:
                 return unit
         return units[0]
+
+    def will_colonize(self):
+        return True

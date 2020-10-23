@@ -16,6 +16,7 @@ class Board:
 
     def __init__(self, size):
         self.dimensions = size
+        self.planets = []
         self.grid = dict()
 
     def occupy(self, units):
@@ -34,12 +35,12 @@ class Board:
             for y in range(self.dimensions[1]):
                 self.grid.update({(x,y): BoardSpace([x,y])})
     
-    def space(self,coords):
+    def information_on_space(self,coords):
         coord = tuple(coords)
         space = self.grid[coord]
         if len(space.units) > 0:
             for unit in space.units:
-                print(unit.name,unit.coords)
+                print('Player',unit.player.player_num,':',unit.name,'at',unit.coords)
         else:
             print('No Units On Space')
 
@@ -65,8 +66,10 @@ class Board:
                     break
             planet_coords.append(coords)
             self.grid[tuple(coords)].planet = Planet(coords)
+            self.planets.append(self.grid[tuple(coords)].planet)
         for coord in player_coords:
             self.grid[tuple(coords)].planet = Planet(coords)
+            self.planets.append(self.grid[tuple(coords)].planet)
 
 
 

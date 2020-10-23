@@ -54,8 +54,14 @@ class DumbPlayer(Player):
                     unit.move(grid_size, only_direction = [-1,0])
                 print(unit.name,':',before_coords,'-->',unit.coords)
 
+    def upgrade(self):
+        self.generate_units(self.coordins,self.colonies[0],only_once = True)
+
     def buy_tech(self):
         self.generate_units(self.coordins,self.colonies[0],only_once = True)
 
     def unit_preference(self, units):
         return random.choice(units)
+
+    def will_colonize(self):
+        return False

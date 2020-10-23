@@ -14,6 +14,8 @@ import random
 class CombatEngine:
 
     def __init__(self, board, dice_type = None):
+        self.battles = []
+        self.combat_state = []
         self.units = []
         self.battle_order = []
         self.enemies = []
@@ -26,6 +28,47 @@ class CombatEngine:
         self.over = False
         self.dead_ships = []
         self.dice_type = dice_type
+
+    def reset_stats(self):
+        self.units = []
+        self.battle_order = []
+        self.enemies = []
+        self.team_units = []
+        self.dead_ships = []
+
+    def find_battles(self, occupants):
+        non_battles = []
+        for o in occupants:
+            self.over = False
+            self.check_battle_status(o)
+            if self.over is True:
+                non_battles.append(o)
+        for passive in non_battles:
+            occupants.remove(passive)
+        return occupants
+        
+    def resolve_battles(self, occupants):
+        self.battles = self.find_battles(occupants)
+        for battle in self.battles:
+            self.over = False
+            self.battle(battle)
+            self.reset_stats()
+
+    def generate_combat_state(self, units):
+        self.battles = self.find_battles(units)
+        self.combat_state = []
+        for battle in self.battles:
+            battle_dict = {}
+            battle_dict['location'] = battle[0].coords
+            battle_dict['order'] = []
+            order = self.supremacy(battle)
+            for unit in order:
+                unit_dict = {}
+                unit_dict['player'] = unit.player.player_num
+                unit_dict['unit'] = unit.unit_num
+                battle_dict['order'].append(unit_dict)
+            self.combat_state.append(battle_dict)
+        return self.combat_state
 
     def check_dice_roll(self):
         if self.dice_type == 'Descending':

@@ -1,29 +1,11 @@
 import random
-
-def directional_input(current, goal):
-    directions = [[1, 0],[-1, 0],[0, 1],[0, -1]]
-    distances = []
-    for i in range(len(directions)):
-        new_loc = [current[0] + directions[i][0], current[1] + directions[i][1]]
-        dist = distance(new_loc, goal)
-        distances.append(dist)
-    closest = min(distances)
-    index = distances.index(closest)
-    return directions[index]
-
-def distance(current, goal):
-    return ((current[0] - goal[0])**2 + (current[1] - goal[1])**2)**(0.5)
-
-def fastest_route(current, goal):
-    route = []
-    while(current != goal):
-        direc = directional_input(current, goal)
-        route.append(direc)
-        current  = [current[0] + direc[0], current[1] + direc[1]]
-    return route
+# import sys
+# sys.append('src')
+from utility import Utility
 
 class Unit:
     def __init__(self, coords, player, name, unit_num):
+        self.utility = Utility('yes')
         self.coords = coords
         self.alive = True
         self.player = player
@@ -79,4 +61,4 @@ class Unit:
             self.destroy()
 
     def set_route(self, goal):
-        self.route = fastest_route(self.coords, goal)
+        self.route = self.utility.fastest_route(self.coords, goal)
