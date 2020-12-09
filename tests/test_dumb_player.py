@@ -1,50 +1,53 @@
 import sys
 sys.path.append('src')
+from player import Player
+from units.unit import Unit
+from units.scout import Scout
+from units.colonyship import Colonyship
+from units.colony import Colony
 from game import Game
-import os
+from board import Board
+from planet import Planet
+from strategies.custom_strategy import CustomStrategy
+from strategies.combat_strategy import CombatStrategy
+from strategies.dumb_strategy import DumbStrategy
 
-# Disable
-def blockPrint():
-    sys.stdout = open(os.devnull, 'w')
+scout_coords = [[0,0], [0,4]]
+non_scout_coords = [[2,0], [2,4]]
+player_scouts = [3,5,8,10,12]
+new_game = Game(logging = False, die_rolls = 'ascending')
+strategy_1 = DumbStrategy(exist = True)
+strategy_2 = DumbStrategy(exist = True)
+new_game.add_player(strategy_1, [2,0])
+new_game.add_player(strategy_2, [2,4])
+new_game.initialize_game()
 
-# Restore
-def enablePrint():
-    sys.stdout = sys.__stdout__
+def check_player(player_index, scout_count, turn):
+    state = new_game.game_state()
+    scouts = [unit['name'] for unit in state['players'][player_index]['units'] if unit['name'] == 'Scout']
+    assert len(scouts) == scout_count
+    for unit in state['players'][player_index]['units']:
+        if unit['name'] == 'Scout':
+            if unit['turn created'] == turn:
+                assert unit['coords'] == non_scout_coords[player_index]
+            else:
+                assert unit['coords'] == scout_coords[player_index]
+        else:
+            assert unit['coords'] == non_scout_coords[player_index]
+    print('Passed')
 
-def assertion(player,unit_coords):
-    for i in range(len(player.units)):
-        unit = player.units[i]
-        if unit.name == 'Scout':
-            assert unit.coords == unit_coords[i],'Unit at wrong coords'
+for i in range(4):
+    print('===================================')
+    new_game.turn_count += 1
+    new_game.complete_movement_phase()
+    print('Testing',i+1, 'Turn Movement Scouts')
+    check_player(0, player_scouts[i], i+1)
+    check_player(1, player_scouts[i], i+1)
+    print('Testing',i+1, 'Turn Combat Phase')
+    new_game.complete_combat_phase()
     print('passed')
-g = Game(players = 2, player_coords = [[2,0],[2,4]], grid_size = [5, 5], max_turns = 10,planets = 0,player_type = 'Dumb',logging = False)
-
-
-coords_one = [[1,0],[1,0],[1,0],[2,0],[2,0],[2,0]]
-coords_two = [[1,4],[1,4],[1,4],[2,4],[2,4],[2,4]]
-g.start()
-g.complete_turn()
-enablePrint()
-print('Turn One Tests:')
-print(g.generate_state())
-assertion(g.players[0],coords_one)
-assertion(g.players[1],coords_two)
-blockPrint()
-g.complete_turn()
-enablePrint()
-print('Turn Two Tests:')
-print(g.generate_state())
-coords_one = [[0,0],[0,0],[0,0],[1,0],[1,0]]
-coords_two = [[0,4],[0,4],[0,4],[1,4],[1,4]]
-assertion(g.players[0],coords_one)
-assertion(g.players[1],coords_two)
-blockPrint()
-g.complete_turn()
-enablePrint()
-print('Turn Three Tests:')
-print(g.generate_state())
-coords_one = [[0,0],[0,0],[0,0],[0,0],[0,0]]
-coords_two = [[0,4],[0,4],[0,4],[0,4],[0,4]]
-assertion(g.players[0],coords_one)
-assertion(g.players[1],coords_two)
-# g.complete_turn()
+    new_game.complete_economic_phase()
+    print('Testing',i+1, 'Turn Economic Phase')
+    check_player(0, player_scouts[i + 1], i+1)
+    check_player(1, player_scouts[i + 1], i+1)
+    print('===================================')
