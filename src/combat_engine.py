@@ -202,7 +202,7 @@ class CombatEngine:
                     if unit.coords in planet_coords:
                         planet = self.board.grid[tuple(unit.coords)].planet
                         if planet.colonized is False:
-                            if player.strategy.will_colonize(unit, self.game.game_state()):
+                            if player.strategy.will_colonize(self.game.unit_state(unit), self.game.game_state()):
                                 player.build_colony(unit.coords, col_type = 'Normal', colony_ship = unit)
                                 if self.game.logging:
                                     print('Player', player.player_num,'colonized a planet at',unit.coords)

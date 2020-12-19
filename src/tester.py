@@ -11,8 +11,8 @@ from strategies.combat_strategy import CombatStrategy
 from strategies.dumb_strategy import DumbStrategy
 
 new_game = Game(logging = True, die_rolls = 'ascending')
-strategy_1 = CombatStrategy(exist = True)
-strategy_2 = CombatStrategy(exist = True)
+strategy_1 = CombatStrategy(player_num = 0)
+strategy_2 = CombatStrategy(player_num = 1)
 new_game.add_player(strategy_1, [0,0])
 new_game.add_player(strategy_2, [4,4])
 new_game.initialize_game()

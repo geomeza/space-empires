@@ -16,8 +16,8 @@ scout_coords = [[0,0], [0,4]]
 non_scout_coords = [[2,0], [2,4]]
 player_scouts = [3,5,8,10,12]
 new_game = Game(logging = False, die_rolls = 'ascending')
-strategy_1 = DumbStrategy(exist = True)
-strategy_2 = DumbStrategy(exist = True)
+strategy_1 = DumbStrategy(player_num = 0)
+strategy_2 = DumbStrategy(player_num = 1)
 new_game.add_player(strategy_1, [2,0])
 new_game.add_player(strategy_2, [2,4])
 new_game.initialize_game()

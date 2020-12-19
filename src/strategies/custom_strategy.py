@@ -8,12 +8,14 @@ from units.base import Base
 
 class CustomStrategy:
 
-    def __init__(self, exist):
-        self.exist = True
+    def __init__(self, player_num):
+        self.player_num = player_num
 
-    def decide_ship_movement(self, game_state):
-        # print(game_state)
-        return {'Scout': [-1,0]}
+    def decide_ship_movement(self, ship_index, game_state):
+        if game_state['players'][self.player_num]['units'][ship_index]['name'] == 'Scout':
+            return [-1,0] 
+        else:
+            return [0,0]
 
     def decide_purchases(self, player_state):
         return {'ships': [Shipyard]}
