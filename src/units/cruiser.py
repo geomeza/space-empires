@@ -9,5 +9,12 @@ class Cruiser(Unit):
     abbr = 'C'
     name = 'Cruiser'
     armor = 2
-    speed = 1
     hull_size = 3
+    maint = 3
+    build_size = 2
+
+    def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created):
+        super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)
+        self.strength += tech_lvls['atk']
+        self.defense += tech_lvls['def']
+        self.maint = 3

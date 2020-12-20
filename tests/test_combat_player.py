@@ -1,61 +1,109 @@
 import sys
 sys.path.append('src')
+from player import Player
+from units.unit import Unit
+from units.scout import Scout
+from units.colonyship import Colonyship
+from units.colony import Colony
 from game import Game
-import os
+from board import Board
+from planet import Planet
+from strategies.custom_strategy import CustomStrategy
+from strategies.combat_strategy import CombatStrategy
+from strategies.dumb_strategy import DumbStrategy
 
-# Disable
-def blockPrint():
-    sys.stdout = open(os.devnull, 'w')
+print('ASCENDING TESTS')
 
-# Restore
-def enablePrint():
-    sys.stdout = sys.__stdout__
+print('TURN 1 Economic')
 
-def assertion(player,unit_coords, cp):
-    assert cp == player.com_points, 'Wrong Amount of CP'
-    assert len(unit_coords) == len(player.units), 'Wrong amount of units'
-    for i in range(len(unit_coords)):
-        unit = player.units[i]
-        assert unit.coords == unit_coords[i],'Unit at wrong coords'
-    print('passed')
-g = Game(players = 2, player_coords = [[2,0],[2,4]], grid_size = [5, 5], max_turns = 10,planets = 0,player_type = 'Combat',logging = False, die_rolls = 'Ascending')
+new_game = Game(logging = False, die_rolls = 'ascending')
+strategy_1 = CombatStrategy(player_num = 0)
+strategy_2 = CombatStrategy(player_num = 1)
+new_game.add_player(strategy_1, [2,0])
+new_game.add_player(strategy_2, [2,4])
+new_game.initialize_game()
+new_game.complete_many_turns(1)
 
-g.start()
+location = [2,2]
 
-coords_one = [[2,2],[2,2],[2,2],[2,2],[2,2],[2,2]]
-coords_two = [[2,2],[2,2],[2,2],[2,2],[2,2],[2,2]]
-g.complete_movement_phase()
-enablePrint()
-print('Turn One Movement Tests:')
-assertion(g.players[0],coords_one, 20)
-assertion(g.players[1],coords_two, 20)
-blockPrint()
-g.complete_combat_phase()
-enablePrint()
-print('Turn One Combat Test:')
-coords_one = [[2,2],[2,2],[2,2]]
-assertion(g.players[0], coords_one, 20)
-blockPrint()
-g.complete_economic_phase()
-enablePrint()
-print('Turn One Economic Test:')
-coords_one = [[2,2],[2,2],[2,2], [2,0],[2,0], [2,0]]
-assertion(g.players[0], coords_one, 3)
-coords_two = [[2,4], [2, 4], [2,4], [2,4]]
-assertion(g.players[1],coords_two, 0)
-blockPrint()
-g.complete_movement_phase()
-enablePrint()
-print('Turn Two Movement Test:')
-coords_one = [[2,2],[2,2],[2,2], [2,2],[2,2], [2,2]]
-assertion(g.players[0], coords_one, 3)
-coords_two = [[2,2], [2, 2], [2,2], [2,2]]
-assertion(g.players[1],coords_two, 0)
-blockPrint()
-g.complete_combat_phase()
-enablePrint()
-print('Turn Two Combat Test:')
-coords_one = [[2,2],[2,2],[2,2], [2,2],[2,2], [2,2]]
-assertion(g.players[0], coords_one, 3)
+new_or_non_moveable = [[2,0], [2,4]]
 
-##I DIDNT DO DESCENDING ROLLS BECAUSE OF BUG
+p1_scouts = []
+
+def return_scouts(game_state, player_index):
+    return [unit for unit in game_state['players'][player_index]['units'] if unit['name'] == 'Scout']
+def return_destroyers(game_state, player_index):
+    return [unit for unit in game_state['players'][player_index]['units'] if unit['name'] == 'Destroyer']
+def return_ship_size_tech(game_state, player_index):
+    return game_state['players'][player_index]['tech']['ss']
+def return_cp(game_state, player_index):
+    return game_state['players'][player_index]['cp']
+
+def check_unit_coords(units, coords):
+    for unit in units:
+        assert unit['coords'] == coords
+
+assert return_cp(new_game.game_state(), 0) == 7
+assert return_cp(new_game.game_state(), 1) == 1
+print('Passed')
+
+print('TURN 2 Movement')
+new_game.complete_movement_phase()
+check_unit_coords(return_scouts(new_game.game_state(), 0), [2,2])
+assert len(return_scouts(new_game.game_state(), 0)) == 3
+check_unit_coords(return_destroyers(new_game.game_state(), 0), [2,2])
+assert len(return_destroyers(new_game.game_state(), 0)) == 0
+check_unit_coords(return_destroyers(new_game.game_state(), 1), [2,2])
+assert len(return_destroyers(new_game.game_state(), 1)) == 1
+
+print('Passed')
+
+print('TURN 2 Combat')
+new_game.complete_combat_phase()
+check_unit_coords(return_scouts(new_game.game_state(), 0), [2,2])
+assert len(return_scouts(new_game.game_state(), 0)) == 1
+check_unit_coords(return_destroyers(new_game.game_state(), 0), [2,2])
+assert len(return_destroyers(new_game.game_state(), 0)) == 0
+check_unit_coords(return_destroyers(new_game.game_state(), 1), [2,2])
+assert len(return_destroyers(new_game.game_state(), 1)) == 0
+
+print('Passed')
+
+
+print('DESCENDING TESTS')
+
+new_game = Game(logging = False, die_rolls = 'descending')
+strategy_1 = CombatStrategy(player_num = 0)
+strategy_2 = CombatStrategy(player_num = 1)
+new_game.add_player(strategy_1, [2,0])
+new_game.add_player(strategy_2, [2,4])
+new_game.initialize_game()
+new_game.complete_many_turns(1)
+
+print('TURN 1 Economic')
+
+assert return_cp(new_game.game_state(), 0) == 1
+assert return_cp(new_game.game_state(), 1) == 7
+print('Passed')
+
+print('TURN 2 Movement')
+new_game.complete_movement_phase()
+check_unit_coords(return_scouts(new_game.game_state(), 1), [2,2])
+assert len(return_scouts(new_game.game_state(), 1)) == 3
+check_unit_coords(return_destroyers(new_game.game_state(), 1), [2,2])
+assert len(return_destroyers(new_game.game_state(), 1)) == 0
+check_unit_coords(return_destroyers(new_game.game_state(), 0), [2,2])
+assert len(return_destroyers(new_game.game_state(), 0)) == 1
+
+print('Passed')
+
+print('TURN 2 Combat')
+new_game.complete_combat_phase()
+check_unit_coords(return_scouts(new_game.game_state(), 1), [2,2])
+assert len(return_scouts(new_game.game_state(), 1)) == 3
+check_unit_coords(return_destroyers(new_game.game_state(), 1), [2,2])
+assert len(return_destroyers(new_game.game_state(), 1)) == 0
+check_unit_coords(return_destroyers(new_game.game_state(), 0), [2,2])
+assert len(return_destroyers(new_game.game_state(), 0)) == 0
+
+print('Passed')

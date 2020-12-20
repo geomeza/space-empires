@@ -1,335 +1,106 @@
-from units.unit import Unit 
-from units.dreadnaught import Dreadnaught 
-from units.scout import Scout 
-from units.battlecruiser import Battlecruiser 
-from units.battleship import Battleship 
-from units.colony import Colony 
-from units.colonyship import Colonyship 
-from units.cruiser import Cruiser 
-from units.destroyer import Destroyer 
-from units.shipyard import Shipyard 
-from planets.planet import Planet 
-from players.player import Player 
-from players.dumb_player import DumbPlayer
-from players.random_player import RandomPlayer
-from players.combat_player import CombatPlayer
-from combat_engine import CombatEngine
-from movement_engine import MovementEngine
-from economic_engine import EconomicEngine
+from player import Player
 from board import Board
-import random
-# import matplotlib.pyplot as plt
-# from matplotlib.ticker import MultipleLocator   
-import sys,os
-
-# Disable
-def blockPrint():
-    sys.stdout = open(os.devnull, 'w')
-
-# Restore
-def enablePrint():
-    sys.stdout = sys.__stdout__
-
-
+from movement_engine import MovementEngine
+from utility import Utility
+from economic_engine import EconomicEngine
+from combat_engine import CombatEngine
 
 class Game:
-    def __init__(self, players=2, player_coords=[[0, 2], [4, 2]], grid_size=[5,5], max_turns=100, planets=8,player_type = 'Random',logging = True, die_rolls = None):
-        self.turn_count = 0
-        self.phase = None
-        self.current_player = None
-        self.player_count = players
-        self.turns = 0
-        self.win = 0
-        self.player_coords = player_coords
-        self.grid_size = grid_size
-        self.players_dead = 0
-        self.max_turns = max_turns
-        self.num_planets = planets
+
+    def __init__(self, board_size = [5,5], planets = [[1,0]],max_turns = 10, logging = True, die_rolls = 'descending'):
+        self.players = []
+        self.dead_players = []
+        self.current_player = 'None'
+        self.board_size = board_size
         self.board = None
-        self.player_type = player_type
-        self.combat_engine = None
-        self.movement_engine = None
-        self.economic_engine = None
-        self.complete = False
-        self.die_rolls = die_rolls
-        if logging is False:
-            blockPrint()
+        self.planets = planets
+        self.turn_count = 0
+        self.max_turns = max_turns
+        self.phase = 'Bruh Moment'
+        self.winner = 'None'
+        self.logging = logging
+        self.dice_rolls = die_rolls
 
-    # def labeled_scatter_plot(self, grid_size=[5,5], fontsize=10):
-    #     player_colors = ['red','blue','green','purple']
-    #     fig, ax = plt.subplots()
-    #     ax.xaxis.set_minor_locator(MultipleLocator(0.5))
-    #     ax.yaxis.set_minor_locator(MultipleLocator(0.5))
-    #     for i in range(len(self.players)):
-    #         for unit in self.players[i].units:
-    #             team_color = player_colors[self.players[i].player_num - 1]
-    #             x = unit.coords[0]
-    #             y = unit.coords[1]
-    #             color = team_color
-    #             label = unit.abbr+str(unit.unit_num)
-    #             ax.text(x, y, label, fontsize=fontsize, color=color, horizontalalignment='center', verticalalignment='center')
-    #     for planet in self.planets:
-    #         p_coords = planet.coords
-    #         ax.text(p_coords[0], p_coords[1], 'Planet', fontsize=10, color='black', horizontalalignment='center', verticalalignment='center')
-    #     x_max, y_max = grid_size
-    #     plt.xlim(-0.5 ,x_max-0.5)
-    #     plt.ylim(-0.5, y_max-0.5)
+    def add_player(self, strategy, coords):
+        new_player = Player(strategy, len(self.players) + 1, coords, self)
+        self.players.append(new_player)
 
-    #     plt.grid(which='minor')
-    #     plt.show()
+    def create_assets(self, planets):
+        if self.logging:
+            print('Creating Board')
+        self.board = Board(self.board_size, self, planets)
+        self.utility = Utility(True, self)
+        self.economic_engine = EconomicEngine(self.board, self)
+        self.movement_engine = MovementEngine(self.board, self)
+        self.combat_engine = CombatEngine(self.board, self)
 
-    def generate_state(self):
-        game_dict = {}
-        game_attrs = ['turn', 'phase', 'current player', 'winner', 'players']
-        game_iterators = ['turns', 'phase', 'current_player', 'win', 'players']
-        for attr, val in self.__dict__.items():
-            if attr in game_iterators:
-                ind_of_iter = game_iterators.index(attr)
-                if game_attrs[ind_of_iter] != 'players':
-                    game_dict[game_attrs[ind_of_iter]] = val
-                else:
-                    game_dict['players'] = []
-                    for player in self.players:
-                        player_dict = self.generate_player_dict(player)
-                        game_dict['players'].append(player_dict)
-        game_dict['planets'] = [planet.coords for planet in self.board.planets]
-        return game_dict
-
-    def generate_player_dict(self, player):
-        player_dict = {}
-        player_dict['cp'] = player.com_points
-        player_tech = ['attack', 'defense', 'movement', 'Ship size']
-        player_dict['technology'] = {player_tech[i]: player.tech_lvls[i] for i in range(len(player_tech))}
-        units = [self.generate_unit_dict(unit) for unit in player.units]
-        for colony in player.colonies:
-            units.append(self.generate_unit_dict(colony))
-        player_dict['units'] = units
-        return player_dict
-
-    def generate_unit_dict(self, unit):
-        unit_dict = {}
-        unit_dict['location'] = unit.coords
-        if unit.name == 'Colony':
-            unit_dict['type'] = unit.colony_type
-        else:
-            unit_dict['type'] = unit.name
-            unit_dict['health'] = unit.armor
-            unit_dict['technology'] = {}
-            unit_dict['technology']['attack'] = unit.strength
-            unit_dict['technology']['defense'] = unit.defense
-            unit_dict['technology']['movement'] = unit.speed
-        return unit_dict
-
-
-
-
-    # def generate_state(self):
-    #     game_dict = {}
-    #     for player in self.players:
-    #         player_num = player.player_num
-    #         game_dict.update({'Player'+str(player_num):{}})
-    #         game_dict['Player'+str(player_num)].update({'Units': []})
-    #         game_dict['Player'+str(player_num)].update({'Tech': player.tech_lvls})
-    #         game_dict['Player'+str(player_num)].update({'Com Point': player.com_points})
-    #         game_dict['Player'+str(player_num)].update({'Colonies':[player.colonies]})
-    #         shipyards = []
-    #         for colony in player.colonies:
-    #             for shipyard in colony.shipyards:
-    #                 shipyards.append(shipyard)
-    #         game_dict['Player'+str(player_num)].update({'Shipyards' : shipyards})
-    #     all_units = []
-    #     for player in self.players:
-    #         for unit in player.units:
-    #             all_units.append(unit)
-    #     for unit in all_units:
-    #         units = game_dict['Player'+str(unit.player.player_num)]['Units']
-    #         units.append(unit)
-    #         game_dict['Player'+str(unit.player.player_num)].update({'Units': units})
-    #     game_dict.update({'Units': all_units})
-    #     game_dict.update({'Planets': self.board.planets})
-    #     return game_dict
-
-    def create_board(self):
-        self.board = Board(self.grid_size)
-        self.board.generate()
-        self.board.generate_planets(self.player_coords, self.num_planets)
-        self.combat_engine = CombatEngine(self.board, dice_type = self.die_rolls)
-        self.movement_engine = MovementEngine(self, self.board)
-
-    def update_board(self):
-        all_units = []
+    def initialize_game(self):
+        self.create_assets(self.planets)
+        if self.logging:
+            print('Initializing Players')
         for player in self.players:
-            for unit in player.units:
-                all_units.append(unit)
-        self.board.update_self(all_units)
-
-    def generate_players(self):
-        if self.player_type == 'Random':
-            self.players = [RandomPlayer(i + 1) for i in range(self.player_count)]
-        
-        if self.player_type == 'Dumb':
-            self.players = [DumbPlayer(i + 1) for i in range(self.player_count)]
-        
-        if self.player_type == 'Combat':
-            self.players = [CombatPlayer(i + 1, self.grid_size) for i in range(self.player_count)]
-
-        for s in range(self.player_count):
-            self.players[s].initialize_units(self.player_coords[s])
-
-    # def add_combat_points(self):
-    #     for player in self.players:
-    #         player.generate_cp()
-
-    # def pay_maintenance_cost(self):
-    #     for player in self.players:
-    #         player.pay_maintenance()
+            player.cp = 0
+            player.initialize_units()
+        self.board.update(self.players)
+        if self.logging:
+            for s in range(len(self.players)):
+                print('----------------------------------')
+                print('Player', s + 1, ':')
+                print('Combat Points:',self.players[s].cp)
+                self.show_unit_coords(s+1)
+                print('----------------------------------')
 
     def show_unit_coords(self, player_num):
         for unit in self.players[player_num - 1].units:
             print(unit.name, ':', unit.coords)
 
-    # def upgrade(self,player):
-    #     upgr = random.randint(1, 2)
-    #     if upgr == 1:
-    #         player.buy_tech()
-    #     elif upgr == 2:
-    #         colony_choice = random.choice(player.colonies)
-    #         player.generate_units(colony_choice.coords, colony_choice, only_once =True)
+    def complete_turn(self):
+        self.turn_count += 1
+        self.complete_movement_phase()
+        self.complete_combat_phase()
+        self.complete_economic_phase()
 
-    # def colonize(self, player):
-    #     if player.will_colonize():
-    #         for unit in player.units:
-    #             space = self.board.grid[tuple(unit.coords)]
-    #             if unit.name == 'Colony Ship':
-    #                 if space.planet is not None:
-    #                     if space.planet.colonized is False:
-    #                         space.planet.player = player
-    #                         space.planet.colonized = True
-    #                         unit.destroy()
-    #                         player.create_colony(unit.coords, space.planet, space)
-
-    def start(self):
-        self.create_board()
-        self.generate_players()
-        self.economic_engine = EconomicEngine(self.board, self, self.players)
-        self.update_board()
-        for s in range(len(self.players)):
-            print('----------------------------------')
-            print('Player', s + 1, ':')
-            print('Combat Points:',self.players[s].com_points)
-            self.show_unit_coords(s+1)
-            print('----------------------------------')
+    def complete_movement_phase(self):
+        self.movement_engine.complete_movement_phase()
 
     def complete_combat_phase(self):
-        self.phase = 'Combat'
-        print('----------------------------------')
-        print('BEGINNING OF COMBAT PHASE')
-        self.resolve_combat()
-        for player in self.players:
-            self.current_player = player.player_num - 1
-            self.combat_engine.attack_colony(player)
-        print('END OF COMBAT PHASE')
-        print('----------------------------------')
-
-    # def complete_economic_phase(self):
-    #     self.phase = 'Economic'
-    #     print('----------------------------------')
-    #     print('BEGINNING OF ECONOMIC PHASE')
-    #     self.add_combat_points()
-    #     self.pay_maintenance_cost()
-    #     for player in self.players:
-    #         self.current_player = player.player_num - 1
-    #         self.colonize(player)
-    #         print('-----------')
-    #         print('Player',player.player_num,'is upgrading/buying!')
-    #         player.upgrade()
-    #         print('Player',player.player_num,'Combat Points Left:',player.com_points)
-    #         print('-----------')
-    #     print('END OF ECONOMIC PHASE')
-    #     print('----------------------------------')
-
-
-    def complete_turn(self):
-        print('-------------------------------------------------')
-        print('Turn', self.turns + 1)
-        self.economic_engine.update_self(self.players)
-        self.movement_engine.complete_movement_phase(self.players)
-        self.complete_combat_phase()
-        self.remove_dead_players()
-        if self.complete is True:
-            self.winner()
-            return None
-        self.economic_engine.complete_economic_phase()
-        self.remove_dead_players()
-        if self.complete is True:
-            self.winner()
-            return None
-        print('-------------------------------------')
-        print('PLAYERS LEFT:')
-        for player in self.players:
-            print('PLAYER',player.player_num)
-        self.turns +=1
-        print('-------------------------------------------------')
-        return None
-
-    def remove_dead_players(self):
-        for player in self.players:
-            if len(player.units) == 0 and len(player.colonies) == 0:
-                print('-------------------------------------------')
-                print('PLAYER',player.player_num,'HAD NO MORE SHIPS')
-                print('PLAYER',player.player_num,'DIED')
-                self.players_dead += 1
-                self.players.remove(player)
-                print('-------------------------------------------')
-        if len(self.players) == 1:
-            self.win = self.players[0].player_num
-            self.complete = True
-            return None
-
-    def complete_many_turns(self,nums):
-        for n in range(nums):
-            if self.complete is False:
-                self.complete_turn()
-
-    def resolve_combat(self):
-        all_units = []
-        for player in self.players:
-            for unit in player.units:
-                all_units.append(unit)
-        occupants = self.board.occupy(all_units)
-        self.combat_engine.resolve_battles(occupants)
-        # for o in occupants:
-        #     if len(o) >= 2:
-        #         self.combat_engine.check_for_battle(o)
-
-    def find_combat_array(self):
-        all_units = []
-        for player in self.players:
-            for unit in player.units:
-                all_units.append(unit)
-        occupants = self.board.occupy(all_units)
-        return self.combat_engine.generate_combat_state(occupants)
+        self.combat_engine.complete_combat_phase()
     
-    def state(self):
-        for player in self.players:
-            print('Player:',player.player_num)
-            for unit in player.units:
-                unit.show_coords()
+    def complete_economic_phase(self):
+        self.economic_engine.complete_economic_phase()
 
-    def run_to_completion(self):
-        for n in range(self.turns, self.max_turns):
-            if self.complete is False:
-                self.complete_turn()
-            else:
-                print('Game Over')
-                return None
-        self.win = self.player_count + 2
-        print('Game Over')
+    def complete_many_turns(self, num_turns):
+        for i in range(num_turns):
+            self.complete_turn()
 
-    def winner(self):
-        if self.win == 0:
-            return ('Game Not Done Yet')
-        elif self.win in range(self.player_count + 1):
-            print('Player', self.win, 'Wins')
-        else:
-            return ('Nobody Wins')
+    def game_state(self):
+        state = {}
+        state['board_size'] = self.board.size
+        state['turn'] = self.turn_count
+        state['phase'] = self.phase
+        state['current_player'] = self.current_player
+        state['players'] = [self.player_state(player) for player in self.players]
+        state['planets'] = [planet.coords for planet in self.board.planets]
+        state['winner'] = self.winner
+        return state
+
+    def player_state(self, player):
+        state = {}
+        state['player num'] = player.player_num
+        state['tech'] = player.tech_lvls
+        state['cp'] = player.cp
+        state['units'] = [self.unit_state(unit) for unit in player.units]
+        return state
+
+    def unit_state(self, unit):
+        state = {}
+        state['player'] = unit.player.player_num
+        state['name'] = unit.name
+        state['class num'] = unit.class_num
+        state['unit num'] = unit.unit_num
+        state['coords'] = unit.coords
+        state['maint'] = unit.maint
+        state['tech'] = unit.tech_lvls
+        state['hits left'] = unit.armor
+        state['turn created'] = unit.turn_created
+        return state
