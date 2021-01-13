@@ -1,6 +1,3 @@
-import sys
-sys.path.append('src')
-
 from units.scout import Scout
 from units.cruiser import Cruiser
 from units.colonyship import Colonyship
@@ -20,19 +17,17 @@ class CombatStrategy:
         ship_coords = game_state['players'][self.player_num]['units'][ship_index]['coords']
         route = self.fastest_route(ship_coords, [game_state['board_size'][0]// 2, game_state['board_size'][1]// 2])
         if len(route) > 0:
-            return tuple(route[0])
+            return route[0]
         else:
-            return (0,0)
+            return [0,0]
 
-    def decide_purchases(self, game_state):
+    def decide_purchases(self, player_state):
         purchases = {}
-        cp = game_state['players'][self.player_num]['cp']
+        cp = player_state['cp']
         units = []
-        if game_state['players'][self.player_num]['tech']['ss'] < 2:
-            purchases['tech'] = ['ss']
+        if player_state['tech']['ss'] < 2:
+            purchases['tech'] = [['ss', 1]]
             cp -= 10
-        else:
-            purchases['tech'] = []
         if cp > self.check_buy_counter().cost:
             while True:
                 unit = self.check_buy_counter()
@@ -42,7 +37,8 @@ class CombatStrategy:
                     self.buy_counter += 1
                 else:
                     break
-        purchases['units'] = units
+        if len(units) >= 1:
+            purchases['ships'] = units
         return purchases
 
     def check_buy_counter(self):
@@ -53,18 +49,20 @@ class CombatStrategy:
 
 
     def decide_removals(self, player_state):
-        return -1
+        removals = []
+        threshold = self.get_maintenance() - self.cp
+        for unit in player_state['units']:
+            removals.append(unit['unit num'])
+            threshold -= unit['maint']
+            if threshold <= 0:
+                break
+        return removals
         
-    def decide_which_unit_to_attack(self, combat_state, location, attacker_index):
-        for unit in combat_state[tuple(location)]:
-            if unit['player'] != combat_state[tuple(location)][attacker_index]['player']:
-                return combat_state[tuple(location)].index(unit)
+    def decide_which_ship_to_attack(self, attacker, unit_info):
+        return unit_info[0]
 
     def will_colonize(self, colony_ship, game_state):
         return False
-
-    def decide_which_units_to_screen(self, combat_state):
-        return []
 
     def directional_input(self, current, goal):
         directions = [[1, 0],[-1, 0],[0, 1],[0, -1]]

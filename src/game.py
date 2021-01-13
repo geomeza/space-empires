@@ -22,7 +22,7 @@ class Game:
         self.dice_rolls = die_rolls
 
     def add_player(self, strategy, coords):
-        new_player = Player(strategy, len(self.players) + 1, coords, self)
+        new_player = Player(strategy, len(self.players), coords, self)
         self.players.append(new_player)
 
     def create_assets(self, planets):
@@ -70,7 +70,7 @@ class Game:
         self.economic_engine.complete_economic_phase()
 
     def complete_many_turns(self, num_turns):
-        for i in range(num_turns):
+        for _ in range(num_turns):
             self.complete_turn()
 
     def game_state(self):

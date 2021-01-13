@@ -39,8 +39,9 @@ class MovementEngine:
             if unit.moveable:
                 unit_index = player.units.index(unit)
                 before_coords = unit.coords
-                for i in range(movements):
+                for _  in range(movements):
                     unit_direction = player.strategy.decide_ship_movement(unit_index, self.game.game_state())
+                    unit_direction = [unit_direction[0], unit_direction[1]]
                     unit.move(unit_direction, self.game.board_size)
                     if self.game.logging:
                         print(unit.name,':',before_coords,'-->',unit.coords)

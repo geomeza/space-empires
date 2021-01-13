@@ -14,6 +14,7 @@ class CombatEngine:
         self.dice = {'ascending' : [1,2,3,4,5,6], 'descending' : [6,5,4,3,2,1], 'random' : [1,2,3,4,5,6]}
         self.order = -1
         self.dice_roll = 0
+        self.combat_state = None
 
     def roll_dice(self):
         if self.dice_rolls != 'random':
@@ -36,6 +37,7 @@ class CombatEngine:
             self.reset_stats()
         for coords, units in passives.items():
             del potential_battles[coords]
+        self.combat_state = potential_battles
         return potential_battles
 
     def complete_combat_phase(self):
@@ -89,10 +91,12 @@ class CombatEngine:
     def which_ship_to_attack(self, player, attacker, units):
         self.sort_units(units, player)
         unit_info = [self.game.unit_state(unit) for unit in self.enemies if unit.alive]
-        decision = player.strategy.decide_which_ship_to_attack(attacker, unit_info)
+        units = [unit for unit in units if unit.alive]
+        decision = player.strategy.decide_which_unit_to_attack(self.get_combat_state(), attacker.coords, units.index(attacker))
+        psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
         chosen_enemy = None
         for unit in units:
-            if unit.unit_num == decision['unit num'] and unit.player.player_num == decision['player']:
+            if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player']:
                 chosen_enemy = unit
         return chosen_enemy
 
@@ -172,6 +176,7 @@ class CombatEngine:
                     print('Player',unit.player.player_num,unit.name, unit.unit_num)
             while self.over is False:
                 self.battle_order = self.supremacy(self.units)
+                self.units = self.battle_order
                 for unit in self.battle_order:
                     if unit.alive is True:
                         if unit.can_atk is False:
@@ -202,7 +207,7 @@ class CombatEngine:
                     if unit.coords in planet_coords:
                         planet = self.board.grid[tuple(unit.coords)].planet
                         if planet.colonized is False:
-                            if player.strategy.will_colonize(self.game.unit_state(unit), self.game.game_state()):
+                            if player.strategy.will_colonize_planet(unit.coords, self.game.game_state()):
                                 player.build_colony(unit.coords, col_type = 'Normal', colony_ship = unit)
                                 if self.game.logging:
                                     print('Player', player.player_num,'colonized a planet at',unit.coords)
@@ -217,3 +222,12 @@ class CombatEngine:
                     if planet.colonized:
                         if unit.can_atk and planet.colony.player != unit.player:
                             self.unit_shot(attacker = unit, defender = planet.colony)
+
+    def get_combat_state(self):
+        state = {}
+        for coords,units in self.combat_state.items():
+            ordered_units = self.supremacy(units)
+            ordered_units = [unit for unit in ordered_units if unit.alive]
+            unit_dicts = [{'player' : unit.player.player_num, 'unit': unit.unit_num} for unit in ordered_units]
+            state.update({coords : unit_dicts})
+        return state

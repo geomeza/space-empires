@@ -30,7 +30,7 @@ class CustomStrategy:
                 break
         return removals
         
-    def decide_which_ship_to_attack(self, attacker, unit_info):
+    def decide_which_unit_to_attack(self, attacker, unit_info):
         return unit_info[0]
 
     def will_colonize(self, colony_ship, game_state):

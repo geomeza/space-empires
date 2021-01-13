@@ -22,8 +22,11 @@ class EconomicEngine:
                 print('--------------')
             maintenance = player.get_maintenance()
             if player.cp < maintenance:
-                self.remove_ships(player)
-                maintenance = self.get_maintenance()
+                removal_cutoff = maintenance - player.cp
+                while removal_cutoff > 0:
+                    removal = self.remove_ship(player)
+                    removal_cutoff -= removal
+                maintenance = player.get_maintenance()
             player.pay(maintenance)
             if self.game.logging:
                 print('Player',player.player_num,'payed',maintenance,'in maintenance!')
@@ -38,9 +41,9 @@ class EconomicEngine:
 
 
     def purchase(self, player):
-        purchases = player.strategy.decide_purchases(self.game.player_state(player))
+        purchases = player.strategy.decide_purchases(self.game.game_state())
         for key,val in purchases.items():
-            if key == 'ships':
+            if key == 'units':
                 for ship in val:
                     if ship.cost <= player.cp:
                         builder = player.build_unit(ship, player.coords_to_build(ship.build_size, ship), pay = True)
@@ -51,19 +54,19 @@ class EconomicEngine:
                             print('Could not afford to buy', ship.name)
             elif key == 'tech':
                 for tech_type in val:
-                    for i in range(tech_type[1]):
-                        self.game.utility.buy_tech(tech_type[0], player)
+                    self.game.utility.buy_tech(tech_type, player)
 
 
-    def remove_ships(self, player):
-        removals = player.strategy.decide_removals(self.game.player_state(player))
-        for unit in player.units:
-            if self.game.logging:
-                print('-------')
-                print('Unit:',unit.name, unit.unit_num,'could not be sustained, was destroyed!')
-                print('-------')
-            if unit.unit_num in removals:
-                unit.destroy()
+    def remove_ship(self, player):
+        removal = player.strategy.decide_removal(self.game.game_state())
+        unit = player.units[removal]
+        cp = unit.maint
+        if self.game.logging:
+            print('-------')
+            print('Unit:',unit.name, unit.unit_num,'could not be sustained, was destroyed!')
+            print('-------')
+        unit.destroy()
+        return cp
 
     def economic_state(self):
         return [{

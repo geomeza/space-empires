@@ -43,8 +43,8 @@ def check_unit_coords(units, coords):
     for unit in units:
         assert unit['coords'] == coords
 
-assert return_cp(new_game.game_state(), 0) == 7
-assert return_cp(new_game.game_state(), 1) == 1
+assert return_cp(new_game.game_state(), 0) == 7, return_cp(new_game.game_state(), 0)
+assert return_cp(new_game.game_state(), 1) == 1, return_cp(new_game.game_state(), 1)
 print('Passed')
 
 print('TURN 2 Movement')
