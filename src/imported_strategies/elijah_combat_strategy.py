@@ -1,4 +1,4 @@
-from strategies.strategy_util import get_possible_spots, is_in_bounds
+from strategy_util import get_possible_spots, is_in_bounds
 
 
 class CombatStrategy:
@@ -17,11 +17,11 @@ class CombatStrategy:
         sp = game_state['sp']
         tech_amt = game_state['players'][self.player_index]['spaces'][sp]
         possible_spaces = get_possible_spots(
-            unit["location"], tech_amt, game_state["board_size"])
+            unit["coords"], tech_amt, game_state["board_size"])
         distances = [dist((2, 2), pos)
                      for pos in possible_spaces]
         next_space = possible_spaces[distances.index(min(distances))]
-        return next_space[0] - unit["location"][0], next_space[1] - unit["location"][1]
+        return next_space[0] - unit["coords"][0], next_space[1] - unit["coords"][1]
 
     # Buy all possible size tech and scouts/destroyers
     def decide_purchases(self, game_state):

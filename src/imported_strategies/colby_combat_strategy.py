@@ -12,10 +12,7 @@ from unit.colony_ship import Colony_Ship
 from unit.colony import Colony
 from unit.ship_yard import Ship_Yard
 from unit.base import Base
-from unit.miner import Miner
-from unit.decoy import Decoy
-from unit.carrier import Carrier
-from strategies.basic_strategy import BasicStrategy
+from basic_strategy import BasicStrategy
 
 class CombatStrategy(BasicStrategy):
     def __init__(self, player_index):#wutever else we need):

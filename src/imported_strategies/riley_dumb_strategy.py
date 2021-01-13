@@ -1,3 +1,12 @@
+from units.scout import Scout
+from units.cruiser import Cruiser
+from units.colonyship import Colonyship
+from units.colony import Colony
+from planet import Planet
+from units.shipyard import Shipyard
+from units.base import Base
+from units.destroyer import Destroyer
+
 class DumbStrategy:
     def __init__(self,player_index):
         self.player_index = player_index
@@ -7,8 +16,8 @@ class DumbStrategy:
     
     def decide_ship_movement(self,ship_index, game_state):
         ship = game_state['players'][self.player_index]['units'][ship_index]
-        if ship['location'][0] != game_state['board_size'][0]-1:
-           return (1, 0)
+        if ship['coords'][0] != game_state['board_size'][0]-1:
+           return (-1, 0)
         else:
             return (0,0)
     
@@ -16,14 +25,14 @@ class DumbStrategy:
         units = []
         money = game_state['players'][self.player_index]['cp']
         while money - 6 >= 0:
-            units.append('Scout')
+            units.append(Scout)
             money -= 6
         return {'units':units,'tech':[]}
     
     def decide_removals(self, game_state):
         i = 0
         while True:
-            if game_state['players'][self.player_index]['units'][i]['location'] != None:
+            if game_state['players'][self.player_index]['units'][i]['coords'] != None:
                 return game_state['players'][self.player_index]['units'][i]['unit_num']
             else:
                 i+=1

@@ -11,14 +11,22 @@ from planet import Planet
 from strategies.custom_strategy import CustomStrategy
 from strategies.combat_strategy import CombatStrategy
 from strategies.dumb_strategy import DumbStrategy
-
+from imported_strategies.strategy_util import is_in_bounds
+# from imported_strategies.colby_dumb_strategy import DumbStrategy as colby_dumb
+from imported_strategies.elijah_combat_strategy import CombatStrategy as eli_combat
+# from imported_strategies.david_dumb_strategy import DumbStrategy as david_dumb
+from imported_strategies.riley_combat_strategy import CombatStrategy as riley_combat
 print('ASCENDING TESTS')
 
 print('TURN 1 Economic')
 
 new_game = Game(logging = False, die_rolls = 'ascending')
-strategy_1 = CombatStrategy(player_num = 0)
-strategy_2 = CombatStrategy(player_num = 1)
+# strategy_1 = riley_combat(0)
+# strategy_2 = riley_combat(1)
+strategy_1 = eli_combat(0)
+strategy_2 = eli_combat(1)
+# strategy_1 = CombatStrategy(player_num = 0)
+# strategy_2 = CombatStrategy(player_num = 1)
 new_game.add_player(strategy_1, [2,0])
 new_game.add_player(strategy_2, [2,4])
 new_game.initialize_game()

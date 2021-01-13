@@ -1,5 +1,5 @@
 import math
-from strategies.strategy_util import is_in_bounds
+from imported_strategies.strategy_util import is_in_bounds
 
 
 class DumbStrategy:
@@ -13,9 +13,9 @@ class DumbStrategy:
 
     # Decide where each ship moves
     def decide_ship_movement(self, unit_index, game_state):
-        x, y = game_state["players"][self.player_index]['units'][unit_index]["location"]
+        x, y = game_state["players"][self.player_index]['units'][unit_index]["coords"]
         if is_in_bounds(1+x, 0+y, game_state["board_size"]):
-            return (1, 0)
+            return (-1, 0)
         return (0, 0)
 
     # Only build scouts
