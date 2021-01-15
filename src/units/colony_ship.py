@@ -1,10 +1,10 @@
 from units.unit import Unit 
 
-class Colonyship(Unit):
+class ColonyShip(Unit):
     cost = 8
     strength = 0          
     defense = 0
-    name = 'Colony Ship'
+    name = 'Colonyship'
     abbr = 'CO'
     class_num = 0
     armor = 0

@@ -1,11 +1,3 @@
-from units.scout import Scout
-from units.cruiser import Cruiser
-from units.colonyship import Colonyship
-from units.colony import Colony
-from planet import Planet
-from units.shipyard import Shipyard
-from units.base import Base
-
 class CustomStrategy:
 
     def __init__(self, player_num):

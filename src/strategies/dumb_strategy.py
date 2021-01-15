@@ -1,19 +1,10 @@
-from units.scout import Scout
-from units.cruiser import Cruiser
-from units.colonyship import Colonyship
-from units.colony import Colony
-from planet import Planet
-from units.shipyard import Shipyard
-from units.base import Base
-from units.destroyer import Destroyer
-
 class DumbStrategy:
 
     def __init__(self, player_num):
         self.player_num = player_num
 
     def decide_ship_movement(self, ship_index, game_state):
-        if game_state['players'][self.player_num]['units'][ship_index]['name'] == 'Scout':
+        if game_state['players'][self.player_num]['units'][ship_index]['type'] == 'Scout':
             return (-1,0) 
         else:
             return (0,0)
@@ -22,11 +13,12 @@ class DumbStrategy:
         purchases = {}
         cp =game_state['players'][self.player_num]['cp']
         units = []
-        if cp > Scout.cost:
+        scout = game_state['unit_data']['Scout']
+        if cp > scout['cp_cost']:
             while True:
-                if cp >= Scout.cost:
-                    units.append(Scout)
-                    cp -= Scout.cost
+                if cp >= scout['cp_cost']:
+                    units.append('Scout')
+                    cp -= scout['cp_cost']
                 else:
                     break
         if len(units) >= 1:

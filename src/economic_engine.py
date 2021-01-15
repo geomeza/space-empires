@@ -1,3 +1,12 @@
+from units.unit import Unit
+from units.scout import Scout
+from units.colony_ship import ColonyShip
+from units.destroyer import Destroyer
+from units.battleship import Battleship
+from units.cruiser import Cruiser
+from units.dreadnaught import Dreadnaught
+from units.ship_yard import ShipYard
+
 class EconomicEngine:
 
     def __init__(self, board, game):
@@ -42,9 +51,12 @@ class EconomicEngine:
 
     def purchase(self, player):
         purchases = player.strategy.decide_purchases(self.game.game_state())
+        ship_objects = [Scout, Destroyer, Dreadnaught, ColonyShip, Cruiser, Battleship, ShipYard]
+        ship_names = ['Scout', 'Destroyer', 'Dreadnaught', 'Colonyship', 'Cruiser', 'Battleship', 'Shipyard']
         for key,val in purchases.items():
             if key == 'units':
-                for ship in val:
+                for ship_name in val:
+                    ship = ship_objects[ship_names.index(ship_name)]
                     if ship.cost <= player.cp:
                         builder = player.build_unit(ship, player.coords_to_build(ship.build_size, ship), pay = True)
                         if self.game.logging and builder is not False:
@@ -53,8 +65,11 @@ class EconomicEngine:
                         if self.game.logging:
                             print('Could not afford to buy', ship.name)
             elif key == 'tech':
+                translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
+                techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']
                 for tech_type in val:
-                    self.game.utility.buy_tech(tech_type, player)
+                    wanted = translations[techs.index(tech_type)]
+                    self.game.utility.buy_tech(wanted, player)
 
 
     def remove_ship(self, player):

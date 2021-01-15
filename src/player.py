@@ -1,10 +1,10 @@
 from units.scout import Scout
 from units.cruiser import Cruiser
-from units.colonyship import Colonyship
+from units.colony_ship import ColonyShip
 from units.colony import Colony
 from units.base import Base
 from planet import Planet
-from units.shipyard import Shipyard
+from units.ship_yard import ShipYard
 # from units.ship_yard import ShipYard
 
 
@@ -61,12 +61,12 @@ class Player:
         self.game.board.planets.append(home_planet)
         self.game.board.grid[tuple(self.home_coords)].planet = home_planet
         for i in range(4):
-            self.build_unit(Shipyard, self.home_coords, pay = False)
+            self.build_unit(ShipYard, self.home_coords, pay = False)
         self.units[0].set_builders()
         for i in range(3):
             self.build_unit(Scout, self.home_coords, pay = False)
         for i in range(3):
-            self.build_unit(Colonyship, self.home_coords, pay = False)
+            self.build_unit(ColonyShip, self.home_coords, pay = False)
 
     def coords_to_build(self, build_size, ship):
         for unit in self.units:

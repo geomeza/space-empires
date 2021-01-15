@@ -1,6 +1,6 @@
 from units.unit import Unit 
 
-class Shipyard(Unit):
+class ShipYard(Unit):
     class_type = 'C'
     class_num = 3
     strength = 3

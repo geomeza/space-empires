@@ -1,15 +1,5 @@
 import sys
 sys.path.append('src')
-
-from units.scout import Scout
-from units.cruiser import Cruiser
-from units.colonyship import Colonyship
-from units.colony import Colony
-from planet import Planet
-from units.shipyard import Shipyard
-from units.base import Base
-from units.destroyer import Destroyer
-
 class CombatStrategy:
 
     def __init__(self, player_num):
@@ -28,17 +18,17 @@ class CombatStrategy:
         purchases = {}
         cp = game_state['players'][self.player_num]['cp']
         units = []
-        if game_state['players'][self.player_num]['tech']['ss'] < 2:
-            purchases['tech'] = ['ss']
+        if game_state['players'][self.player_num]['tech']['shipsize'] < 2:
+            purchases['tech'] = ['shipsize']
             cp -= 10
         else:
             purchases['tech'] = []
-        if cp > self.check_buy_counter().cost:
+        unit = game_state['unit_data'][self.check_buy_counter()]
+        if cp > unit['cp_cost']:
             while True:
-                unit = self.check_buy_counter()
-                if cp >= unit.cost:
-                    units.append(unit)
-                    cp -= unit.cost
+                if cp >= unit['cp_cost']:
+                    units.append(self.check_buy_counter())
+                    cp -= unit['cp_cost']
                     self.buy_counter += 1
                 else:
                     break
@@ -47,9 +37,9 @@ class CombatStrategy:
 
     def check_buy_counter(self):
         if self.buy_counter % 2 == 0:
-            return Destroyer
+            return 'Destroyer'
         else:
-            return Scout
+            return 'Scout'
 
 
     def decide_removals(self, player_state):
