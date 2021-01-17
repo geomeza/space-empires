@@ -8,9 +8,10 @@ class Base(Unit):
     defense = 2
     armor = 3
     cost = 12
-    build_size = 2
+    ship_size_needed = 2
     name = 'Base'
     abbr = 'B'
+    # movement = 
 
     moveable = False
     maint = None

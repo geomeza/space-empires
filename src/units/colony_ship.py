@@ -13,4 +13,5 @@ class ColonyShip(Unit):
     maint = None
     can_atk = False
     instant_ko = True
-    build_size = 1
+    ship_size_needed = 1
+    movement = 1

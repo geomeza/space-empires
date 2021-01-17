@@ -11,7 +11,9 @@ class Battlecruiser(Unit):
     armor = 2
     speed = 1
     hull_size = 2
-    build_size = 4
+    ship_size_needed = 4
+    movement = 1
+    ship_size_needed = 4
 
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)

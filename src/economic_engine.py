@@ -40,6 +40,7 @@ class EconomicEngine:
             if self.game.logging:
                 print('Player',player.player_num,'payed',maintenance,'in maintenance!')
             self.purchase(player)
+            player.set_colony_builders()
             if self.game.logging:
                 print('PLAYER', player.player_num,'HAS', player.cp,'LEFT')
             self.board.update(self.game.players)
@@ -58,9 +59,11 @@ class EconomicEngine:
                 for ship_name in val:
                     ship = ship_objects[ship_names.index(ship_name)]
                     if ship.cost <= player.cp:
-                        builder = player.build_unit(ship, player.coords_to_build(ship.build_size, ship), pay = True)
-                        if self.game.logging and builder is not False:
-                            print('PLAYER', player.player_num,'BOUGHT A:', ship.name)
+                        coords = player.coords_to_build(ship.hull_size, ship)
+                        if coords is not None:
+                            builder = player.build_unit(ship, coords, pay = True)
+                            if self.game.logging and builder is not False:
+                                print('PLAYER', player.player_num,'BOUGHT A:', ship.name)
                     else:
                         if self.game.logging:
                             print('Could not afford to buy', ship.name)

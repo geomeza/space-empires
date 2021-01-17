@@ -9,7 +9,7 @@ class ShipYard(Unit):
     cost = 6
     name = 'Shipyard'
     abbr = 'SY'
-    build_size = 0
+    ship_size_needed = 0
     build_capacity = 1
     hull_size = 0
     maint = None
@@ -27,3 +27,9 @@ class ShipYard(Unit):
                 if unit.coords == self.coords:
                     found = unit
                     return unit
+
+    def destroy(self):
+        self.alive = False
+        if self in self.player.units:
+            self.player.units.remove(self)
+        self.colony.set_builders()

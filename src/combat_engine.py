@@ -142,7 +142,7 @@ class CombatEngine:
     def remove_non_fighters(self, units):
         passives = []
         for unit in units:
-            if unit.name == 'Colony Ship':
+            if unit.name == 'Colonyship':
                 passives.append(unit)
         if len(passives) == len(units):
             self.over = True
@@ -192,9 +192,12 @@ class CombatEngine:
                                 if self.game.logging:
                                     print('Battle Is Over')
                                     print('Player', unit_choice.player.player_num,'Units Win!')
+                                    print('Survivors')
+                                    print('------------------------')
                                     for unit in self.units:
                                         if unit.alive is True:
                                             print(unit.name, unit.unit_num)
+                                    print('------------------------')
                                 return
                 self.units = self.remove_dead_ships(self.units)
 

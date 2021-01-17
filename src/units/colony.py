@@ -10,6 +10,7 @@ class Colony(Unit):
     moveable = False
     maint = None
     can_atk = False
+    ship_size_needed = 0
     
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created, colony_type = 'Normal'):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)
@@ -28,6 +29,14 @@ class Colony(Unit):
         else:
             self.destroy()
 
+    def destroy(self):
+        planet = self.player.home_planet
+        planet.destroy()
+        self.alive = False
+        if self in self.player.units:
+            self.player.units.remove(self)
+
     def set_builders(self):
+        self.builders = 0
         for shipyard in self.shipyards:
             self.builders += shipyard.build_capacity

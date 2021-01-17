@@ -13,8 +13,9 @@ class Player:
     def __init__(self, strategy, player_num, starting_coords, game):
         self.strategy = strategy
         self.player_num = player_num
-        self.tech_lvls = {'atk' : 0, 'def' : 0, 'move' : 1, 'shpyrd' : 1.0, 'ss' : 1}
+        self.tech_lvls = {'atk' : 0, 'def' : 0, 'move' : 1, 'shpyrd' : 1, 'ss' : 1}
         self.home_coords = starting_coords
+        self.home_planet = None
         self.game = game
         self.units = []
         self.cp = 0
@@ -31,7 +32,7 @@ class Player:
                 if self.game.logging:
                     print('Colony Already Has 4 Shipyards')
                 return False
-        ship_tech = {key: val for key,val in self.tech_lvls.items() if key in ['atk', 'def']}
+        ship_tech = {key: val for key,val in self.tech_lvls.items() if key in ['atk', 'def', 'move']}
         new_unit = unit_name(coords, len(self.units) + 1, self, ship_tech, self.game, self.game.turn_count)
         if pay:
             self.cp -= new_unit.cost
@@ -58,6 +59,7 @@ class Player:
     def initialize_units(self):
         self.build_colony(self.home_coords, col_type = 'Home')
         home_planet = Planet(self.home_coords, colonized = True, colony = self.units[0])
+        self.home_planet = home_planet
         self.game.board.planets.append(home_planet)
         self.game.board.grid[tuple(self.home_coords)].planet = home_planet
         for i in range(4):
@@ -71,11 +73,26 @@ class Player:
     def coords_to_build(self, build_size, ship):
         for unit in self.units:
             if unit.name == 'Colony':
-                if self.tech_lvls['ss'] >= ship.hull_size:
+                if self.tech_lvls['ss'] >= ship.ship_size_needed:
                     if unit.builders >= build_size:
+                        unit.builders -= build_size
                         return unit.coords
+                    else:
+                        if self.game.logging:
+                            print('Player does not have enough builders at colonies to build ship')
+                        return None
+                else:
+                    if self.game.logging:
+                        print('Player does not have proper ship size level')
+                    return None
 
     def update_shipyards(self):
+        for unit in self.units:
+            if unit.name == 'Shipyard':
+                unit.build_capacity = self.game.utility.ship_size_dict[str(self.tech_lvls['shpyrd'])]
+        self.set_colony_builders()
+
+    def set_colony_builders(self):
         for unit in self.units:
             if unit.name == 'Colony':
                 unit.set_builders()

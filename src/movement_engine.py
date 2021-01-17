@@ -17,12 +17,12 @@ class MovementEngine:
                 print('Movement', i + 1)
             self.movement_phase = i+1
             for player in self.game.players:
-                movement_lvl = player.tech_lvls['move'] - 1
-                movements = self.movement_info[str(i + 1)][movement_lvl]
+                # movement_lvl = player.tech_lvls['move'] - 1
+                # movements = self.movement_info[str(i + 1)][movement_lvl]
                 if self.game.logging:
                     print('--------------------')
                     print('Player', player.player_num,'is moving')
-                self.move_units(player, movements)
+                self.move_units(player, i+1)
                 self.board.update(self.game.players)
                 if self.game.logging:
                     print('--------------------')
@@ -33,13 +33,14 @@ class MovementEngine:
             print('END OF MOVEMENT PHASE')
                 
 
-    def move_units(self, player, movements):
+    def move_units(self, player, movement_round):
         self.game.current_player = player.player_num
         for unit in player.units:
             if unit.moveable:
+                ship_movements = self.movement_info[str(movement_round)][unit.movement - 1]
                 unit_index = player.units.index(unit)
                 before_coords = unit.coords
-                for _  in range(movements):
+                for _  in range(ship_movements):
                     unit_direction = player.strategy.decide_ship_movement(unit_index, self.game.game_state())
                     unit_direction = [unit_direction[0], unit_direction[1]]
                     unit.move(unit_direction, self.game.board_size)

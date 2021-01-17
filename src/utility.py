@@ -3,27 +3,39 @@ class Utility:
     def __init__(self, exist, game):
         self.exist = exist
         self.game = game
-        self.tech_info = {'atk': {'lvls' : [-1,0,1,2], 'prices' : [20, 50 , 90], 'max' : 4}, 'def': {'lvls' : [-1,0,1,2], 'prices' : [20, 50 , 90], 'max' : 4}, 'move': {'lvls': [0,1,2,3,4,5], 'prices': [20, 50, 90, 130, 170], 'max' : 6}, 'shpyrd': {'lvls' : [0.5, 1.0, 1.5], 'prices' : [20, 50], 'max' : 2.0}, 'ss' : {'lvls': [0,1,2,3,4,5], 'prices' : [10,15,20,25,30], 'max' : 6}}
+        self.tech_info = {'atk': {'lvls' : [-1,0,1,2], 'prices' : [20, 50 , 90], 'max' : 4}, \
+            'def': {'lvls' : [-1,0,1,2], 'prices' : [20, 50 , 90], 'max' : 4},\
+            'move': {'lvls': [0,1,2,3,4,5], 'prices': [20, 50, 90, 130, 170], 'max' : 6}, \
+            'shpyrd': {'lvls' : [0, 1, 2], 'prices' : [20, 50], 'max' : 3}, \
+            'ss' : {'lvls': [0,1,2,3,4,5], 'prices' : [10,15,20,25,30], 'max' : 6}}
+
+        self.ship_size_dict = {'1' : 1.0, '2':1.5, '3' : 2.0}
 
     def buy_tech(self, tech_type, player):
         adjuster = 1
-        if tech_type == 'shpyrd':
-            adjuster = 0.5
         if player.tech_lvls[tech_type] < self.tech_info[tech_type]['max']:
             current_player_lvl = self.tech_info[tech_type]['lvls'].index(player.tech_lvls[tech_type] - adjuster)
             cost = self.tech_info[tech_type]['prices'][current_player_lvl]
             if player.cp >= cost:
                 player.pay(cost)
-                player.tech_lvls[tech_type] = self.tech_info[tech_type]['lvls'][current_player_lvl + 1] + adjuster
+                new_lvl = self.tech_info[tech_type]['lvls'][current_player_lvl + 1] + adjuster
+                player.tech_lvls[tech_type] = new_lvl
+                if tech_type == 'shpyrd':
+                    player.update_shipyards()
                 if self.game.logging:
                     print('---------')
                     print('Player', player.player_num,'Payed For:')
                     print('Level:', player.tech_lvls[tech_type],' Of', tech_type,'Technology')
                     print('---------')
+            else:
+                if self.game.logging:
+                    print('---------')
+                    print('Player', player.player_num,'could not afford:')
+                    print('Level:', player.tech_lvls[tech_type] + 1,' Of', tech_type,'Technology')
+                    print('---------')
         else:
             if self.game.logging:
                 print(tech_type,'TECHNOLOGY MAXED OUT')
-        player.update_shipyards()
 
     def directional_input(self, current, goal):
         directions = [[1, 0],[-1, 0],[0, 1],[0, -1]]

@@ -11,7 +11,8 @@ class Battleship(Unit):
     armor = 3
     speed = 1
     hull_size = 3
-    build_size = 5
+    ship_size_needed = 5
+    movement = 1
 
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)

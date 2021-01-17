@@ -1,18 +1,13 @@
-class CustomStrategy:
+class NewCustomStrategy:
 
     def __init__(self, player_num):
         self.player_num = player_num
 
     def decide_ship_movement(self, ship_index, game_state):
-        ship_coords = game_state['players'][self.player_num]['units'][ship_index]['coords']
-        route = self.fastest_route(ship_coords, [1, 1])
-        if len(route) > 0:
-            return tuple(route[0])
-        else:
-            return (0,0)
+        return (1,0)
 
     def decide_purchases(self, game_state):
-        return {'tech': ['shipsize', 'shipsize', 'shipyard'], 'units' : ['Destroyer', 'Destroyer', 'Destroyer', 'Destroyer', 'Destroyer']}
+        return {'units' : [] , 'tech': []}
 
     def decide_removals(self, player_state):
         return -1

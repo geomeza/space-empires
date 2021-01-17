@@ -37,12 +37,12 @@ def check_player(player_index, scout_count, turn):
     assert len(scouts) == scout_count
     for unit in state['players'][player_index]['units']:
         if unit['type'] == 'Scout':
-            if unit['turn created'] == turn:
+            if unit['turn_created'] == turn:
                 assert unit['coords'] == non_scout_coords[player_index]
             else:
                 assert unit['coords'] == scout_coords[player_index]
-        else:
-            assert unit['coords'] == non_scout_coords[player_index]
+        # else:
+        #     assert unit['coords'] == non_scout_coords[player_index]
     print('Passed')
 
 for i in range(4):
@@ -60,3 +60,4 @@ for i in range(4):
     check_player(0, player_scouts[i + 1], i+1)
     check_player(1, player_scouts[i + 1], i+1)
     print('===================================')
+    # print(new_game.game_state())

@@ -20,6 +20,7 @@ class Game:
         self.winner = 'None'
         self.logging = logging
         self.dice_rolls = die_rolls
+        self.complete = False
 
     def add_player(self, strategy, coords):
         new_player = Player(strategy, len(self.players), coords, self)
@@ -58,6 +59,9 @@ class Game:
         self.turn_count += 1
         self.complete_movement_phase()
         self.complete_combat_phase()
+        self.remove_dead_players()
+        if self.complete:
+            return
         self.complete_economic_phase()
 
     def complete_movement_phase(self):
@@ -72,13 +76,47 @@ class Game:
     def complete_many_turns(self, num_turns):
         for _ in range(num_turns):
             self.complete_turn()
+            if self.complete:
+                return
+
+    def run_until_complete(self):
+        while True:
+            self.complete_turn()
+            if self.complete:
+                break
+
+    def remove_dead_players(self):
+        dead_players = []
+        for player in self.players:
+            colonized_bool = player.home_planet.colonized
+            colony = player.home_planet.colony
+            if colonized_bool is False and colony is None:
+                dead_players.append(player)
+                for unit in player.units:
+                    unit.destroy()
+        for player in dead_players:
+            self.players.remove(player)
+            if self.logging:
+                print('--------------------------------------')
+                print('Player', player.player_num, 'Has Died')
+                print('--------------------------------------')
+        if len(self.players) == 1:
+            player = self.players[0]
+            self.winner = player.player_num
+            self.complete = True
+            print('--------------------------------------')
+            print('Player', player.player_num,'Won')
+            print('--------------------------------------')
+
+
+
 
     def game_state(self):
         state = {}
         state['board_size'] = self.board.size
         state['turn'] = self.turn_count
         state['phase'] = self.phase
-        state['current_player'] = self.current_player
+        state['player_whose_turn'] = self.current_player
         state['players'] = [self.player_state(player) for player in self.players]
         state['planets'] = [planet.coords for planet in self.board.planets]
         state['unit_data'] = {
@@ -103,7 +141,8 @@ class Game:
 
     def player_state(self, player):
         state = {}
-        state['player num'] = player.player_num
+        state['home_coords'] = player.home_coords
+        state['player_num'] = player.player_num
         translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
         techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']
         state['tech'] = {techs[translations.index(tech)] : player.tech_lvls[tech] for tech in player.tech_lvls.keys()}
@@ -113,15 +152,16 @@ class Game:
 
     def unit_state(self, unit):
         state = {}
+        state['ship_size_needed'] = unit.ship_size_needed
         state['player'] = unit.player.player_num
         state['type'] = unit.name
-        state['class num'] = unit.class_num
-        state['unit num'] = unit.unit_num
+        state['class_num'] = unit.class_num
+        state['unit_num'] = unit.unit_num
         state['coords'] = unit.coords
         state['maint'] = unit.maint
-        translations = ['atk', 'def']
-        techs = ['attack', 'defense']
+        translations = ['atk', 'def', 'move']
+        techs = ['attack', 'defense', 'movement']
         state['tech'] = {techs[translations.index(tech)] : unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()}
-        state['hits left'] = unit.armor
-        state['turn created'] = unit.turn_created
+        state['hits_left'] = unit.armor
+        state['turn_created'] = unit.turn_created
         return state

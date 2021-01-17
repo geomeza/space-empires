@@ -4,10 +4,7 @@ class DumbStrategy:
         self.player_num = player_num
 
     def decide_ship_movement(self, ship_index, game_state):
-        if game_state['players'][self.player_num]['units'][ship_index]['type'] == 'Scout':
-            return (-1,0) 
-        else:
-            return (0,0)
+        return (-1,0) 
 
     def decide_purchases(self, game_state):
         purchases = {}
