@@ -120,16 +120,16 @@ class Game:
         state['players'] = [self.player_state(player) for player in self.players]
         state['planets'] = [planet.coords for planet in self.board.planets]
         state['unit_data'] = {
-            'Battleship': {'cp_cost': 20, 'hullsize': 3},
-            'Battlecruiser': {'cp_cost': 15, 'hullsize': 2},
-            'Cruiser': {'cp_cost': 12, 'hullsize': 2},
-            'Destroyer': {'cp_cost': 9, 'hullsize': 1},
-            'Dreadnaught': {'cp_cost': 24, 'hullsize': 3},
-            'Scout': {'cp_cost': 6, 'hullsize': 1},
-            'Shipyard': {'cp_cost': 3, 'hullsize': 1},
-            'Decoy': {'cp_cost': 1, 'hullsize': 0},
-            'Colonyship': {'cp_cost': 8, 'hullsize': 1},
-            'Base': {'cp_cost': 12, 'hullsize': 3}}
+            'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed' : 5},
+            'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed' : 4},
+            'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed' : 2},
+            'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed' : 2},
+            'Dreadnaught': {'cp_cost': 24, 'hullsize': , 'shipsize_needed' : 6},
+            'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed' : 1},
+            'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed' : 1},
+            'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed' : 1},
+            'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed' : 1},
+            'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed' : 2}}
         state['technology_data'] = {
             'shipsize': [10, 15, 20, 25, 30],
             'attack': [20, 30, 40],
@@ -152,7 +152,6 @@ class Game:
 
     def unit_state(self, unit):
         state = {}
-        state['ship_size_needed'] = unit.ship_size_needed
         state['player'] = unit.player.player_num
         state['type'] = unit.name
         state['class_num'] = unit.class_num
