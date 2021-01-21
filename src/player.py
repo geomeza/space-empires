@@ -70,9 +70,25 @@ class Player:
         for i in range(3):
             self.build_unit(ColonyShip, self.home_coords, pay = False)
 
-    def coords_to_build(self, build_size, ship):
+    # def coords_to_build(self, build_size, ship):
+    #     for unit in self.units:
+    #         if unit.name == 'Colony':
+    #             if self.tech_lvls['ss'] >= ship.ship_size_needed:
+    #                 if unit.builders >= build_size:
+    #                     unit.builders -= build_size
+    #                     return unit.coords
+    #                 else:
+    #                     if self.game.logging:
+    #                         print('Player does not have enough builders at colonies to build ship')
+    #                     return None
+    #             else:
+    #                 if self.game.logging:
+    #                     print('Player does not have proper ship size level')
+    #                 return None
+
+    def check_colony(self, build_size, ship, coords):
         for unit in self.units:
-            if unit.name == 'Colony':
+            if unit.name == 'Colony' and unit.coords == coords:
                 if self.tech_lvls['ss'] >= ship.ship_size_needed:
                     if unit.builders >= build_size:
                         unit.builders -= build_size
@@ -85,6 +101,7 @@ class Player:
                     if self.game.logging:
                         print('Player does not have proper ship size level')
                     return None
+
 
     def update_shipyards(self):
         for unit in self.units:

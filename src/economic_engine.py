@@ -56,10 +56,10 @@ class EconomicEngine:
         ship_names = ['Scout', 'Destroyer', 'Dreadnaught', 'Colonyship', 'Cruiser', 'Battleship', 'Shipyard']
         for key,val in purchases.items():
             if key == 'units':
-                for ship_name in val:
-                    ship = ship_objects[ship_names.index(ship_name)]
+                for ship_dict in val:
+                    ship = ship_objects[ship_names.index(ship_dict['type'])]
                     if ship.cost <= player.cp:
-                        coords = player.coords_to_build(ship.hull_size, ship)
+                        coords = player.check_colony(ship.hull_size, ship,ship_dict['coords'] )
                         if coords is not None:
                             builder = player.build_unit(ship, coords, pay = True)
                             if self.game.logging and builder is not False:
@@ -67,7 +67,7 @@ class EconomicEngine:
                     else:
                         if self.game.logging:
                             print('Could not afford to buy', ship.name)
-            elif key == 'tech':
+            elif key == 'technology':
                 translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
                 techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']
                 for tech_type in val:

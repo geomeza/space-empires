@@ -1,50 +1,68 @@
 import sys
-import random
 sys.path.append('src')
-from unit.unit import Unit
-from unit.scout import Scout
-from unit.destroyer import Destroyer
-from unit.cruiser import Cruiser
-from unit.battle_cruiser import BattleCruiser
-from unit.battleship import Battleship
-from unit.dreadnaught import Dreadnaught
-from unit.colony_ship import Colony_Ship
-from unit.colony import Colony
-from unit.ship_yard import Ship_Yard
-from unit.base import Base
-from basic_strategy import BasicStrategy
+from imported_strategies.basic_strategy import BasicStrategy
+import random
+
+
 
 class CombatStrategy(BasicStrategy):
-    def __init__(self, player_index):#wutever else we need):
+    def __init__(self, player_index):  # wutever else we need):
         self.player_index = player_index
+        self.__name__ = 'CombatStrategy'
+        self.previous_buy = 'Scout'
 
     def decide_purchases(self, game_state):
-        if game_state['turn'] == 1 and game_state['players'][self.player_index]['ship_size_tech'] == 0: return 7
-        else: return self.decide_ship_purchases(game_state)
+        purchases = {'technology': [], 'units': []}
+        total_cost = 0
+        while game_state['players'][self.player_index]['cp'] > total_cost:
+            if game_state['turn'] == 1 and game_state['players'][self.player_index]['technology']['shipsize'] == 1 and 'shipsize' not in purchases['technology']:
+                if game_state['players'][self.player_index]['cp'] > total_cost + self.upgrade_costs('shipsize', game_state):
+                    purchases['technology'].append('shipsize')
+                    total_cost += self.upgrade_costs('shipsize', game_state)
+                else:
+                    break
+            else:
+                ship = self.decide_ship_purchases(game_state)
+                if game_state['players'][self.player_index]['cp'] > total_cost + self.ship_cost(ship, game_state):
+                    purchases['units'].append({'type': ship, 'coords': game_state['players'][self.player_index]['home_coords']})
+                    total_cost += self.ship_cost(ship, game_state)
+                else:
+                    break
+        return purchases
+
+    def ship_cost(self, ship, game_state):
+        return game_state['unit_data'][ship]['cp_cost']
 
     def decide_ship_purchases(self, game_state):
-        if self.check_previous_buy() == 2: 
-            self.previous_buy = Scout(None, (0,0), 0, 0, True)
-            return Scout(None, (0,0), 0, 0, True)
-        if self.check_previous_buy() == 1: 
-            self.previous_buy = Destroyer(None, (0,0), 0, 0, True)
-            return Destroyer(None, (0,0), 0, 0, True)
+        if self.check_previous_buy() == 'Destroyer':
+            self.previous_buy = 'Scout'
+            return 'Scout'
+        if self.check_previous_buy() == 'Scout':
+            self.previous_buy = 'Destroyer'
+            return 'Destroyer'
 
     def check_previous_buy(self):
-        if isinstance(self.previous_buy, Scout): return 1
-        elif isinstance(self.previous_buy, Destroyer): return 2
+        if self.previous_buy == 'Scout':
+            return 'Scout'
+        elif self.previous_buy == 'Destroyer':
+            return 'Destroyer'
 
     def decide_ship_movement(self, ship_index, game_state):
-        center_point_x, center_point_y = game_state['grid_size'] // 2, game_state['grid_size'] // 2
-        x, y = 0,0
-        if x != center_point_x:
-            if x < center_point_x:
-                x += game_state['players'][self.player_index]['ships'][ship_index]['movement_tech'][game_state['movement_round']]
-            elif x > center_point_x:
-                x -= game_state['players'][self.player_index]['ships'][ship_index]['movement_tech'][game_state['movement_round']]  
-        if y != center_point_y:
-            if y < center_point_y:
-                y += game_state['players'][self.player_index]['ships'][ship_index]['movement_tech'][game_state['movement_round']]
-            elif y > center_point_y:
-                y -= game_state['players'][self.player_index]['ships'][ship_index]['movement_tech'][game_state['movement_round']]
+        center_point_x, center_point_y = game_state['board_size'][0] // 2, game_state['board_size'][1] // 2
+        ship = game_state['players'][self.player_index]['units'][ship_index]
+        ship_x, ship_y = ship['coords'][0], ship['coords'][1]
+        x, y = 0, 0
+        movement_tech = self.get_movement_tech(ship['technology']['movement'])
+        if ship_x != center_point_x:
+            if ship_x < center_point_x:
+                x += movement_tech[game_state['round']]
+            elif ship_x > center_point_x:
+                x -= movement_tech[game_state['round']]
+            return x, y
+        if ship_y != center_point_y:
+            if ship_y < center_point_y:
+                y += movement_tech[game_state['round']]
+            elif ship_y > center_point_y:
+                y -= movement_tech[game_state['round']]
+            return x, y
         return x, y

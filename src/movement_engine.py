@@ -15,7 +15,7 @@ class MovementEngine:
             if self.game.logging:
                 print('---------------------------------')
                 print('Movement', i + 1)
-            self.movement_phase = i+1
+            self.movement_phase = i
             for player in self.game.players:
                 # movement_lvl = player.tech_lvls['move'] - 1
                 # movements = self.movement_info[str(i + 1)][movement_lvl]

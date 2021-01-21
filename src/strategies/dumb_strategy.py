@@ -4,7 +4,10 @@ class DumbStrategy:
         self.player_num = player_num
 
     def decide_ship_movement(self, ship_index, game_state):
-        return (-1,0) 
+        if self.is_in_bounds(*game_state['players'][self.player_num]['units'][ship_index]['coords'], game_state['board_size']):
+            return (-1,0) 
+        else:
+            return (0,0)
 
     def decide_purchases(self, game_state):
         purchases = {}
@@ -14,13 +17,13 @@ class DumbStrategy:
         if cp > scout['cp_cost']:
             while True:
                 if cp >= scout['cp_cost']:
-                    units.append('Scout')
+                    units.append({'type': 'Scout', 'coords':game_state['players'][self.player_num]['home_coords']})
                     cp -= scout['cp_cost']
                 else:
                     break
         if len(units) >= 1:
             purchases['units'] = units
-        purchases['tech'] = []
+        purchases['technology'] = []
         return purchases
 
     def decide_removal(self, game_state):
@@ -37,3 +40,7 @@ class DumbStrategy:
 
     def decide_which_units_to_screen(self, combat_state):
         return []
+
+    def is_in_bounds(self, x, y, bounds):
+        x1, y1 = bounds
+        return (x >= 0 and x < x1) and (y >= 0 and y < y1)

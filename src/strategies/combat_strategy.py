@@ -18,16 +18,16 @@ class CombatStrategy:
         purchases = {}
         cp = game_state['players'][self.player_num]['cp']
         units = []
-        if game_state['players'][self.player_num]['tech']['shipsize'] < 2:
-            purchases['tech'] = ['shipsize']
+        if game_state['players'][self.player_num]['technology']['shipsize'] < 2:
+            purchases['technology'] = ['shipsize']
             cp -= 10
         else:
-            purchases['tech'] = []
+            purchases['technology'] = []
         unit = game_state['unit_data'][self.check_buy_counter()]
         if cp > unit['cp_cost']:
             while True:
                 if cp >= unit['cp_cost']:
-                    units.append(self.check_buy_counter())
+                    units.append({'type': self.check_buy_counter(), 'coords' : game_state['players'][self.player_num]['home_coords']})
                     cp -= unit['cp_cost']
                     self.buy_counter += 1
                 else:
@@ -57,7 +57,7 @@ class CombatStrategy:
         return []
 
     def directional_input(self, current, goal):
-        directions = [[1, 0],[-1, 0],[0, 1],[0, -1]]
+        directions = [[1, 0],[-1, 0],[0, 1],[0, -1],[0,0]]
         distances = []
         for i in range(len(directions)):
             new_loc = [current[0] + directions[i][0], current[1] + directions[i][1]]

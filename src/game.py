@@ -116,6 +116,7 @@ class Game:
         state['board_size'] = self.board.size
         state['turn'] = self.turn_count
         state['phase'] = self.phase
+        state['round'] = self.movement_engine.movement_phase
         state['player_whose_turn'] = self.current_player
         state['players'] = [self.player_state(player) for player in self.players]
         state['planets'] = [planet.coords for planet in self.board.planets]
@@ -124,7 +125,7 @@ class Game:
             'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed' : 4},
             'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed' : 2},
             'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed' : 2},
-            'Dreadnaught': {'cp_cost': 24, 'hullsize': , 'shipsize_needed' : 6},
+            'Dreadnaught': {'cp_cost': 24, 'hullsize': 3, 'shipsize_needed' : 6},
             'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed' : 1},
             'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed' : 1},
             'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed' : 1},
@@ -145,7 +146,7 @@ class Game:
         state['player_num'] = player.player_num
         translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
         techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']
-        state['tech'] = {techs[translations.index(tech)] : player.tech_lvls[tech] for tech in player.tech_lvls.keys()}
+        state['technology'] = {techs[translations.index(tech)] : player.tech_lvls[tech] for tech in player.tech_lvls.keys()}
         state['cp'] = player.cp
         state['units'] = [self.unit_state(unit) for unit in player.units]
         return state
@@ -158,9 +159,10 @@ class Game:
         state['unit_num'] = unit.unit_num
         state['coords'] = unit.coords
         state['maint'] = unit.maint
+        state['alive'] = unit.alive
         translations = ['atk', 'def', 'move']
         techs = ['attack', 'defense', 'movement']
-        state['tech'] = {techs[translations.index(tech)] : unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()}
+        state['technology'] = {techs[translations.index(tech)] : unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()}
         state['hits_left'] = unit.armor
         state['turn_created'] = unit.turn_created
         return state

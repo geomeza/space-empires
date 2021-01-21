@@ -1,32 +1,22 @@
-from basic_strategy import BasicStrategy
-from unit.base import Base
-from unit.ship_yard import Ship_Yard
-from unit.colony import Colony
-from unit.colony_ship import Colony_Ship
-from unit.dreadnaught import Dreadnaught
-from unit.battleship import Battleship
-from unit.battle_cruiser import BattleCruiser
-from unit.cruiser import Cruiser
-from unit.destroyer import Destroyer
-from unit.scout import Scout
-from unit.unit import Unit
 import sys
-import random
 sys.path.append('src')
-
+from strategies.basic_strategy import BasicStrategy
+import random
 
 class DumbStrategy(BasicStrategy):
     def __init__(self, player_index):  # wutever else we need):
         self.player_index = player_index
+        self.__name__ = 'DumbStrategy'
 
     def decide_purchases(self, game_state):
         return self.decide_ship_purchases(game_state)
 
     def decide_ship_purchases(self, game_state):
-        return Scout(None, (0, 0), 0, 0, True)
+        return {'units': [{'type': 'Scout', 'coords': game_state['players'][self.player_index]['home_coords']}] * (game_state['players'][self.player_index]['creds'] // 6), 'technology': []}
 
-    def decide_ship_movement(self, ship, game_state, movement_round):
-        x, y = 0,0
-        if ship['x'] < game_state['players'][self.player_index]['grid_size']:
-            x += ship['movement_tech'][movement_round]
+    def decide_ship_movement(self, ship_index, game_state):
+        x, y = 0, 0
+        movement_tech = self.get_movement_tech(game_state['players'][self.player_index]['units'][ship_index]['technology']['movement'])
+        if game_state['players'][self.player_index]['units'][ship_index]['coords'][0] < game_state['board_size']:
+            x += movement_tech[game_state['round']]
         return x, y

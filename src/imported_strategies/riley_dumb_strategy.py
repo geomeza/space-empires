@@ -1,23 +1,14 @@
-from units.scout import Scout
-from units.cruiser import Cruiser
-from units.colonyship import Colonyship
-from units.colony import Colony
-from planet import Planet
-from units.shipyard import Shipyard
-from units.base import Base
-from units.destroyer import Destroyer
-
 class DumbStrategy:
     def __init__(self,player_index):
         self.player_index = player_index
 
-    def will_colinize_planet(self,colony_ship_loc,game_state):
+    def will_colonize_planet(self,colony_ship_loc,game_state):
         return True
     
     def decide_ship_movement(self,ship_index, game_state):
         ship = game_state['players'][self.player_index]['units'][ship_index]
         if ship['coords'][0] != game_state['board_size'][0]-1:
-           return (-1, 0)
+           return (1, 0)
         else:
             return (0,0)
     
@@ -25,7 +16,7 @@ class DumbStrategy:
         units = []
         money = game_state['players'][self.player_index]['cp']
         while money - 6 >= 0:
-            units.append(Scout)
+            units.append('Scout')
             money -= 6
         return {'units':units,'tech':[]}
     
@@ -37,7 +28,7 @@ class DumbStrategy:
             else:
                 i+=1
 
-    def decide_which_unit_to_attack(self, attacking_ship_index, location, combat_state):
+    def decide_which_unit_to_attack(self, combat_state, location, attacking_ship_index):
         for entry in combat_state[location]:
             if entry['player'] != combat_state[location][attacking_ship_index]['player']:
                 return combat_state[location].index(entry)

@@ -92,7 +92,7 @@ class CombatEngine:
         self.sort_units(units, player)
         unit_info = [self.game.unit_state(unit) for unit in self.enemies if unit.alive]
         units = [unit for unit in units if unit.alive]
-        decision = player.strategy.decide_which_unit_to_attack(self.get_combat_state(), attacker.coords, units.index(attacker))
+        decision = player.strategy.decide_which_unit_to_attack(self.get_combat_state(), tuple(attacker.coords), units.index(attacker))
         psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
         chosen_enemy = None
         for unit in units:
