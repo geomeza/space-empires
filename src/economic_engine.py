@@ -54,25 +54,22 @@ class EconomicEngine:
         purchases = player.strategy.decide_purchases(self.game.game_state())
         ship_objects = [Scout, Destroyer, Dreadnaught, ColonyShip, Cruiser, Battleship, ShipYard]
         ship_names = ['Scout', 'Destroyer', 'Dreadnaught', 'Colonyship', 'Cruiser', 'Battleship', 'Shipyard']
-        for key,val in purchases.items():
-            if key == 'units':
-                for ship_dict in val:
-                    ship = ship_objects[ship_names.index(ship_dict['type'])]
-                    if ship.cost <= player.cp:
-                        coords = player.check_colony(ship.hull_size, ship,ship_dict['coords'] )
-                        if coords is not None:
-                            builder = player.build_unit(ship, coords, pay = True)
-                            if self.game.logging and builder is not False:
-                                print('PLAYER', player.player_num,'BOUGHT A:', ship.name)
-                    else:
-                        if self.game.logging:
-                            print('Could not afford to buy', ship.name)
-            elif key == 'technology':
-                translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
-                techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']
-                for tech_type in val:
-                    wanted = translations[techs.index(tech_type)]
-                    self.game.utility.buy_tech(wanted, player)
+        for technology in purchases['technology']:
+            translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
+            techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']
+            wanted = translations[techs.index(technology)]
+            self.game.utility.buy_tech(wanted, player)
+        for unit in purchases['units']:
+            ship = ship_objects[ship_names.index(unit['type'])]
+            if ship.cost <= player.cp:
+                coords = player.check_colony(ship.hull_size, ship,unit['coords'] )
+                if coords is not None:
+                    builder = player.build_unit(ship, coords, pay = True)
+                    if self.game.logging and builder is not False:
+                        print('PLAYER', player.player_num,'BOUGHT A:', ship.name)
+            else:
+                if self.game.logging:
+                    print('Could not afford to buy', ship.name)
 
 
     def remove_ship(self, player):

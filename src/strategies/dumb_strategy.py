@@ -5,7 +5,7 @@ class DumbStrategy:
 
     def decide_ship_movement(self, ship_index, game_state):
         if self.is_in_bounds(*game_state['players'][self.player_num]['units'][ship_index]['coords'], game_state['board_size']):
-            return (-1,0) 
+            return (1,0) 
         else:
             return (0,0)
 
