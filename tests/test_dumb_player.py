@@ -14,15 +14,17 @@ from strategies.dumb_strategy import DumbStrategy
 # from imported_strategies.strategy_util import is_in_bounds
 from imported_strategies.colby_dumb_strategy import DumbStrategy as colby_dumb
 from imported_strategies.elijah_dumb_strategy import DumbStrategy as eli_dumb
-# from imported_strategies.david_dumb_strategy import DumbStrategy as david_dumb
+from imported_strategies.david_dumb_strategy import DumbStrategy as david_dumb
 from imported_strategies.riley_dumb_strategy import DumbStrategy as riley_dumb
 
 scout_coords = [[4,0], [4,4]]
 non_scout_coords = [[2,0], [2,4]]
 player_scouts = [3,5,8,10,12]
 new_game = Game(logging = False, die_rolls = 'ascending')
-strategy_1 = colby_dumb(0)
-strategy_2 = colby_dumb(1)
+strategy_1 = david_dumb(0)
+strategy_2 = david_dumb(1)
+# strategy_1 = colby_dumb(0)
+# strategy_2 = colby_dumb(1)
 # strategy_1 = riley_dumb(0)
 # strategy_2 = riley_dumb(1)
 # strategy_1 = eli_dumb(0)

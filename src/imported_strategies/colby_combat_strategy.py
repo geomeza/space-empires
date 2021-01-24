@@ -1,8 +1,7 @@
+import random
+from imported_strategies.basic_strategy import BasicStrategy
 import sys
 sys.path.append('src')
-from imported_strategies.basic_strategy import BasicStrategy
-import random
-
 
 
 class CombatStrategy(BasicStrategy):
@@ -12,7 +11,7 @@ class CombatStrategy(BasicStrategy):
         self.previous_buy = 'Scout'
 
     def decide_purchases(self, game_state):
-        purchases = {'technology': [], 'units': []}
+        purchases = {'units': [], 'technology': []}
         total_cost = 0
         while game_state['players'][self.player_index]['cp'] > total_cost:
             if game_state['turn'] == 1 and game_state['players'][self.player_index]['technology']['shipsize'] == 1 and 'shipsize' not in purchases['technology']:
@@ -24,7 +23,8 @@ class CombatStrategy(BasicStrategy):
             else:
                 ship = self.decide_ship_purchases(game_state)
                 if game_state['players'][self.player_index]['cp'] > total_cost + self.ship_cost(ship, game_state):
-                    purchases['units'].append({'type': ship, 'coords': game_state['players'][self.player_index]['home_coords']})
+                    purchases['units'].append(
+                        {'type': ship, 'coords': game_state['players'][self.player_index]['home_coords']})
                     total_cost += self.ship_cost(ship, game_state)
                 else:
                     break

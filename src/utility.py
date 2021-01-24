@@ -3,11 +3,11 @@ class Utility:
     def __init__(self, exist, game):
         self.exist = exist
         self.game = game
-        self.tech_info = {'atk': {'lvls' : [-1,0,1,2], 'prices' : [20, 50 , 90], 'max' : 4}, \
-            'def': {'lvls' : [-1,0,1,2], 'prices' : [20, 50 , 90], 'max' : 4},\
-            'move': {'lvls': [0,1,2,3,4,5], 'prices': [20, 50, 90, 130, 170], 'max' : 6}, \
-            'shpyrd': {'lvls' : [0, 1, 2], 'prices' : [20, 50], 'max' : 3}, \
-            'ss' : {'lvls': [0,1,2,3,4,5], 'prices' : [10,15,20,25,30], 'max' : 6}}
+        self.tech_info = {'atk': {'lvls' : [-1,0,1,2], 'prices' : [20, 30, 40], 'max' : 4}, \
+            'def': {'lvls' : [-1,0,1,2], 'prices' : [20, 30, 40], 'max' : 4},\
+            'move': {'lvls': [0,1,2,3,4,5], 'prices': [20, 30, 40, 40, 40], 'max' : 6}, \
+            'shpyrd': {'lvls' : [0, 1, 2], 'prices' : [20, 30], 'max' : 3}, \
+            'ss' : {'lvls': [0,1,2,3,4,5], 'prices' : [10, 15, 20, 25, 30], 'max' : 6}}
 
         self.ship_size_dict = {'1' : 1.0, '2':1.5, '3' : 2.0}
 

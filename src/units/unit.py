@@ -29,8 +29,16 @@ class Unit:
         test_x = self.coords[0] + direction[0]
         test_y = self.coords[1] + direction[1]
         if test_x < 0 or test_x > grid_size[0] - 1:
+            if self.game.invalidation:
+                if self.game.logging:
+                    print('Player made invalid move')
+                self.player.self_destruct()
             return
         if test_y < 0 or test_y > grid_size[1] - 1:
+            if self.game.invalidation:
+                if self.game.logging:
+                    print('Player made invalid move')
+                self.player.self_destruct()
             return
         self.coords = [test_x, test_y]
 

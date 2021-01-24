@@ -7,7 +7,8 @@ from combat_engine import CombatEngine
 
 class Game:
 
-    def __init__(self, board_size = [5,5], planets = [[1,0]],max_turns = 10, logging = True, die_rolls = 'descending'):
+    def __init__(self, board_size = [5,5], planets = [[1,0]],max_turns = 10, logging = True, die_rolls = 'descending', invalidation = True):
+        self.invalidation = invalidation
         self.players = []
         self.dead_players = []
         self.current_player = 'None'
@@ -58,6 +59,9 @@ class Game:
     def complete_turn(self):
         self.turn_count += 1
         self.complete_movement_phase()
+        self.remove_dead_players()
+        if self.complete:
+            return
         self.complete_combat_phase()
         self.remove_dead_players()
         if self.complete:
@@ -107,9 +111,6 @@ class Game:
             print('--------------------------------------')
             print('Player', player.player_num,'Won')
             print('--------------------------------------')
-
-
-
 
     def game_state(self):
         state = {}

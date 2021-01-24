@@ -41,6 +41,7 @@ class CombatEngine:
         return potential_battles
 
     def complete_combat_phase(self):
+        self.game.phase = 'Combat'
         if self.game.logging:
             print('START OF COMBAT PHASE')
         battles = self.find_battles()
@@ -133,7 +134,7 @@ class CombatEngine:
             if defender.alive is False:
                 self.dead_ships.append(defender)
                 if self.game.logging:
-                    print('Unit Destroyed')
+                    print(defender.name,'Destroyed')
         else:
             if self.game.logging:
                 print('They Miss')

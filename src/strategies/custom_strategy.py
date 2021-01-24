@@ -12,7 +12,8 @@ class CustomStrategy:
             return (0,0)
 
     def decide_purchases(self, game_state):
-        return {'tech': ['shipsize', 'shipsize', 'shipyard'], 'units' : ['Destroyer', 'Destroyer', 'Destroyer', 'Destroyer', 'Destroyer']}
+        home_coords = game_state['players'][self.player_num]['home_coords']
+        return {'technology': ['shipsize', 'shipsize', 'shipyard'], 'units' : [{'type': 'Destroyer', 'coords' : home_coords} for i in range(5)]}
 
     def decide_removals(self, player_state):
         return -1

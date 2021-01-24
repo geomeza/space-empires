@@ -4,9 +4,9 @@ class CombatStrategy:
         self.next_buy = 'Destroyers'
 
     def decide_ship_movement(self,ship_index, game_state):
-        if game_state['players'][self.player_num]["units"][ship_index]["coords"][1]>2:
+        if game_state['players'][self.player_num-1]["units"][ship_index]["coords"][1]>2:
              return (0,-1)
-        elif game_state['players'][self.player_num]["units"][ship_index]["coords"][1]<2:
+        elif game_state['players'][self.player_num-1]["units"][ship_index]["coords"][1]<2:
              return (0,1)
         else:
             return (0,0)
@@ -17,16 +17,17 @@ class CombatStrategy:
             'units': [],
             'technology': [] 
         }
-
-      if game_state['players'][self.player_num]['technology']['shipsize']<2:
+      new_shipsize= game_state['players'][self.player_num-1]['technology']['shipsize']
+      if game_state['players'][self.player_num-1]['technology']['shipsize']<2:
+        new_shipsize= game_state['players'][self.player_num-1]['technology']['shipsize']+1
         return_dic['technology'].append('shipsize')
-      elif self.next_buy == 'Destroyer':
-        self.next_buy = 'Scout'
-        return_dic['units'].append({'type': 'Destroyer', 'coords': (2,self.player_num*4)})
-      elif self.next_buy == 'Scout':
-        self.next_buy = 'Destroyer'
-        return_dic['units'].append({'type': 'Scout', 'coords': (2,self.player_num*4)})
-      print(return_dic)
+      if new_shipsize>=2:
+        if self.next_buy == 'Destroyers':
+          self.next_buy = 'Scout'
+          return_dic['unit'].append({'type': 'Destroyer', 'coords': (2,self.player_num*4)})
+        elif self.next_buy == 'Scout':
+          self.next_buy = 'Destroyers'
+          return_dic['unit'].append({'type': 'Scout', 'coords': (2,self.player_num*4)})
       return return_dic
 
     def will_colonize_planet(self, coordinates, game_state):
@@ -38,7 +39,7 @@ class CombatStrategy:
     def decide_which_unit_to_attack(self,combat_state, coords, attacker_index):
       for ship in combat_state[coords]:
         if ship['player']!=self.player_num:
-          return combat_state[coords].index(ship)
+          return combat_state['coords'].index(ship)
           break
       
 

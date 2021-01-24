@@ -11,6 +11,7 @@ from units.ship_yard import ShipYard
 class Player:
 
     def __init__(self, strategy, player_num, starting_coords, game):
+        self.dead = False
         self.strategy = strategy
         self.player_num = player_num
         self.tech_lvls = {'atk' : 0, 'def' : 0, 'move' : 1, 'shpyrd' : 1, 'ss' : 1}
@@ -70,22 +71,6 @@ class Player:
         for i in range(3):
             self.build_unit(ColonyShip, self.home_coords, pay = False)
 
-    # def coords_to_build(self, build_size, ship):
-    #     for unit in self.units:
-    #         if unit.name == 'Colony':
-    #             if self.tech_lvls['ss'] >= ship.ship_size_needed:
-    #                 if unit.builders >= build_size:
-    #                     unit.builders -= build_size
-    #                     return unit.coords
-    #                 else:
-    #                     if self.game.logging:
-    #                         print('Player does not have enough builders at colonies to build ship')
-    #                     return None
-    #             else:
-    #                 if self.game.logging:
-    #                     print('Player does not have proper ship size level')
-    #                 return None
-
     def check_colony(self, build_size, ship, coords):
         for unit in self.units:
             if unit.name == 'Colony' and unit.coords == coords:
@@ -101,7 +86,6 @@ class Player:
                     if self.game.logging:
                         print('Player does not have proper ship size level')
                     return None
-
 
     def update_shipyards(self):
         for unit in self.units:
@@ -133,3 +117,14 @@ class Player:
             if unit.name == 'Colony':
                 income += unit.capacity
         return income
+
+    def find_planet(self, coords):
+        for key, val in self.game.board.grid.items():
+            if key == tuple(coords):
+                return val.planet
+
+    def self_destruct(self):
+        unit = self.units[0]
+        if unit.name == 'Colony' and unit.colony_type == 'Home':
+            self.units[0].destroy()
+            self.dead = True

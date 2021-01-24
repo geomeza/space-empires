@@ -4,10 +4,10 @@ class NewCustomStrategy:
         self.player_num = player_num
 
     def decide_ship_movement(self, ship_index, game_state):
-        return (1,0)
+        return (-1,0)
 
     def decide_purchases(self, game_state):
-        return {'units' : [] , 'tech': []}
+        return {'units' : [] , 'technology': []}
 
     def decide_removals(self, player_state):
         return -1

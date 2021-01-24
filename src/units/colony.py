@@ -14,6 +14,7 @@ class Colony(Unit):
     
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created, colony_type = 'Normal'):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)
+        self.capacity_dict = {'Normal': [1,2], 'Home': [10,15]}
         self.base = None
         self.shipyards = []
         self.builders = 0
@@ -23,14 +24,15 @@ class Colony(Unit):
             self.capacity = 20
 
     def hit(self):
-        if self.armor > 0:
+        if self.armor > 1:
             self.armor -= 1
-            self.capacity -= 1
+            self.capacity = self.capacity_dict[self.colony_type][self.armor-1]
+            print('Capacity', self.capacity)
         else:
             self.destroy()
 
     def destroy(self):
-        planet = self.player.home_planet
+        planet = self.player.find_planet(self.coords)
         planet.destroy()
         self.alive = False
         if self in self.player.units:

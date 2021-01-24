@@ -3,6 +3,7 @@ from imported_strategies.strategy_util import get_possible_spots, is_in_bounds, 
 
 class CombatStrategy:
     buy_destroyer = True
+    __name__ = 'CombatStrategy'
 
     def __init__(self, player_index):
         self.player_index = player_index
@@ -16,7 +17,7 @@ class CombatStrategy:
         p = game_state['players'][self.player_index]
         unit = p['units'][unit_index]
         sp = game_state['round']
-        mov_lvl = p['technology']['movement']
+        mov_lvl = p['technology']['movement']-1
         tech_amt = get_spaces(mov_lvl)[sp]
         possible_spaces = get_possible_spots(
             unit["coords"], tech_amt, game_state["board_size"])
@@ -30,11 +31,13 @@ class CombatStrategy:
         unit_data = game_state['unit_data']
         player_state = game_state['players'][self.player_index]
         cp = player_state['cp']
+        print(cp)
         technology_data = game_state['technology_data']
-        ss_level = player_state["technology"]["shipsize"] - 1
+        ss_level = player_state["technology"]["shipsize"]
         purchases = {"technology": [], "units": []}
         if cp > technology_data["shipsize"][ss_level] and ss_level < 2:
             purchases["technology"].append("shipsize")
+            # SS prices list starts level 1 at index 0
             cp -= technology_data["shipsize"][ss_level]
             ss_level = 2
         can_buy_destroyer = cp >= unit_data["Destroyer"][
@@ -50,6 +53,7 @@ class CombatStrategy:
                 'type': 'Scout',
                 'coords': player_state["home_coords"]
             }]
+        print(purchases)
         return purchases
 
     # Return ship #0
