@@ -1,4 +1,4 @@
-class CombatStrategy:
+class AggressiveStrategy:
 
     def __init__(self, player_num):
         self.player_num = player_num
@@ -6,7 +6,7 @@ class CombatStrategy:
 
     def decide_ship_movement(self, ship_index, game_state):
         ship_coords = game_state['players'][self.player_num]['units'][ship_index]['coords']
-        route = self.fastest_route(ship_coords, [game_state['board_size'][0]// 2, game_state['board_size'][1]// 2])
+        route = self.fastest_route(ship_coords, game_state['players'][self.player_num-1]['home_coords'])
         if len(route) > 0:
             return tuple(route[0])
         else:

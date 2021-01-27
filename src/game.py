@@ -99,6 +99,7 @@ class Game:
                 for unit in player.units:
                     unit.destroy()
         for player in dead_players:
+            print(player.cp, 'CP')
             self.players.remove(player)
             if self.logging:
                 print('--------------------------------------')
@@ -108,6 +109,7 @@ class Game:
             player = self.players[0]
             self.winner = player.player_num
             self.complete = True
+            print(player.cp, 'KEK')
             print('--------------------------------------')
             print('Player', player.player_num,'Won')
             print('--------------------------------------')

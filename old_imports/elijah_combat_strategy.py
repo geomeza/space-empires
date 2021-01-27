@@ -53,6 +53,7 @@ class CombatStrategy:
                 'type': 'Scout',
                 'coords': player_state["home_coords"]
             }]
+        print(purchases)
         return purchases
 
     # Return ship #0

@@ -1,3 +1,5 @@
+import sys
+sys.path.append('src')
 class CombatStrategy:
 
     def __init__(self, player_num):

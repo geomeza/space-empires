@@ -62,7 +62,7 @@ class CombatEngine:
         self.team = []
         self.units = units
         for unit in self.units:
-            if unit.alive is True:
+            if unit.alive:
                 if unit.player == player:
                     self.team.append(unit)
                 else:
@@ -131,7 +131,7 @@ class CombatEngine:
             if self.game.logging:
                 print('They Hit')
             defender.hit()
-            if defender.alive is False:
+            if not defender.alive:
                 self.dead_ships.append(defender)
                 if self.game.logging:
                     print(defender.name,'Destroyed')
@@ -165,7 +165,7 @@ class CombatEngine:
     
     def battle(self, units):
         units = self.remove_non_fighters(units)
-        if self.over is True:
+        if self.over:
             return
         else:
             self.over = False
@@ -175,18 +175,18 @@ class CombatEngine:
                 print('In Combat:')
                 for unit in self.battle_order:
                     print('Player',unit.player.player_num,unit.name, unit.unit_num)
-            while self.over is False:
+            while not self.over:
                 self.battle_order = self.supremacy(self.units)
                 self.units = self.battle_order
                 for unit in self.battle_order:
-                    if unit.alive is True:
-                        if unit.can_atk is False:
+                    if unit.alive:
+                        if not unit.can_atk:
                             continue
                         self.sort_units(units, unit.player)
                         enem = self.which_ship_to_attack(unit.player, unit, self.units)
                         self.unit_shot(unit, enem)
                         self.check_battle_status(self.units)
-                        if self.over is True:
+                        if self.over:
                             if len(self.units) >= 1:
                                 self.remove_dead_ships(self.units)
                                 unit_choice = self.units[0]
@@ -196,7 +196,7 @@ class CombatEngine:
                                     print('Survivors')
                                     print('------------------------')
                                     for unit in self.units:
-                                        if unit.alive is True:
+                                        if unit.alive:
                                             print(unit.name, unit.unit_num)
                                     print('------------------------')
                                 return
@@ -210,7 +210,7 @@ class CombatEngine:
                 if unit.name == 'Colony Ship':
                     if unit.coords in planet_coords:
                         planet = self.board.grid[tuple(unit.coords)].planet
-                        if planet.colonized is False:
+                        if not planet.colonized:
                             if player.strategy.will_colonize_planet(unit.coords, self.game.game_state()):
                                 player.build_colony(unit.coords, col_type = 'Normal', colony_ship = unit)
                                 if self.game.logging:
