@@ -99,7 +99,6 @@ class Game:
                 for unit in player.units:
                     unit.destroy()
         for player in dead_players:
-            print(player.cp, 'CP')
             self.players.remove(player)
             if self.logging:
                 print('--------------------------------------')
@@ -109,10 +108,10 @@ class Game:
             player = self.players[0]
             self.winner = player.player_num
             self.complete = True
-            print(player.cp, 'KEK')
-            print('--------------------------------------')
-            print('Player', player.player_num,'Won')
-            print('--------------------------------------')
+            if self.game.logging:
+                print('--------------------------------------')
+                print('Player', player.player_num,'Won')
+                print('--------------------------------------')
 
     def game_state(self):
         state = {}
@@ -135,11 +134,11 @@ class Game:
             'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed' : 1},
             'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed' : 2}}
         state['technology_data'] = {
-            'shipsize': [10, 15, 20, 25, 30],
+            'shipsize': [0, 10, 15, 20, 25, 30],
             'attack': [20, 30, 40],
             'defense': [20, 30, 40],
-            'movement': [20, 30, 40, 40, 40],
-            'shipyard': [20, 30]}
+            'movement': [0,20, 30, 40, 40, 40],
+            'shipyard': [0,20, 30]}
         state['winner'] = self.winner
         return state
 
