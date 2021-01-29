@@ -3,9 +3,9 @@ class MovementEngine:
     def __init__(self, board, game):
         self.board = board
         self.game = game
-        self.movement_info = {'1' : [1,1,1,2,2,2], '2': [1,2,2,2,2,3], '3': [1,2,2,2,3,3]}
+        self.movement_info = {'1': [1, 1, 1, 2, 2, 2], '2': [
+            1, 2, 2, 2, 2, 3], '3': [1, 2, 2, 2, 3, 3]}
         self.movement_phase = None
-
 
     def complete_movement_phase(self):
         self.game.phase = 'Movement'
@@ -21,7 +21,7 @@ class MovementEngine:
                 # movements = self.movement_info[str(i + 1)][movement_lvl]
                 if self.game.logging:
                     print('--------------------')
-                    print('Player', player.player_num,'is moving')
+                    print('Player', player.player_num, 'is moving')
                 self.move_units(player, i+1)
                 self.board.update(self.game.players)
                 if self.game.logging:
@@ -31,7 +31,6 @@ class MovementEngine:
         if self.game.logging:
             print('---------------------------------')
             print('END OF MOVEMENT PHASE')
-                
 
     def move_units(self, player, movement_round):
         self.game.current_player = player.player_num
@@ -39,18 +38,20 @@ class MovementEngine:
             if unit.player.dead:
                 break
             if unit.moveable:
-                ship_movements = self.movement_info[str(movement_round)][unit.movement - 1]
+                ship_movements = self.movement_info[str(
+                    movement_round)][unit.movement - 1]
                 unit_index = player.units.index(unit)
                 before_coords = unit.coords
-                for _  in range(ship_movements):
-                    unit_direction = player.strategy.decide_ship_movement(unit_index, self.game.game_state())
+                for _ in range(ship_movements):
+                    unit_direction = player.strategy.decide_ship_movement(
+                        unit_index, self.game.game_state())
                     unit_direction = [unit_direction[0], unit_direction[1]]
                     unit.move(unit_direction, self.game.board_size)
                     if unit.player.dead:
                         break
                     if self.game.logging:
-                        print(unit.name,':',before_coords,'-->',unit.coords)
-    
+                        print(unit.name, ':', before_coords, '-->', unit.coords)
+
     def generate_movement_state(self):
         movement_dict = {}
         movement_dict['Phase'] = self.movement_phase

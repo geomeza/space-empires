@@ -5,9 +5,10 @@ from utility import Utility
 from economic_engine import EconomicEngine
 from combat_engine import CombatEngine
 
+
 class Game:
 
-    def __init__(self, board_size = [5,5], planets = [[1,0]],max_turns = 10, logging = True, die_rolls = 'descending', invalidation = True):
+    def __init__(self, board_size=[5, 5], planets=[[1, 0]], max_turns=10, logging=True, die_rolls='descending', invalidation=True):
         self.invalidation = invalidation
         self.players = []
         self.dead_players = []
@@ -48,7 +49,7 @@ class Game:
             for s in range(len(self.players)):
                 print('----------------------------------')
                 print('Player', s + 1, ':')
-                print('Combat Points:',self.players[s].cp)
+                print('Combat Points:', self.players[s].cp)
                 self.show_unit_coords(s+1)
                 print('----------------------------------')
 
@@ -73,7 +74,7 @@ class Game:
 
     def complete_combat_phase(self):
         self.combat_engine.complete_combat_phase()
-    
+
     def complete_economic_phase(self):
         self.economic_engine.complete_economic_phase()
 
@@ -108,9 +109,9 @@ class Game:
             player = self.players[0]
             self.winner = player.player_num
             self.complete = True
-            if self.game.logging:
+            if self.logging:
                 print('--------------------------------------')
-                print('Player', player.player_num,'Won')
+                print('Player', player.player_num, 'Won')
                 print('--------------------------------------')
 
     def game_state(self):
@@ -120,25 +121,26 @@ class Game:
         state['phase'] = self.phase
         state['round'] = self.movement_engine.movement_phase
         state['player_whose_turn'] = self.current_player
-        state['players'] = [self.player_state(player) for player in self.players]
+        state['players'] = [self.player_state(
+            player) for player in self.players]
         state['planets'] = [planet.coords for planet in self.board.planets]
         state['unit_data'] = {
-            'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed' : 5},
-            'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed' : 4},
-            'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed' : 2},
-            'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed' : 2},
-            'Dreadnaught': {'cp_cost': 24, 'hullsize': 3, 'shipsize_needed' : 6},
-            'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed' : 1},
-            'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed' : 1},
-            'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed' : 1},
-            'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed' : 1},
-            'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed' : 2}}
+            'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5},
+            'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4},
+            'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed': 2},
+            'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed': 2},
+            'Dreadnaught': {'cp_cost': 24, 'hullsize': 3, 'shipsize_needed': 6},
+            'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed': 1},
+            'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed': 1},
+            'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed': 1},
+            'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed': 1},
+            'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed': 2}}
         state['technology_data'] = {
             'shipsize': [0, 10, 15, 20, 25, 30],
             'attack': [20, 30, 40],
             'defense': [20, 30, 40],
-            'movement': [0,20, 30, 40, 40, 40],
-            'shipyard': [0,20, 30]}
+            'movement': [0, 20, 30, 40, 40, 40],
+            'shipyard': [0, 20, 30]}
         state['winner'] = self.winner
         return state
 
@@ -148,7 +150,8 @@ class Game:
         state['player_num'] = player.player_num
         translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
         techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']
-        state['technology'] = {techs[translations.index(tech)] : player.tech_lvls[tech] for tech in player.tech_lvls.keys()}
+        state['technology'] = {techs[translations.index(
+            tech)]: player.tech_lvls[tech] for tech in player.tech_lvls.keys()}
         state['cp'] = player.cp
         state['units'] = [self.unit_state(unit) for unit in player.units]
         return state
@@ -164,7 +167,8 @@ class Game:
         state['alive'] = unit.alive
         translations = ['atk', 'def', 'move']
         techs = ['attack', 'defense', 'movement']
-        state['technology'] = {techs[translations.index(tech)] : unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()}
+        state['technology'] = {techs[translations.index(
+            tech)]: unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()}
         state['hits_left'] = unit.armor
         state['turn_created'] = unit.turn_created
         return state

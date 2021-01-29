@@ -28,6 +28,13 @@ class Unit:
                 direction = [0,0]
         test_x = self.coords[0] + direction[0]
         test_y = self.coords[1] + direction[1]
+        distance = round(self.game.utility.distance(self.coords, [test_x, test_y]),3)
+        if  distance != 1.0 and distance != 1.414 and distance != 0:
+            if self.game.invalidation:
+                if self.game.logging:
+                    print('Player made invalid move')
+                self.player.self_destruct()
+            return
         if test_x < 0 or test_x > grid_size[0] - 1:
             if self.game.invalidation:
                 if self.game.logging:

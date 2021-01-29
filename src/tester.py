@@ -11,13 +11,13 @@ from strategies.new_custom_strategy import NewCustomStrategy
 from strategies.combat_strategy import CombatStrategy
 from strategies.dumb_strategy import DumbStrategy
 
-new_game = Game(logging = True, die_rolls = 'random', invalidation = False)
-strategy_1 = NewCustomStrategy(player_num = 0)
-strategy_2 = CustomStrategy(player_num = 1)
-new_game.add_player(strategy_1, [1,1])
-new_game.add_player(strategy_2, [2,2])
+new_game = Game(logging=True, die_rolls='random', invalidation=True)
+strategy_1 = NewCustomStrategy(player_num=0)
+strategy_2 = CustomStrategy(player_num=1)
+new_game.add_player(strategy_1, [4, 1])
+new_game.add_player(strategy_2, [3, 2])
 new_game.initialize_game()
-new_game.complete_many_turns(1)
-new_game.run_until_complete()
-print(new_game.complete)
 
+new_game.complete_many_turns(4)
+# new_game.run_until_complete()
+print(new_game.complete)

@@ -5,7 +5,7 @@ class CustomStrategy:
 
     def decide_ship_movement(self, ship_index, game_state):
         ship_coords = game_state['players'][self.player_num]['units'][ship_index]['coords']
-        route = self.fastest_route(ship_coords, [1, 1])
+        route = self.fastest_route(ship_coords, [4, 1])
         if len(route) > 0:
             return tuple(route[0])
         else:

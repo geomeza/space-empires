@@ -14,14 +14,14 @@ class Player:
         self.dead = False
         self.strategy = strategy
         self.player_num = player_num
-        self.tech_lvls = {'atk' : 0, 'def' : 0, 'move' : 1, 'shpyrd' : 1, 'ss' : 1}
+        self.tech_lvls = {'atk': 0, 'def': 0, 'move': 1, 'shpyrd': 1, 'ss': 1}
         self.home_coords = starting_coords
         self.home_planet = None
         self.game = game
         self.units = []
         self.cp = 0
-    
-    def build_unit(self, unit_name, coords, pay = True):
+
+    def build_unit(self, unit_name, coords, pay=True):
         colony = self.find_colony(coords)
         if unit_name.name == 'Base':
             if colony.base is not None:
@@ -33,8 +33,10 @@ class Player:
                 if self.game.logging:
                     print('Colony Already Has 4 Shipyards')
                 return False
-        ship_tech = {key: val for key,val in self.tech_lvls.items() if key in ['atk', 'def', 'move']}
-        new_unit = unit_name(coords, len(self.units) + 1, self, ship_tech, self.game, self.game.turn_count)
+        ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
+            'atk', 'def', 'move']}
+        new_unit = unit_name(coords, len(self.units) + 1,
+                             self, ship_tech, self.game, self.game.turn_count)
         if pay:
             self.cp -= new_unit.cost
         self.units.append(new_unit)
@@ -45,31 +47,36 @@ class Player:
                 if unit.coords == coords:
                     return unit
 
-    def build_colony(self, coords, col_type = 'Normal', colony_ship = None):
-        ship_tech = {key: val for key,val in self.tech_lvls.items() if key in ['atk', 'def']}
+    def build_colony(self, coords, col_type='Normal', colony_ship=None):
+        ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
+            'atk', 'def']}
         if col_type == 'Home':
-            home_colony = Colony(coords, len(self.units) + 1, self, ship_tech, self.game, self.game.turn_count,colony_type = 'Home')
+            home_colony = Colony(coords, len(
+                self.units) + 1, self, ship_tech, self.game, self.game.turn_count, colony_type='Home')
             self.units.append(home_colony)
         else:
-            new_colony = Colony(coords, len(self.units) + 1, self, ship_tech, self.game, self.game.turn_count, colony_type = 'Normal')
-            self.game.board.grid[tuple(coords)].planet.colonize(self, new_colony)
+            new_colony = Colony(coords, len(self.units) + 1, self, ship_tech,
+                                self.game, self.game.turn_count, colony_type='Normal')
+            self.game.board.grid[tuple(coords)].planet.colonize(
+                self, new_colony)
             self.units.append(new_colony)
             if colony_ship is not None:
                 colony_ship.destroy()
 
     def initialize_units(self):
-        self.build_colony(self.home_coords, col_type = 'Home')
-        home_planet = Planet(self.home_coords, colonized = True, colony = self.units[0])
+        self.build_colony(self.home_coords, col_type='Home')
+        home_planet = Planet(
+            self.home_coords, colonized=True, colony=self.units[0])
         self.home_planet = home_planet
         self.game.board.planets.append(home_planet)
         self.game.board.grid[tuple(self.home_coords)].planet = home_planet
         for i in range(4):
-            self.build_unit(ShipYard, self.home_coords, pay = False)
+            self.build_unit(ShipYard, self.home_coords, pay=False)
         self.units[0].set_builders()
         for i in range(3):
-            self.build_unit(Scout, self.home_coords, pay = False)
+            self.build_unit(Scout, self.home_coords, pay=False)
         for i in range(3):
-            self.build_unit(ColonyShip, self.home_coords, pay = False)
+            self.build_unit(ColonyShip, self.home_coords, pay=False)
 
     def check_colony(self, build_size, ship, coords):
         for unit in self.units:
@@ -80,7 +87,8 @@ class Player:
                         return unit.coords
                     else:
                         if self.game.logging:
-                            print('Player does not have enough builders at colonies to build ship')
+                            print(
+                                'Player does not have enough builders at colonies to build ship')
                         return None
                 else:
                     if self.game.logging:
@@ -90,7 +98,8 @@ class Player:
     def update_shipyards(self):
         for unit in self.units:
             if unit.name == 'Shipyard':
-                unit.build_capacity = self.game.utility.ship_size_dict[str(self.tech_lvls['shpyrd'])]
+                unit.build_capacity = self.game.utility.ship_size_dict[str(
+                    self.tech_lvls['shpyrd'])]
         self.set_colony_builders()
 
     def set_colony_builders(self):
@@ -100,7 +109,7 @@ class Player:
 
     def pay(self, payment):
         self.cp -= payment
-    
+
     def recieve(self, income):
         self.cp += income
 

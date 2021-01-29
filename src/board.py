@@ -2,6 +2,7 @@ from board_space import BoardSpace
 from planet import Planet
 import random
 
+
 class Board:
 
     def __init__(self, size, game, planets):
@@ -9,13 +10,13 @@ class Board:
         self.game = game
         self.planets = []
         self.grid = dict()
-        self.initialize(planets = planets)
+        self.initialize(planets=planets)
 
     def initialize(self, planets):
         for x in range(self.size[0]):
             for y in range(self.size[1]):
-                self.grid.update({(x,y): BoardSpace([x,y])})
-        self.generate_planets(planets = planets)
+                self.grid.update({(x, y): BoardSpace([x, y])})
+        self.generate_planets(planets=planets)
 
     def update(self, players):
         all_units = []
@@ -35,7 +36,8 @@ class Board:
                 self.planets.append(new_planet)
                 self.grid[tuple(coords)].planet = new_planet
         elif isinstance(planets, int):
-            player_coords = [player.home_coords for player in self.game.players]
+            player_coords = [
+                player.home_coords for player in self.game.players]
             for i in range(planets):
                 random_coords = None
                 planet_coords = [planet.coords for planet in self.planets]
@@ -48,9 +50,9 @@ class Board:
                 self.grid[tuple(random_coords)].planet = new_planet
 
     def generate_coordinates(self):
-        x_coord = random.randint(0,self.size[0] - 1)
-        y_coord = random.randint(0,self.size[1] - 1)
-        return [x_coord,y_coord]
+        x_coord = random.randint(0, self.size[0] - 1)
+        y_coord = random.randint(0, self.size[1] - 1)
+        return [x_coord, y_coord]
 
     def get_all_units_and_coords(self):
         self.update(self.game.players)
@@ -59,4 +61,3 @@ class Board:
             if len(board_space.units) >= 2:
                 board.update({coords: board_space.units})
         return board
-

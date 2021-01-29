@@ -1,5 +1,5 @@
 class Planet:
-    def __init__(self, coords, colonized = False, colony = None):
+    def __init__(self, coords, colonized=False, colony=None):
         self.coords = coords
         self.colonized = colonized
         self.colony = colony
