@@ -52,7 +52,7 @@ class EconomicEngine:
             print('END OF ECONOMIC PHASE')
 
     def purchase(self, player):
-        purchases = player.strategy.decide_purchases(self.game.game_state())
+        purchases = player.strategy.decide_purchases(self.game.hidden_game_state(player.player_num))
         ship_objects = [Scout, Destroyer, Dreadnaught,
                         ColonyShip, Cruiser, Battleship, ShipYard]
         ship_names = ['Scout', 'Destroyer', 'Dreadnaught',
@@ -77,7 +77,7 @@ class EconomicEngine:
                     print('Could not afford to buy', ship.name)
 
     def remove_ship(self, player):
-        removal = player.strategy.decide_removal(self.game.game_state())
+        removal = player.strategy.decide_removal(self.game.hidden_game_state(player.player_num))
         unit = player.units[removal]
         cp = unit.maint
         if self.game.logging:

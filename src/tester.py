@@ -11,9 +11,9 @@ from strategies.new_custom_strategy import NewCustomStrategy
 from strategies.combat_strategy import CombatStrategy
 from strategies.dumb_strategy import DumbStrategy
 
-new_game = Game(logging=True, die_rolls='random', invalidation=True)
-strategy_1 = NewCustomStrategy(player_num=0)
-strategy_2 = CustomStrategy(player_num=1)
+new_game = Game(planets=[], logging=True, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False)
+strategy_1 = DumbStrategy(player_num=0)
+strategy_2 = DumbStrategy(player_num=1)
 new_game.add_player(strategy_1, [4, 1])
 new_game.add_player(strategy_2, [3, 2])
 new_game.initialize_game()

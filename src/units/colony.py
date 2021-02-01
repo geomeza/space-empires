@@ -27,7 +27,8 @@ class Colony(Unit):
         if self.armor > 1:
             self.armor -= 1
             self.capacity = self.capacity_dict[self.colony_type][self.armor-1]
-            print('Capacity', self.capacity)
+            if self.game.logging:
+                print('New CP Capacity', self.capacity)
         else:
             self.destroy()
 

@@ -8,7 +8,7 @@ from combat_engine import CombatEngine
 
 class Game:
 
-    def __init__(self, board_size=[5, 5], planets=[[1, 0]], max_turns=10, logging=True, die_rolls='descending', invalidation=True):
+    def __init__(self, board_size=[5, 5], planets=[], max_turns=10, logging=True, die_rolls='descending', invalidation=True, scouts_only = False, movement_rounds = 3, banned_phases = [], screens = False):
         self.invalidation = invalidation
         self.players = []
         self.dead_players = []
@@ -23,6 +23,10 @@ class Game:
         self.logging = logging
         self.dice_rolls = die_rolls
         self.complete = False
+        self.scouts_only = scouts_only
+        self.movement_rounds = movement_rounds
+        self.banned_phases = banned_phases
+        self.screens = screens
 
     def add_player(self, strategy, coords):
         new_player = Player(strategy, len(self.players), coords, self)
@@ -58,16 +62,23 @@ class Game:
             print(unit.name, ':', unit.coords)
 
     def complete_turn(self):
-        self.turn_count += 1
-        self.complete_movement_phase()
-        self.remove_dead_players()
-        if self.complete:
-            return
-        self.complete_combat_phase()
-        self.remove_dead_players()
-        if self.complete:
-            return
-        self.complete_economic_phase()
+        if self.turn_count < self.max_turns:
+            self.turn_count += 1
+            if 'movement' not in self.banned_phases:
+                self.complete_movement_phase()
+            self.remove_dead_players()
+            if self.complete:
+                return
+            if 'combat' not in self.banned_phases:
+                self.complete_combat_phase()
+            self.remove_dead_players()
+            if self.complete:
+                return
+            if 'economic' not in self.banned_phases:
+                self.complete_economic_phase()
+        else:
+            self.complete = True
+            self.winner = len(self.players) + 5
 
     def complete_movement_phase(self):
         self.movement_engine.complete_movement_phase()
@@ -107,6 +118,7 @@ class Game:
                 print('--------------------------------------')
         if len(self.players) == 1:
             player = self.players[0]
+            self.winner_name = player.strategy.name
             self.winner = player.player_num
             self.complete = True
             if self.logging:
@@ -155,6 +167,44 @@ class Game:
         state['cp'] = player.cp
         state['units'] = [self.unit_state(unit) for unit in player.units]
         return state
+
+    def hidden_player_state(self,player, wanted = None):
+        state = {}
+        state['home_coords'] = player.home_coords
+        state['player_num'] = player.player_num
+        state['units'] = [{'coords': unit.coords} for unit in player.units]
+        return state
+
+
+    def hidden_game_state(self, wanted = None):
+        state = {}
+        state['board_size'] = self.board.size
+        state['turn'] = self.turn_count
+        state['phase'] = self.phase
+        state['round'] = self.movement_engine.movement_phase
+        state['player_whose_turn'] = self.current_player
+        state['players'] = [self.player_state(
+            player) if player.player_num == wanted else self.hidden_player_state(player) for player in self.players]
+        state['unit_data'] = {
+            'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5},
+            'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4},
+            'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed': 2},
+            'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed': 2},
+            'Dreadnaught': {'cp_cost': 24, 'hullsize': 3, 'shipsize_needed': 6},
+            'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed': 1},
+            'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed': 1},
+            'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed': 1},
+            'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed': 1},
+            'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed': 2}}
+        state['technology_data'] = {
+            'shipsize': [0, 10, 15, 20, 25, 30],
+            'attack': [20, 30, 40],
+            'defense': [20, 30, 40],
+            'movement': [0, 20, 30, 40, 40, 40],
+            'shipyard': [0, 20, 30]}
+        state['winner'] = self.winner
+        return state
+
 
     def unit_state(self, unit):
         state = {}

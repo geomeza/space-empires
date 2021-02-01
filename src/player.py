@@ -70,13 +70,14 @@ class Player:
         self.home_planet = home_planet
         self.game.board.planets.append(home_planet)
         self.game.board.grid[tuple(self.home_coords)].planet = home_planet
-        for i in range(4):
-            self.build_unit(ShipYard, self.home_coords, pay=False)
-        self.units[0].set_builders()
+        if not self.game.scouts_only:
+            for i in range(4):
+                self.build_unit(ShipYard, self.home_coords, pay=False)
+            self.units[0].set_builders()
+            for i in range(3):
+                self.build_unit(ColonyShip, self.home_coords, pay=False)
         for i in range(3):
             self.build_unit(Scout, self.home_coords, pay=False)
-        for i in range(3):
-            self.build_unit(ColonyShip, self.home_coords, pay=False)
 
     def check_colony(self, build_size, ship, coords):
         for unit in self.units:

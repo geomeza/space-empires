@@ -219,7 +219,7 @@ class CombatEngine:
                     if unit.coords in planet_coords:
                         planet = self.board.grid[tuple(unit.coords)].planet
                         if not planet.colonized:
-                            if player.strategy.will_colonize_planet(unit.coords, self.game.game_state()):
+                            if player.strategy.will_colonize_planet(unit.coords, self.game.hidden_game_state(player.player_num)):
                                 player.build_colony(
                                     unit.coords, col_type='Normal', colony_ship=unit)
                                 if self.game.logging:
@@ -241,9 +241,16 @@ class CombatEngine:
     def get_combat_state(self):
         state = {}
         for coords, units in self.combat_state.items():
+            translations = ['atk', 'def', 'move']
+            techs = ['attack', 'defense', 'movement']
             ordered_units = self.supremacy(units)
             ordered_units = [unit for unit in ordered_units if unit.alive]
             unit_dicts = [{'player': unit.player.player_num,
-                           'unit': unit.unit_num} for unit in ordered_units]
+                           'unit': unit.unit_num,
+                             'type' : unit.name,
+                            'technology' : {techs[translations.index(
+                              tech)]: unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()},
+                            'hits_left': unit.armor,
+                            'turn_created' : unit.turn_created} for unit in ordered_units]
             state.update({coords: unit_dicts})
         return state

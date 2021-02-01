@@ -11,7 +11,7 @@ class MovementEngine:
         self.game.phase = 'Movement'
         if self.game.logging:
             print('BEGINNING OF MOVEMENT PHASE')
-        for i in range(3):
+        for i in range(self.game.movement_rounds):
             if self.game.logging:
                 print('---------------------------------')
                 print('Movement', i + 1)
@@ -44,7 +44,7 @@ class MovementEngine:
                 before_coords = unit.coords
                 for _ in range(ship_movements):
                     unit_direction = player.strategy.decide_ship_movement(
-                        unit_index, self.game.game_state())
+                        unit_index, self.game.hidden_game_state(player.player_num))
                     unit_direction = [unit_direction[0], unit_direction[1]]
                     unit.move(unit_direction, self.game.board_size)
                     if unit.player.dead:
