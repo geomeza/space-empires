@@ -8,7 +8,7 @@ from combat_engine import CombatEngine
 
 class Game:
 
-    def __init__(self, board_size=[5, 5], planets=[], max_turns=10, logging=True, die_rolls='descending', invalidation=True, scouts_only = False, movement_rounds = 3, banned_phases = [], screens = False):
+    def __init__(self, board_size=[5, 5], planets=[], max_turns=10, logging=True, die_rolls='descending', invalidation=True, scouts_only = False, movement_rounds = 3, banned_phases = [], screens = False, max_dice = 10, default = False):
         self.invalidation = invalidation
         self.players = []
         self.dead_players = []
@@ -27,6 +27,8 @@ class Game:
         self.movement_rounds = movement_rounds
         self.banned_phases = banned_phases
         self.screens = screens
+        self.max_dice = max_dice
+        self.default = default
 
     def add_player(self, strategy, coords):
         new_player = Player(strategy, len(self.players), coords, self)
@@ -78,7 +80,20 @@ class Game:
                 self.complete_economic_phase()
         else:
             self.complete = True
-            self.winner = len(self.players) + 5
+            if self.default:
+                self.default_win()
+                if self.logging:
+                    print('--------------------------------------')
+                    print('Player', self.winner.player_num, 'Won By Default')
+                    print('--------------------------------------')
+            else:
+                self.winner = len(self.players) + 5
+                self.winner_name = 'TIE'
+                if self.logging:
+                    print('--------------------------------------')
+                    print('MAX TURNS REACHED')
+                    print('TIE GAME!!')
+                    print('--------------------------------------')
 
     def complete_movement_phase(self):
         self.movement_engine.complete_movement_phase()
@@ -126,6 +141,11 @@ class Game:
                 print('Player', player.player_num, 'Won')
                 print('--------------------------------------')
 
+    def default_win(self):
+        units = [len(player.units) for player in self.players]
+        self.winner = self.players[units.index(max(units))]
+        self.winner_name = self.winner.strategy.name
+
     def game_state(self):
         state = {}
         state['board_size'] = self.board.size
@@ -137,16 +157,17 @@ class Game:
             player) for player in self.players]
         state['planets'] = [planet.coords for planet in self.board.planets]
         state['unit_data'] = {
-            'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5},
-            'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4},
-            'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed': 2},
-            'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed': 2},
-            'Dreadnaught': {'cp_cost': 24, 'hullsize': 3, 'shipsize_needed': 6},
-            'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed': 1},
-            'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed': 1},
-            'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed': 1},
-            'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed': 1},
-            'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed': 2}}
+        'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5, 'tactics': 5, 'attack': 5, 'defense': 2, 'maintenance': 3},
+        'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4, 'tactics': 4, 'attack': 5, 'defense': 1, 'maintenance': 2},
+        'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed': 3, 'tactics': 3, 'attack': 4, 'defense': 1, 'maintenance': 2},
+        'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed': 2, 'tactics': 2, 'attack': 4, 'defense': 0, 'maintenance': 1},
+        'Dreadnaught': {'cp_cost': 24, 'hullsize': 3, 'shipsize_needed': 6, 'tactics': 5, 'attack': 6, 'defense': 3, 'maintenance': 3},
+        'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed': 1, 'tactics': 1, 'attack': 3, 'defense': 0, 'maintenance': 1},
+        'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed': 1, 'tactics': 3, 'attack': 3, 'defense': 0, 'maintenance': 0},
+        'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed': 1, 'tactics': 0, 'attack': 0, 'defense': 0, 'maintenance': 0},
+        'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed': 1, 'tactics': 0, 'attack': 0, 'defense': 0, 'maintenance': 0},
+        'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed': 2, 'tactics': 5, 'attack': 7, 'defense': 2, 'maintenance': 0}
+    }
         state['technology_data'] = {
             'shipsize': [0, 10, 15, 20, 25, 30],
             'attack': [20, 30, 40],

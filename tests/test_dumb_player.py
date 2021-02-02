@@ -20,7 +20,7 @@ from imported_strategies.riley_dumb_strategy import DumbStrategy as riley_dumb
 scout_coords = [[4,0], [4,4]]
 non_scout_coords = [[2,0], [2,4]]
 player_scouts = [3,5,8,10,12]
-new_game = Game(logging = False, die_rolls = 'ascending', invalidation = False)
+new_game = Game(logging = False, die_rolls = 'ascending', invalidation = False, max_dice = 6)
 # strategy_1 = david_dumb(0)
 # strategy_2 = david_dumb(1)
 # strategy_1 = colby_dumb(0)

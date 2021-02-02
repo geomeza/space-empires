@@ -12,20 +12,26 @@ class CombatEngine:
         self.battle_order = []
         self.dead_ships = []
         self.dice_rolls = self.game.dice_rolls
-        self.dice = {'ascending': [1, 2, 3, 4, 5, 6], 'descending': [
-            6, 5, 4, 3, 2, 1], 'random': [1, 2, 3, 4, 5, 6]}
+        self.dice = self.make_dice()
         self.order = -1
         self.dice_roll = 0
         self.combat_state = None
 
+    def make_dice(self):
+        max_roll = self.game.max_dice
+        ascending = [i for i in range(1,max_roll + 1)]
+        descending = ascending[:]
+        descending.reverse()
+        return {'ascending': ascending, 'descending': descending, 'random': ascending}
+
     def roll_dice(self):
         if self.dice_rolls != 'random':
-            if self.order < 5:
+            if self.order < 9:
                 self.order += 1
             else:
                 self.order = 0
         else:
-            self.order = random.randint(0, 5)
+            self.order = random.randint(0, 9)
         self.dice_roll = self.dice[self.dice_rolls][self.order]
 
     def find_battles(self):
@@ -105,7 +111,7 @@ class CombatEngine:
         return chosen_enemy
 
     def hit_threshold(self, attacker, defender):
-        return attacker.strength - defender.defense
+        return (attacker.strength + attacker.tech_lvls['atk']) - (defender.defense + defender.tech_lvls['def'])
 
     def supremacy(self, units):
         for i in range(len(units)):
@@ -113,9 +119,9 @@ class CombatEngine:
                 unit1 = units[i]
                 unit2 = units[j]
                 u1_tactics = unit1.player.tech_lvls['atk'] + \
-                    unit1.player.tech_lvls['def']
+                    unit1.tech_lvls['atk']
                 u2_tactics = unit2.player.tech_lvls['atk'] + \
-                    unit2.player.tech_lvls['def']
+                    unit2.tech_lvls['atk']
                 if (unit1.class_num + u1_tactics) < (unit2.class_num + u2_tactics):
                     units[i], units[j] = units[j], units[i]
                 elif (unit1.class_num + u1_tactics) == (unit2.class_num + u2_tactics):
@@ -149,7 +155,7 @@ class CombatEngine:
     def remove_non_fighters(self, units):
         passives = []
         for unit in units:
-            if unit.name == 'Colonyship':
+            if unit.name == 'Colonyship' or unit.name == 'Decoy':
                 passives.append(unit)
         if len(passives) == len(units):
             self.over = True
@@ -245,7 +251,7 @@ class CombatEngine:
             techs = ['attack', 'defense', 'movement']
             ordered_units = self.supremacy(units)
             ordered_units = [unit for unit in ordered_units if unit.alive]
-            unit_dicts = [{'player': unit.player.player_num,
+            unit_dicts = [{'player_index': unit.player.player_num,
                            'unit': unit.unit_num,
                              'type' : unit.name,
                             'technology' : {techs[translations.index(
@@ -254,3 +260,7 @@ class CombatEngine:
                             'turn_created' : unit.turn_created} for unit in ordered_units]
             state.update({coords: unit_dicts})
         return state
+
+    # def screen_units(self, units):
+    #     players = set([unit.player for unit in units])
+    #     counts = {player: }

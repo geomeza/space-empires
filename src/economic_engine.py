@@ -6,6 +6,7 @@ from units.battleship import Battleship
 from units.cruiser import Cruiser
 from units.dreadnaught import Dreadnaught
 from units.ship_yard import ShipYard
+from units.decoy import Decoy
 
 
 class EconomicEngine:
@@ -54,9 +55,9 @@ class EconomicEngine:
     def purchase(self, player):
         purchases = player.strategy.decide_purchases(self.game.hidden_game_state(player.player_num))
         ship_objects = [Scout, Destroyer, Dreadnaught,
-                        ColonyShip, Cruiser, Battleship, ShipYard]
+                        ColonyShip, Cruiser, Battleship, ShipYard, Decoy]
         ship_names = ['Scout', 'Destroyer', 'Dreadnaught',
-                      'Colonyship', 'Cruiser', 'Battleship', 'Shipyard']
+                      'Colonyship', 'Cruiser', 'Battleship', 'Shipyard', 'Decoy']
         for technology in purchases['technology']:
             translations = ['ss', 'atk', 'def', 'move', 'shpyrd']
             techs = ['shipsize', 'attack', 'defense', 'movement', 'shipyard']

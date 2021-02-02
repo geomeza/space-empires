@@ -28,7 +28,7 @@ from strategies.dumb_strategy import DumbStrategy
 
 print('ASCENDING TESTS')
 
-new_game = Game(logging = True, die_rolls = 'descending')
+new_game = Game(logging = True, die_rolls = 'descending', max_dice = 6)
 
 strategy_1 = AggressiveStrategy(player_num = 0)
 strategy_2 = AggressiveStrategy(player_num = 1)

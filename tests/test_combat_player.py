@@ -20,7 +20,7 @@ print('ASCENDING TESTS')
 
 print('TURN 1 Economic')
 
-new_game = Game(logging = False, die_rolls = 'ascending')
+new_game = Game(logging = False, die_rolls = 'ascending', max_dice = 6)
 # strategy_1 = david_combat(0)
 # strategy_2 = david_combat(1)
 # strategy_1 = riley_combat(0)
@@ -84,7 +84,7 @@ print('Passed')
 
 print('DESCENDING TESTS')
 
-new_game = Game(logging = False, die_rolls = 'descending')
+new_game = Game(logging = False, die_rolls = 'descending', max_dice = 6)
 strategy_1 = CombatStrategy(player_num = 0)
 strategy_2 = CombatStrategy(player_num = 1)
 new_game.add_player(strategy_1, [2,0])
