@@ -26,12 +26,12 @@ class CombatEngine:
 
     def roll_dice(self):
         if self.dice_rolls != 'random':
-            if self.order < 9:
+            if self.order < self.game.max_dice - 1:
                 self.order += 1
             else:
                 self.order = 0
         else:
-            self.order = random.randint(0, 9)
+            self.order = random.randint(0, self.game.max_dice)
         self.dice_roll = self.dice[self.dice_rolls][self.order]
 
     def find_battles(self):
@@ -106,7 +106,7 @@ class CombatEngine:
         psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
         chosen_enemy = None
         for unit in units:
-            if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player']:
+            if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player_index']:
                 chosen_enemy = unit
         return chosen_enemy
 

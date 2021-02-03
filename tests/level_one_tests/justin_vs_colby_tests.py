@@ -41,4 +41,4 @@ for i in range(100):
         colby_wins += 1
 
 print('Justin Berserk won', justin_wins,'Out of 100 matches')
-print('COlby won', colby_wins,'Out of 100 matches')
+print('Colby won', colby_wins,'Out of 100 matches')

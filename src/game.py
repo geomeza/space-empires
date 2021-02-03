@@ -1,9 +1,9 @@
 from player import Player
 from board import Board
-from movement_engine import MovementEngine
+from engines.movement_engine import MovementEngine
 from utility import Utility
-from economic_engine import EconomicEngine
-from combat_engine import CombatEngine
+from engines.economic_engine import EconomicEngine
+from engines.combat_engine import CombatEngine
 
 
 class Game:
@@ -65,7 +65,6 @@ class Game:
 
     def complete_turn(self):
         if self.turn_count < self.max_turns:
-            self.turn_count += 1
             if 'movement' not in self.banned_phases:
                 self.complete_movement_phase()
             self.remove_dead_players()
@@ -78,6 +77,7 @@ class Game:
                 return
             if 'economic' not in self.banned_phases:
                 self.complete_economic_phase()
+            self.turn_count += 1
         else:
             self.complete = True
             if self.default:

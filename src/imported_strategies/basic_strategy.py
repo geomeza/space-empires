@@ -9,7 +9,7 @@ class BasicStrategy:  # no movement or actual strategy, just funcitons like deci
         return self.simple_sort(game_state)[-1]['ID']
 
     def decide_which_unit_to_attack(self, combat_state, coords, attacker_index):
-        return next(index for index, ship in enumerate(combat_state[coords]) if self.player_index != ship['player'])
+        return next(index for index, ship in enumerate(combat_state[coords]) if self.player_index != ship['player_index'])
 
     def decide_which_units_to_screen(self, combat_state):
         return []
@@ -52,7 +52,7 @@ class BasicStrategy:  # no movement or actual strategy, just funcitons like deci
 
     def strongest_enemy_ship(self, combat_state_ship_list):
         for index, unit_information in enumerate(combat_state_ship_list):
-            if unit_information['player'] != self.player_index + 1:
+            if unit_information['player_index'] != self.player_index + 1:
                 return index
 
     def decide_ship_movement(self, unit_index, game_state):

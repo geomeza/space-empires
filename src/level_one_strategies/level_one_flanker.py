@@ -20,9 +20,9 @@ class LevelOneFlankerStrategy:
         translations = [(0,0), (1,0), (-1,0), (0,1), (0,-1)]
 
         # unit 0 does the flanking
-        if unit_index == 0:
+        if unit_index == 1:
             dist = abs(x_unit - x_opp) + abs(y_unit - y_opp)
-            delta_x, delta_y = self.sidestep_direction
+            delta_x, delta_y = self.flank_direction
             reverse_flank_direction = (-delta_x, -delta_y)
 
             # at the start, sidestep
@@ -55,9 +55,9 @@ class LevelOneFlankerStrategy:
         # attack opponent's first ship in combat order
 
         combat_order = combat_state[coords]
-        player_indices = [unit['player'] for unit in combat_order]
+        player_indices = [unit['player_index'] for unit in combat_order]
 
         opponent_index = 1 - self.player_index
         for combat_index, unit in enumerate(combat_order):
-            if unit['player'] == opponent_index:
+            if unit['player_index'] == opponent_index:
                 return combat_index

@@ -53,11 +53,11 @@ class LevelOneColbyStrategy(BasicStrategy):
         unit = myself['units'][unit_index]
         x_unit, y_unit = unit['coords']
         x_opp, y_opp = opponent['home_coords']
-        if unit_index == 0 and hidden_game_state['turn'] == 0:
+        if unit_index == 1 and hidden_game_state['turn'] == 0:
             return (-1,0)
-        elif unit_index == 0 and hidden_game_state['turn'] > 0 and hidden_game_state['players'][self.player_index]['units'][unit_index]['coords'][1] < 4:
+        elif unit_index == 1 and hidden_game_state['turn'] > 0 and hidden_game_state['players'][self.player_index]['units'][unit_index]['coords'][1] < 4:
             return (0,1)
-        elif unit_index == 0 and hidden_game_state['players'][self.player_index]['units'][unit_index]['coords'][1] == 4 and hidden_game_state['players'][self.player_index]['units'][unit_index]['coords'][0] == 1:
+        elif unit_index == 1 and hidden_game_state['players'][self.player_index]['units'][unit_index]['coords'][1] == 4 and hidden_game_state['players'][self.player_index]['units'][unit_index]['coords'][0] == 1:
             return (1,0)
         else:
             translations = [(0,0), (1,0), (-1,0), (0,1), (0,-1)]
