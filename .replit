@@ -1,3 +1,3 @@
 language = "python3"
 
-run = "python tests/level_one_tests/random_vs_dumb.py"
+run = "python tests/level_one_tests/berserker_vs_random.py"

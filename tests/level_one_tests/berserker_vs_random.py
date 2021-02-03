@@ -15,7 +15,7 @@ from level_one_strategies.level_one_random import LevelOneRandomStrategy
 random_wins = 0
 berserk_wins = 0
 
-for i in range(100):
+for i in range(1000):
     new_game = Game(planets=[], logging=False, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False, max_turns = 10000)
     strategy_1 = LevelOneRandomStrategy(player_num=0)
     strategy_2 = LevelOneBerserkerStrategy(player_num=1)
@@ -30,5 +30,5 @@ for i in range(100):
         random_wins += 1
 
 print('Random Vs Berserker')
-print('Random won', (random_wins/100) * 100 ,'percent of the matches')
-print('Berserk won', (berserk_wins * 100)/100, 'percent of the matches')
+print('Random won', (random_wins/1000) * 100 ,'percent of the matches')
+print('Berserk won', (berserk_wins / 1000)*100, 'percent of the matches')

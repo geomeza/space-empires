@@ -17,7 +17,7 @@ from level_one_strategies.level_one_flanker import LevelOneFlankerStrategy
 flanker_wins = 0
 berserk_wins = 0
 
-for i in range(100):
+for i in range(1000):
     new_game = Game(planets=[], logging=False, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False)
     nums = [0,1]
     if i%2 == 1:
@@ -39,5 +39,5 @@ for i in range(100):
         flanker_wins += 1
 
 print('Flanker Vs Berserker')
-print('Flanker won', (flanker_wins/100) * 100,'Percent of the matches')
-print('Berserk won', (berserk_wins/100)* 100,'Percent of the matches')
+print('Flanker won', round((flanker_wins/1000) * 100,2),'Percent of the matches')
+print('Berserk won', round((berserk_wins/1000)* 100,2),'Percent of the matches')
