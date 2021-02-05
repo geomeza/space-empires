@@ -18,7 +18,7 @@ flanker_wins = 0
 random_wins = 0
 
 for i in range(1000):
-    new_game = Game(planets=[], logging=False, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False, max_turns = 10000)
+    new_game = Game(planets=[], logging=False, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False, max_turns = 10, default = True)
     nums = [0,1]
     if i%2 == 1:
         nums.reverse()

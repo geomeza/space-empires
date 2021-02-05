@@ -102,6 +102,8 @@ class Player:
                     if self.game.logging:
                         print('Player does not have proper ship size level')
                     return None
+        print('NO COLONY FOUND AT:', coords)
+        return None
 
     def update_shipyards(self):
         for unit in self.units:

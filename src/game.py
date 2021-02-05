@@ -92,7 +92,7 @@ class Game:
                 if self.logging:
                     print('--------------------------------------')
                     print('MAX TURNS REACHED')
-                    print('TIE GAME!!')
+                    print('TIE GAME')
                     print('--------------------------------------')
 
     def complete_movement_phase(self):

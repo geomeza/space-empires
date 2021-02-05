@@ -13,15 +13,18 @@ from level_one_strategies.level_one_dumb import LevelOneDumbStrategy
 from level_one_strategies.level_one_random import LevelOneRandomStrategy
 from level_one_strategies.level_one_george import LevelOneGeorgeStrategy
 from level_one_strategies.level_one_flanker import LevelOneFlankerStrategy
+import random
 
 flanker_wins = 0
 berserk_wins = 0
 
+# custom = [1,1,1,1,1,1,1,1,1,1,1,1,1]
+# custom1 = [random.randint(0,9) for i in range(10)]
 for i in range(1000):
-    new_game = Game(planets=[], logging=False, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False)
-    nums = [0,1]
-    if i%2 == 1:
+    nums = [1,0]
+    if i== 499:
         nums.reverse()
+    new_game = Game(planets=[], logging=False, die_rolls= 'random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False, default = True, max_turns = 10)
     strategy_1 = LevelOneFlankerStrategy(player_num=nums[0])
     strategy_2 = LevelOneBerserkerStrategy(player_num=nums[1])
     if nums[0] == 1:

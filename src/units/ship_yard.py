@@ -9,7 +9,7 @@ class ShipYard(Unit):
     cost = 6
     name = 'Shipyard'
     abbr = 'SY'
-    ship_size_needed = 0
+    ship_size_needed = 1
     build_capacity = 1
     hull_size = 1
     maint = None

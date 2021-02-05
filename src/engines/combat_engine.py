@@ -22,6 +22,9 @@ class CombatEngine:
         ascending = [i for i in range(1,max_roll + 1)]
         descending = ascending[:]
         descending.reverse()
+        if isinstance(self.game.dice_rolls, list):
+            self.dice_rolls = 'custom'
+            return {'custom': self.game.dice_rolls}
         return {'ascending': ascending, 'descending': descending, 'random': ascending}
 
     def roll_dice(self):
@@ -106,7 +109,7 @@ class CombatEngine:
         psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
         chosen_enemy = None
         for unit in units:
-            if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player_index']:
+            if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player']:
                 chosen_enemy = unit
         return chosen_enemy
 
@@ -218,10 +221,11 @@ class CombatEngine:
 
     def colonize(self):
         planet_coords = [planet.coords for planet in self.board.planets]
+        
         self.board.update(self.game.players)
         for player in self.game.players:
             for unit in player.units:
-                if unit.name == 'Colony Ship':
+                if unit.name == 'Colonyship':
                     if unit.coords in planet_coords:
                         planet = self.board.grid[tuple(unit.coords)].planet
                         if not planet.colonized:
@@ -251,7 +255,7 @@ class CombatEngine:
             techs = ['attack', 'defense', 'movement']
             ordered_units = self.supremacy(units)
             ordered_units = [unit for unit in ordered_units if unit.alive]
-            unit_dicts = [{'player_index': unit.player.player_num,
+            unit_dicts = [{'player': unit.player.player_num,
                            'unit': unit.unit_num,
                              'type' : unit.name,
                             'technology' : {techs[translations.index(

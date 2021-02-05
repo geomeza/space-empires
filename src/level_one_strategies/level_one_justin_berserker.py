@@ -1,9 +1,8 @@
 class LevelOneBerserkerStrategy:
-    # Sends all of its units directly towards the enemy home colony
 
     def __init__(self, player_num):
         self.player_index = player_num
-        self.name = 'justin'
+        self.name = 'berserk'
 
     def decide_ship_movement(self, unit_index, hidden_game_state):
         myself = hidden_game_state['players'][self.player_index]
@@ -32,9 +31,9 @@ class LevelOneBerserkerStrategy:
         # attack opponent's first ship in combat order
 
         combat_order = combat_state[coords]
-        player_indices = [unit['player_index'] for unit in combat_order]
+        player_indices = [unit['player'] for unit in combat_order]
 
         opponent_index = 1 - self.player_index
         for combat_index, unit in enumerate(combat_order):
-            if unit['player_index'] == opponent_index:
+            if unit['player'] == opponent_index:
                 return combat_index

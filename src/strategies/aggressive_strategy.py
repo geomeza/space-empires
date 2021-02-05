@@ -46,7 +46,7 @@ class AggressiveStrategy:
         
     def decide_which_unit_to_attack(self, combat_state, location, attacker_index):
         for unit in combat_state[tuple(location)]:
-            if unit['player_index'] != combat_state[tuple(location)][attacker_index]['player_index']:
+            if unit['player'] != combat_state[tuple(location)][attacker_index]['player']:
                 return combat_state[tuple(location)].index(unit)
 
     def will_colonize(self, colony_ship, game_state):

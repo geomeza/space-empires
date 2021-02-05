@@ -2,19 +2,21 @@ class NewCustomStrategy:
 
     def __init__(self, player_num):
         self.player_num = player_num
+        self.name = 'NewCustom'
 
     def decide_ship_movement(self, ship_index, game_state):
         return (-1,0)
 
     def decide_purchases(self, game_state):
-        return {'units' : [] , 'technology': []}
+        home_coords = [0,2]
+        return {'units' : [{'type': 'Shipyard', 'coords': home_coords}, {'type': 'Shipyard', 'coords': home_coords}, {'type': 'Shipyard', 'coords': home_coords}] , 'technology': []}
 
     def decide_removals(self, player_state):
         return -1
         
     def decide_which_unit_to_attack(self, combat_state, location, attacker_index):
         for unit in combat_state[tuple(location)]:
-            if unit['player_index'] != combat_state[tuple(location)][attacker_index]['player_index']:
+            if unit['player'] != combat_state[tuple(location)][attacker_index]['player']:
                 return combat_state[tuple(location)].index(unit)
 
     def will_colonize_planet(self, coords, game_state):
