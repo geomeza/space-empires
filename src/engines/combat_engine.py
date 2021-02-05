@@ -118,13 +118,13 @@ class CombatEngine:
             for j in range(i + 1, len(units)):
                 unit1 = units[i]
                 unit2 = units[j]
-                u1_tactics = unit1.player.tech_lvls['atk'] + \
-                    unit1.tech_lvls['atk']
-                u2_tactics = unit2.player.tech_lvls['atk'] + \
-                    unit2.tech_lvls['atk']
-                if (unit1.class_num + u1_tactics) < (unit2.class_num + u2_tactics):
+                # u1_tactics = unit1.player.tech_lvls['atk'] + \
+                #     unit1.tech_lvls['atk']
+                # u2_tactics = unit2.player.tech_lvls['atk'] + \
+                #     unit2.tech_lvls['atk']
+                if (unit1.tactics) < (unit2.tactics):
                     units[i], units[j] = units[j], units[i]
-                elif (unit1.class_num + u1_tactics) == (unit2.class_num + u2_tactics):
+                elif (unit1.tactics) == (unit2.tactics):
                     if unit1.player.player_num > unit2.player.player_num:
                         units[i], units[j] = units[j], units[i]
         return units

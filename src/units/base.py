@@ -3,7 +3,7 @@ from units.unit import Unit
 class Base(Unit):
     class_type = 'A'
     hull_size = 2
-    class_num = 5
+    tactics = 5
     strength = 7
     defense = 2
     armor = 3

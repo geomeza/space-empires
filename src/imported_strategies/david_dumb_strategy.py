@@ -6,7 +6,7 @@ class DumbStrategy:
       return False
 
     def decide_ship_movement(self,ship_index, game_state):
-        if game_state['players'][self.player_num]["units"][ship_index]["coords"][0]<game_state['board_size'][0]:
+        if game_state['players'][self.player_num]["units"][ship_index]["coords"][0]<game_state['board_size'][0] - 1:
              return (1,0)
         else:
             return (0,0)

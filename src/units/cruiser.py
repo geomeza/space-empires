@@ -5,7 +5,7 @@ class Cruiser(Unit):
     class_type = 'C'
     strength = 4
     defense = 1
-    class_num = 3
+    tactics = 3
     abbr = 'C'
     name = 'Cruiser'
     armor = 2

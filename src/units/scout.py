@@ -5,7 +5,7 @@ class Scout(Unit):
     class_type = 'E'
     strength = 3
     defense = 0
-    class_num = 1
+    tactics = 1
     abbr = 'S'
     name = 'Scout'
     armor = 1

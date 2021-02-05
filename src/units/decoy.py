@@ -6,7 +6,7 @@ class Decoy(Unit):
     defense = 0
     name = 'Decoy'
     abbr = 'DY'
-    class_num = 0
+    tactics = 0
     armor = 0
     class_type = 'Z'
     hull_size = 0

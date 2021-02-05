@@ -5,7 +5,7 @@ class Destroyer(Unit):
     class_type = 'D'
     strength = 4
     defense = 0
-    class_num = 2
+    tactics = 2
     abbr = 'DE'
     name = 'Destroyer'
     armor = 1

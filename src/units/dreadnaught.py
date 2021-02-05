@@ -5,7 +5,7 @@ class Dreadnaught(Unit):
     class_type = 'A'
     strength = 6
     defense = 3
-    class_num = 5
+    tactics = 5
     abbr = 'DR'
     name = 'Dreadnaught'
     armor = 3

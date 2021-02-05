@@ -5,7 +5,7 @@ class Battleship(Unit):
     class_type = 'A'
     strength = 5
     defense = 2
-    class_num = 5
+    tactics = 5
     abbr = 'BS'
     name = 'Battleship'
     armor = 3

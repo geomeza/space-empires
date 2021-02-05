@@ -18,7 +18,7 @@ class NewCustomStrategy:
                 return combat_state[tuple(location)].index(unit)
 
     def will_colonize_planet(self, coords, game_state):
-        return False
+        return True
 
     def decide_which_units_to_screen(self, combat_state):
         return []

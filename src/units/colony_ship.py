@@ -6,7 +6,7 @@ class ColonyShip(Unit):
     defense = 0
     name = 'Colonyship'
     abbr = 'CO'
-    class_num = 0
+    tactics = 0
     armor = 0
     class_type = 'Z'
     hull_size = 1

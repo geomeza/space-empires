@@ -3,7 +3,7 @@ from units.unit import Unit
 class Colony(Unit):
     strength = 0
     name = 'Colony'
-    class_num = 0
+    tactics = 0
     defense = 1
     armor = 3
     capacity = 3
@@ -11,6 +11,7 @@ class Colony(Unit):
     maint = None
     can_atk = False
     ship_size_needed = 0
+    one_shipyard_bought = False
     
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created, colony_type = 'Normal'):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)

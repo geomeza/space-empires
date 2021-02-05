@@ -231,7 +231,7 @@ class Game:
         state = {}
         state['player'] = unit.player.player_num
         state['type'] = unit.name
-        state['class_num'] = unit.class_num
+        state['tactics'] = unit.tactics
         state['unit_num'] = unit.unit_num
         state['coords'] = unit.coords
         state['maint'] = unit.maint

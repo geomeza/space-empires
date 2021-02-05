@@ -44,6 +44,7 @@ class EconomicEngine:
                       maintenance, 'in maintenance!')
             self.purchase(player)
             player.set_colony_builders()
+            player.reset_shipyard_buying_stat()
             if self.game.logging:
                 print('PLAYER', player.player_num, 'HAS', player.cp, 'LEFT')
             self.board.update(self.game.players)

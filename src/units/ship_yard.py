@@ -2,7 +2,7 @@ from units.unit import Unit
 
 class ShipYard(Unit):
     class_type = 'C'
-    class_num = 3
+    tactics = 3
     strength = 3
     defense = 0
     armor = 1
@@ -11,7 +11,7 @@ class ShipYard(Unit):
     abbr = 'SY'
     ship_size_needed = 0
     build_capacity = 1
-    hull_size = 0
+    hull_size = 1
     maint = None
     moveable = False
     

@@ -83,9 +83,16 @@ class Player:
         for unit in self.units:
             if unit.name == 'Colony' and unit.coords == coords:
                 if self.tech_lvls['ss'] >= ship.ship_size_needed:
-                    if unit.builders >= build_size:
-                        unit.builders -= build_size
-                        return unit.coords
+                    if unit.builders >= build_size or ship.name == 'Shipyard':
+                        if ship.name == 'Shipyard' and not unit.one_shipyard_bought:
+                            unit.one_shipyard_bought = True
+                            return unit.coords
+                        elif ship.name == 'Shipyard' and unit.one_shipyard_bought:
+                            print('COLONY ALREADY BOUGHT AT SHIPYARD')
+                            return None
+                        else:
+                            unit.builders -= build_size
+                            return unit.coords
                     else:
                         if self.game.logging:
                             print(
@@ -138,3 +145,8 @@ class Player:
         if unit.name == 'Colony' and unit.colony_type == 'Home':
             self.units[0].destroy()
             self.dead = True
+
+    def reset_shipyard_buying_stat(self):
+        for unit in self.units:
+            if unit.name == 'Colony':
+                unit.one_shipyard_bought = False

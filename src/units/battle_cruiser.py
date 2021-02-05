@@ -5,7 +5,7 @@ class Battlecruiser(Unit):
     class_type = 'B'
     strength = 5
     defense = 1
-    class_num = 4
+    tactics = 4
     abbr = 'BC'
     name = 'Battlecruiser'
     armor = 2
