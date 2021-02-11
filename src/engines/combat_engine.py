@@ -4,6 +4,7 @@ import random
 class CombatEngine:
 
     def __init__(self, board, game):
+        self.seed = None
         self.board = board
         self.game = game
         self.battles = []
@@ -24,6 +25,7 @@ class CombatEngine:
         descending.reverse()
         if isinstance(self.game.dice_rolls, list):
             self.dice_rolls = 'custom'
+            self.game.max_dice = len(self.game.dice_rolls)
             return {'custom': self.game.dice_rolls}
         return {'ascending': ascending, 'descending': descending, 'random': ascending}
 
@@ -34,6 +36,7 @@ class CombatEngine:
             else:
                 self.order = 0
         else:
+            return
             self.order = random.randint(0, self.game.max_dice- 1)
         self.dice_roll = self.dice[self.dice_rolls][self.order]
 
@@ -53,19 +56,16 @@ class CombatEngine:
 
     def complete_combat_phase(self):
         self.game.phase = 'Combat'
-        if self.game.logging:
-            print('START OF COMBAT PHASE')
+        self.game.log('START OF COMBAT PHASE')
         battles = self.find_battles()
         for coords, units in battles.items():
-            if self.game.logging:
-                print('Battle at', coords)
+            self.game.log('Battle at '+ str(coords))
             self.over = False
             self.battle(units)
             self.reset_stats()
             self.board.update(self.game.players)
         self.board.update(self.game.players)
-        if self.game.logging:
-            print('END OF COMBAT PHASE')
+        self.game.log('END OF COMBAT PHASE')
 
     def sort_units(self, units, player):
         self.enemies = []
@@ -135,25 +135,22 @@ class CombatEngine:
     def unit_shot(self, attacker, defender):
         self.roll_dice()
         hit_threshold = self.hit_threshold(attacker, defender)
-        if self.game.logging:
-            print('-------')
-            print('Player', attacker.player.player_num, attacker.name, attacker.unit_num,
-                  'Shoots at', 'Player', defender.player.player_num, defender.name, defender.unit_num)
-            print('Threshold:', hit_threshold)
-            print('Player', attacker.player.player_num,
-                  'Rolled A', self.dice_roll)
+        self.game.log('-------')
+        self.game.log('Player '+ str(attacker.player.player_num) +" "+ attacker.name+" "+ str(attacker.unit_num)+
+                ' Shoots at '+ 'Player '+ str(defender.player.player_num)+ " "+ defender.name+ " "+ str(defender.unit_num))
+        self.game.log('Threshold: '+ str(hit_threshold))
+        self.game.log('Player '+ str(attacker.player.player_num)+
+                ' Rolled A '+ str(self.dice_roll))
         if self.dice_roll <= hit_threshold or self.dice_roll == 1:
-            if self.game.logging:
-                print('They Hit')
+            self.game.log('They Hit')
             defender.hit()
             if not defender.alive:
                 self.dead_ships.append(defender)
-                if self.game.logging:
-                    print(defender.name, 'Destroyed')
+                self.game.log(defender.name+ ' Destroyed')
+                self.game.log('-------')
         else:
-            if self.game.logging:
-                print('They Miss')
-                print('-------')
+            self.game.log('They Miss')
+            self.game.log('-------')
 
     def remove_non_fighters(self, units):
         passives = []
@@ -185,11 +182,10 @@ class CombatEngine:
             self.over = False
             self.units = units
             self.battle_order = self.supremacy(self.units)
-            if self.game.logging:
-                print('In Combat:')
-                for unit in self.battle_order:
-                    print('Player', unit.player.player_num,
-                          unit.name, unit.unit_num)
+            self.game.log('In Combat:')
+            for unit in self.battle_order:
+                self.game.log('Player '+ str(unit.player.player_num)+ " "+ 
+                        unit.name+ " "+ str(unit.unit_num))
             while not self.over:
                 self.battle_order = self.supremacy(self.units)
                 self.units = self.battle_order
@@ -206,35 +202,57 @@ class CombatEngine:
                             if len(self.units) >= 1:
                                 self.remove_dead_ships(self.units)
                                 unit_choice = self.units[0]
-                                if self.game.logging:
-                                    print('Battle Is Over')
-                                    print(
-                                        'Player', unit_choice.player.player_num, 'Units Win!')
-                                    print('Survivors')
-                                    print('------------------------')
-                                    for unit in self.units:
-                                        if unit.alive:
-                                            print(unit.name, unit.unit_num)
-                                    print('------------------------')
+                                self.game.log('Battle Is Over')
+                                self.game.log(
+                                    'Player '+ str(unit_choice.player.player_num)+ ' Units Win!')
+                                self.game.log('Survivors')
+                                self.game.log('------------------------')
+                                for unit in self.units:
+                                    if unit.alive:
+                                        self.game.log(unit.name+ str(unit.unit_num))
+                                self.game.log('------------------------')
                                 return
                 self.units = self.remove_dead_ships(self.units)
 
-    def colonize(self):
-        planet_coords = [planet.coords for planet in self.board.planets]
+    # def colonize(self):
+    #     planet_coords = [planet.coords for planet in self.board.planets]
         
-        self.board.update(self.game.players)
-        for player in self.game.players:
-            for unit in player.units:
-                if unit.name == 'Colonyship':
-                    if unit.coords in planet_coords:
-                        planet = self.board.grid[tuple(unit.coords)].planet
-                        if not planet.colonized:
-                            if player.strategy.will_colonize_planet(unit.coords, self.game.hidden_game_state(player.player_num)):
+    #     self.board.update(self.game.players)
+    #     for player in self.game.players:
+    #         for unit in player.units:
+    #             if unit.name == 'Colonyship':
+    #                 if unit.coords in planet_coords:
+    #                     planet = self.board.grid[tuple(unit.coords)].planet
+    #                     if not planet.colonized:
+    #                         if player.strategy.will_colonize_planet(unit.coords, self.game.hidden_game_state(player.player_num)):
+    #                             player.build_colony(
+    #                                 unit.coords, col_type='Normal', colony_ship=unit)
+    #                             if self.game.logging:
+    #                                 print('Player', player.player_num,
+    #                                       'colonized a planet at', unit.coords)
+
+    def colonize(self, coords):
+        planet_existant = self.check_grid_for_planet(coords)
+        if planet_existant:
+            self.board.update(self.game.players)
+            planet = self.board.grid[tuple(coords)].planet
+            board_space = self.board.grid[tuple(coords)]
+            if not planet.colonized:
+                for unit in board_space.units:
+                    if unit.name == 'Colonyship':
+                        if player.strategy.will_colonize_planet(unit.coords, self.game.hidden_game_state(player.player_num)):
                                 player.build_colony(
                                     unit.coords, col_type='Normal', colony_ship=unit)
-                                if self.game.logging:
-                                    print('Player', player.player_num,
-                                          'colonized a planet at', unit.coords)
+                                self.game.log('Player '+ str(player.player_num)+
+                                        ' colonized a planet at '+ str(unit.coords))
+        else:
+            return
+
+    def check_grid_for_planet(self, coords):
+        planet_coords = [planet.coords for planet in self.board.planets]
+        if coords in planet_coords:
+            return True
+
 
     def attack_colony(self):
         planet_coords = [planet.coords for planet in self.board.planets]

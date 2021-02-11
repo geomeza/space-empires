@@ -4,39 +4,69 @@ from engines.movement_engine import MovementEngine
 from utility import Utility
 from engines.economic_engine import EconomicEngine
 from engines.combat_engine import CombatEngine
+from logger import Logger
+import sys
 
 
 class Game:
 
-    def __init__(self, board_size=[5, 5], planets=[], max_turns=10, logging=True, die_rolls='descending', invalidation=True, scouts_only = False, movement_rounds = 3, banned_phases = [], screens = False, max_dice = 10, default = False):
-        self.invalidation = invalidation
+    def __init__(self, **kwargs):
+        self.logger = None
+        self.level = None
+        self.filename = None
+        self.invalidation = True
         self.players = []
         self.dead_players = []
         self.current_player = 'None'
-        self.board_size = board_size
+        self.board_size = [5,5]
         self.board = None
-        self.planets = planets
+        self.planets = []
         self.turn_count = 0
-        self.max_turns = max_turns
+        self.max_turns = 10
         self.phase = 'Bruh Moment'
         self.winner = 'None'
-        self.logging = logging
-        self.dice_rolls = die_rolls
+        self.logging = True
+        self.dice_rolls = 'descending'
         self.complete = False
-        self.scouts_only = scouts_only
-        self.movement_rounds = movement_rounds
-        self.banned_phases = banned_phases
-        self.screens = screens
-        self.max_dice = max_dice
-        self.default = default
+        self.scouts_only = False
+        self.movement_rounds = 3
+        self.banned_phases = []
+        self.screens = False
+        self.max_dice = 10
+        self.default = False
+        self.shipyards_cleared = True
+        self.__dict__.update(kwargs)
+        self.check_level()
+        if self.filename is not None:
+            print('GONNA LOG')
+            self.logger = Logger(self.filename)
+            self.logger.log('HELLO?')
+
+    def check_level(self):
+        if self.level is not None:
+            if self.level == 1:
+                self.planets = []
+                self.scouts_only = True
+                self.banned_phases = ['economic']
+                self.movement_rounds = 1
+                self.screens = False
+                self.shipyards_cleared = False
+
+    def log(self, string):
+        if self.logger is not None:
+            print('Should Log something')
+            self.logger.log('\npls???\n')
+            self.logger.log(string)
+        if self.logging:
+            print(string)
+
 
     def add_player(self, strategy, coords):
         new_player = Player(strategy, len(self.players), coords, self)
         self.players.append(new_player)
 
     def create_assets(self, planets):
-        if self.logging:
-            print('Creating Board')
+        self.log('Creating Board')
         self.board = Board(self.board_size, self, planets)
         self.utility = Utility(True, self)
         self.economic_engine = EconomicEngine(self.board, self)
@@ -45,26 +75,26 @@ class Game:
 
     def initialize_game(self):
         self.create_assets(self.planets)
-        if self.logging:
-            print('Initializing Players')
+        self.log('Initializing Players')
         for player in self.players:
             player.cp = 0
             player.initialize_units()
         self.board.update(self.players)
-        if self.logging:
-            for s in range(len(self.players)):
-                print('----------------------------------')
-                print('Player', s + 1, ':')
-                print('Combat Points:', self.players[s].cp)
-                self.show_unit_coords(s+1)
-                print('----------------------------------')
+        for s in range(len(self.players)):
+            self.log('----------------------------------')
+            self.log('Player '+str( s + 1)+ ':')
+            self.log('Combat Points: '+ str(self.players[s].cp))
+            self.show_unit_coords(s+1)
+            self.log('----------------------------------')
 
     def show_unit_coords(self, player_num):
         for unit in self.players[player_num - 1].units:
-            print(unit.name, ':', unit.coords)
+            self.log(str(unit.name) + ' : '+ str(unit.coords))
 
     def complete_turn(self):
         if self.turn_count < self.max_turns:
+            self.log('TURN '+ str(self.turn_count))
+            self.log('------------------------------------------------------')
             if 'movement' not in self.banned_phases:
                 self.complete_movement_phase()
             self.remove_dead_players()
@@ -78,22 +108,21 @@ class Game:
             if 'economic' not in self.banned_phases:
                 self.complete_economic_phase()
             self.turn_count += 1
+            self.log('------------------------------------------------------')
         else:
             self.complete = True
             if self.default:
                 self.default_win()
-                if self.logging:
-                    print('--------------------------------------')
-                    print('Player', self.winner.player_num, 'Won By Default')
-                    print('--------------------------------------')
+                self.log('--------------------------------------')
+                self.log('Player '+str(self.winner.player_num)+ ' Won By Default')
+                self.log('--------------------------------------')
             else:
                 self.winner = len(self.players) + 5
                 self.winner_name = 'TIE'
-                if self.logging:
-                    print('--------------------------------------')
-                    print('MAX TURNS REACHED')
-                    print('TIE GAME')
-                    print('--------------------------------------')
+                self.log('--------------------------------------')
+                self.log('MAX TURNS REACHED')
+                self.log('TIE GAME')
+                self.log('--------------------------------------')
 
     def complete_movement_phase(self):
         self.movement_engine.complete_movement_phase()
@@ -127,19 +156,17 @@ class Game:
                     unit.destroy()
         for player in dead_players:
             self.players.remove(player)
-            if self.logging:
-                print('--------------------------------------')
-                print('Player', player.player_num, 'Has Died')
-                print('--------------------------------------')
+            self.log('--------------------------------------')
+            self.log('Player '+ str(player.player_num) + ' Has Died')
+            self.log('--------------------------------------')
         if len(self.players) == 1:
             player = self.players[0]
             self.winner_name = player.strategy.name
             self.winner = player.player_num
             self.complete = True
-            if self.logging:
-                print('--------------------------------------')
-                print('Player', player.player_num, 'Won')
-                print('--------------------------------------')
+            self.log('--------------------------------------')
+            self.log('Player '+ str(player.player_num)+ ' Won')
+            self.log('--------------------------------------')
 
     def default_win(self):
         units = [len(player.units) for player in self.players]

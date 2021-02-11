@@ -20,7 +20,7 @@ print('ASCENDING TESTS')
 
 print('TURN 1 Economic')
 
-new_game = Game(logging = False, die_rolls = 'ascending', max_dice = 6)
+new_game = Game(logging = False, dice_rolls = 'ascending', max_dice = 6)
 # strategy_1 = david_combat(0)
 # strategy_2 = david_combat(1)
 # strategy_1 = riley_combat(0)

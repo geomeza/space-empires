@@ -20,7 +20,7 @@ class LevelOneFlankerStrategy:
         translations = [(0,0), (1,0), (-1,0), (0,1), (0,-1)]
 
         # unit 0 does the flanking
-        if unit_index == 1:
+        if unit_index == self.return_first_scout_index(myself['units']):
             dist = abs(x_unit - x_opp) + abs(y_unit - y_opp)
             delta_x, delta_y = self.flank_direction
             reverse_flank_direction = (-delta_x, -delta_y)
@@ -60,3 +60,8 @@ class LevelOneFlankerStrategy:
         for combat_index, unit in enumerate(combat_order):
             if unit['player'] == opponent_index:
                 return combat_index
+
+    def return_first_scout_index(self, units):
+        for unit in units:
+            if unit['type'] == 'Scout':
+                return units.index(unit)

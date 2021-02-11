@@ -14,23 +14,35 @@ from level_one_strategies.level_one_random import LevelOneRandomStrategy
 from level_one_strategies.level_one_george import LevelOneGeorgeStrategy
 from level_one_strategies.level_one_flanker import LevelOneFlankerStrategy
 import random
+import math
+import os
+
+bruh = open(os.path.join('logs', "21-02-05-flanker-vs-berserker.txt"), 'w')
+bruh.truncate()
 
 flanker_wins = 0
 berserk_wins = 0
+flankers = []
+nums = [0,1]
+for game_num in range(1,21):
+    random.seed(game_num)
 
-# custom = [1,1,1,1,1,1,1,1,1,1,1,1,1]
-# custom1 = [random.randint(0,9) for i in range(10)]
-for i in range(1000):
-    nums = [1,0]
-    if i== 499:
+    first_few_die_rolls = [math.ceil(10*random.random()) for _ in range(100)]
+    print('first few die rolls of game {}'.format(game_num))
+    print('\t',first_few_die_rolls[:7],'\n')
+    if game_num== 9:
         nums.reverse()
-    new_game = Game(planets=[], logging=False, dice_rolls= 'random', invalidation=True, level = 1)
+    new_game = Game(planets=[], logging=False, dice_rolls= first_few_die_rolls, invalidation=True, level = 1, filename = "21-02-05-flanker-vs-berserker.txt")
+    new_game.log('SEED '+ str(game_num))
+    new_game.log('-----------------------------------------------------------------------------------')
     strategy_1 = LevelOneFlankerStrategy(player_num=nums[0])
     strategy_2 = LevelOneBerserkerStrategy(player_num=nums[1])
     if nums[0] == 1:
+        print('BERSERKER FIRST')
         new_game.add_player(strategy_2, [2, 4])
         new_game.add_player(strategy_1, [2, 0])
     else:
+        print('FLANKER FIRST')
         new_game.add_player(strategy_1, [2, 0])
         new_game.add_player(strategy_2, [2, 4])
     new_game.initialize_game()
@@ -39,8 +51,11 @@ for i in range(1000):
     if new_game.winner_name == 'berserk':
         berserk_wins += 1
     else:
+        flankers.append(game_num)
         flanker_wins += 1
+    new_game.log('-----------------------------------------------------------------------------------')
 
 print('Flanker Vs Berserker')
-print('Flanker won', round((flanker_wins/1000) * 100,2),'Percent of the matches')
-print('Berserk won', round((berserk_wins/1000)* 100,2),'Percent of the matches')
+print('Flanker won', round((flanker_wins/20) * 100,2),'Percent of the matches')
+print('Berserk won', round((berserk_wins/20)* 100,2),'Percent of the matches')
+print(flankers)

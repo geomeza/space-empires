@@ -16,7 +16,7 @@ dumb_wins = 0
 random_wins = 0
 
 for i in range(100):
-    new_game = Game(planets=[], logging=False, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False, max_turns = 100, default = True)
+    new_game = Game(planets=[], logging=False, dice_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False, max_turns = 100, default = True, shipyards_cleared = False)
     nums = [0,1]
     if i%2 == 1:
         nums.reverse()

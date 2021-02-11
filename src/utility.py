@@ -23,12 +23,11 @@ class Utility:
                 player.tech_lvls[tech_type] = new_lvl
                 if tech_type == 'shpyrd':
                     player.update_shipyards()
-                if self.game.logging:
-                    print('---------')
-                    print('Player', player.player_num, 'Payed For:')
-                    print(
-                        'Level:', player.tech_lvls[tech_type], ' Of', tech_type, 'Technology')
-                    print('---------')
+                self.game.log('---------')
+                self.game.log('Player '+ str(player.player_num)+ ' Payed For:')
+                self.game.log(
+                    'Level: '+ str(player.tech_lvls[tech_type]) + ' Of '+ str(tech_type)+  ' Technology')
+                self.game.log('---------')
             else:
                 if self.game.logging:
                     print('---------')

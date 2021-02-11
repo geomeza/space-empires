@@ -12,6 +12,7 @@ class Colony(Unit):
     can_atk = False
     ship_size_needed = 0
     one_shipyard_bought = False
+    produced_income = False
     
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created, colony_type = 'Normal'):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)

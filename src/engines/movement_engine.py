@@ -9,28 +9,23 @@ class MovementEngine:
 
     def complete_movement_phase(self):
         self.game.phase = 'Movement'
-        if self.game.logging:
-            print('BEGINNING OF MOVEMENT PHASE')
+        self.game.log('BEGINNING OF MOVEMENT PHASE')
         for i in range(self.game.movement_rounds):
-            if self.game.logging:
-                print('---------------------------------')
-                print('Movement', i + 1)
+            self.game.log('---------------------------------')
+            self.game.log('Movement ' +  str(i + 1))
             self.movement_phase = i
             for player in self.game.players:
                 # movement_lvl = player.tech_lvls['move'] - 1
                 # movements = self.movement_info[str(i + 1)][movement_lvl]
-                if self.game.logging:
-                    print('--------------------')
-                    print('Player', player.player_num, 'is moving')
+                self.game.log('--------------------')
+                self.game.log('Player '+ str(player.player_num) + ' is moving')
                 self.move_units(player, i+1)
                 self.board.update(self.game.players)
-                if self.game.logging:
-                    print('--------------------')
-        self.game.combat_engine.colonize()
+                self.game.log('--------------------')
+        # self.game.combat_engine.colonize()
         self.board.update(self.game.players)
-        if self.game.logging:
-            print('---------------------------------')
-            print('END OF MOVEMENT PHASE')
+        self.game.log('---------------------------------')
+        self.game.log('END OF MOVEMENT PHASE')
 
     def move_units(self, player, movement_round):
         self.game.current_player = player.player_num
@@ -49,8 +44,9 @@ class MovementEngine:
                     unit.move(unit_direction, self.game.board_size)
                     if unit.player.dead:
                         break
-                    if self.game.logging:
-                        print(unit.name, ':', before_coords, '-->', unit.coords)
+                    if unit.name == 'Colonyship':
+                        self.game.combat_engine.colonize(unit.coords)
+                    self.game.log(unit.name+ ' : '+ str(before_coords)+ ' --> '+ str(unit.coords))
 
     def generate_movement_state(self):
         movement_dict = {}

@@ -25,14 +25,13 @@ class Player:
         colony = self.find_colony(coords)
         if unit_name.name == 'Base':
             if colony.base is not None:
-                if self.game.logging:
-                    print('Colony Already Has Base')
+                self.game.log('Colony Already Has Base')
                 return False
-        if unit_name.name == 'Shipyard':
-            if len(colony.shipyards) == 4:
-                if self.game.logging:
-                    print('Colony Already Has 4 Shipyards')
-                return False
+        # if unit_name.name == 'Shipyard':
+        #     if len(colony.shipyards) == 4:
+        #         if self.game.logging:
+        #             print('Colony Already Has 4 Shipyards')
+        #         return False
         ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
             'atk', 'def', 'move']}
         new_unit = unit_name(coords, len(self.units) + 1,
@@ -70,12 +69,13 @@ class Player:
         self.home_planet = home_planet
         self.game.board.planets.append(home_planet)
         self.game.board.grid[tuple(self.home_coords)].planet = home_planet
-        if not self.game.scouts_only:
+        if not self.game.scouts_only and not self.game.shipyards_cleared:
+            for i in range(3):
+                self.build_unit(ColonyShip, self.home_coords, pay=False)
+        if self.game.shipyards_cleared:
             for i in range(4):
                 self.build_unit(ShipYard, self.home_coords, pay=False)
             self.units[0].set_builders()
-            for i in range(3):
-                self.build_unit(ColonyShip, self.home_coords, pay=False)
         for i in range(3):
             self.build_unit(Scout, self.home_coords, pay=False)
 
@@ -84,11 +84,12 @@ class Player:
             if unit.name == 'Colony' and unit.coords == coords:
                 if self.tech_lvls['ss'] >= ship.ship_size_needed:
                     if unit.builders >= build_size or ship.name == 'Shipyard':
-                        if ship.name == 'Shipyard' and not unit.one_shipyard_bought:
+                        if ship.name == 'Shipyard' and not unit.one_shipyard_bought and unit.produced_income:
                             unit.one_shipyard_bought = True
                             return unit.coords
                         elif ship.name == 'Shipyard' and unit.one_shipyard_bought:
-                            print('COLONY ALREADY BOUGHT AT SHIPYARD')
+                            if self.game.logging:
+                                print('COLONY ALREADY BOUGHT AT SHIPYARD')
                             return None
                         else:
                             unit.builders -= build_size
@@ -102,7 +103,8 @@ class Player:
                     if self.game.logging:
                         print('Player does not have proper ship size level')
                     return None
-        print('NO COLONY FOUND AT:', coords)
+        if self.game.logging:
+            print('NO COLONY FOUND AT:', coords)
         return None
 
     def update_shipyards(self):
@@ -130,10 +132,12 @@ class Player:
                 total_maint += unit.maint
         return total_maint
 
-    def get_income(self):
+    def get_income(self, economic_phase = False):
         income = 0
         for unit in self.units:
             if unit.name == 'Colony':
+                if economic_phase:
+                    unit.produced_income = True
                 income += unit.capacity
         return income
 

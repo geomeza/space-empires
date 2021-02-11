@@ -18,19 +18,17 @@ class EconomicEngine:
 
     def complete_economic_phase(self):
         self.game.phase = 'Economic'
-        if self.game.logging:
-            print('BEGINNING OF ECONOMIC PHASE')
-            print('----------------------------')
+        self.game.log('BEGINNING OF ECONOMIC PHASE')
+        self.game.log('----------------------------')
         for player in self.game.players:
             self.current_player = player
-            income = player.get_income()
+            income = player.get_income(economic_phase = True)
             player.recieve(income)
-            if self.game.logging:
-                print('--------------')
-                print('Added', income,
-                      'Combat Points from Colonies to Player', player.player_num)
-                print('New Total:', player.cp)
-                print('--------------')
+            self.game.log('--------------')
+            self.game.log('Added '+ str(income)+
+                    ' Combat Points from Colonies to Player '+ str(player.player_num))
+            self.game.log('New Total: '+ str(player.cp))
+            self.game.log('--------------')
             maintenance = player.get_maintenance()
             if player.cp < maintenance:
                 removal_cutoff = maintenance - player.cp
@@ -39,19 +37,16 @@ class EconomicEngine:
                     removal_cutoff -= removal
                 maintenance = player.get_maintenance()
             player.pay(maintenance)
-            if self.game.logging:
-                print('Player', player.player_num, 'payed',
-                      maintenance, 'in maintenance!')
+            self.game.log('Player '+ str(player.player_num) + ' payed '+
+                    str(maintenance)+ ' in maintenance!')
             self.purchase(player)
             player.set_colony_builders()
             player.reset_shipyard_buying_stat()
-            if self.game.logging:
-                print('PLAYER', player.player_num, 'HAS', player.cp, 'LEFT')
+            self.game.log('PLAYER '+ str(player.player_num) + ' HAS '+ str(player.cp)+ ' LEFT')
             self.board.update(self.game.players)
         self.board.update(self.game.players)
-        if self.game.logging:
-            print('----------------------------')
-            print('END OF ECONOMIC PHASE')
+        self.game.log('----------------------------')
+        self.game.log('END OF ECONOMIC PHASE')
 
     def purchase(self, player):
         purchases = player.strategy.decide_purchases(self.game.hidden_game_state(player.player_num))
@@ -71,9 +66,9 @@ class EconomicEngine:
                 coords = player.check_colony(ship.hull_size, ship, ship_coords)
                 if coords is not None:
                     builder = player.build_unit(ship, coords, pay=True)
-                    if self.game.logging and builder is not False:
-                        print('PLAYER', player.player_num,
-                              'BOUGHT A:', ship.name)
+                    if builder is not False:
+                        self.game.log('PLAYER '+ str(player.player_num)+
+                              ' BOUGHT A: '+ str(ship.name))
             else:
                 if self.game.logging:
                     print('Could not afford to buy', ship.name)
@@ -82,11 +77,10 @@ class EconomicEngine:
         removal = player.strategy.decide_removal(self.game.hidden_game_state(player.player_num))
         unit = player.units[removal]
         cp = unit.maint
-        if self.game.logging:
-            print('-------')
-            print('Unit:', unit.name, unit.unit_num,
-                  'could not be sustained, was destroyed!')
-            print('-------')
+        self.game.log('-------')
+        self.game.log('Unit: '+ unit.name+ ' '+str(unit.unit_num)+
+                ' could not be sustained, was destroyed!')
+        self.game.log('-------')
         unit.destroy()
         return cp
 

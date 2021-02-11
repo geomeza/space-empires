@@ -19,7 +19,7 @@ from level_one_strategies.level_one_justin_berserker import LevelOneBerserkerStr
 colby_wins = 0
 justin_wins = 0
 for i in range(100):
-    new_game = Game(planets=[], logging=False, die_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False)
+    new_game = Game(planets=[], logging=False, dice_rolls='random', invalidation=True, scouts_only = True, movement_rounds = 1, banned_phases = ['economic'], screens = False, shipyards_cleared = False)
     nums = random.choice([[0,1], [1,0]])
     # nums = [0,1]
     # if i%2 == 1:

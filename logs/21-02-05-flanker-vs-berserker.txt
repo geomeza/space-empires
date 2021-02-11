@@ -1,0 +1,16973 @@
+HELLO?
+
+pls???
+
+SEED 1
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 1 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+Player 0 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Colony1
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 4
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 5
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+HELLO?
+
+pls???
+
+SEED 2
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 1 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+Player 0 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 3
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+Player 0 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Colony1
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 4
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 5
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 6
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+HELLO?
+
+pls???
+
+SEED 5
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+Player 0 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Colony1
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 4
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+HELLO?
+
+pls???
+
+SEED 6
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 1 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+Player 0 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 9
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Colony Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 1 Has Died
+
+pls???
+
+--------------------------------------
+HELLO?
+
+pls???
+
+SEED 10
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 1 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 2] --> [2, 3]
+
+pls???
+
+Scout : [2, 2] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 3] --> [2, 4]
+
+pls???
+
+Scout : [2, 3] --> [2, 4]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 4)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+Player 0 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 11
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 13
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Colony Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 1 Has Died
+
+pls???
+
+--------------------------------------
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 0 Won
+
+pls???
+
+--------------------------------------
+
+pls???
+
+-----------------------------------------------------------------------------------
+HELLO?
+
+pls???
+
+SEED 14
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 15
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 16
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+HELLO?
+
+pls???
+
+SEED 17
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 1 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 2] --> [2, 3]
+
+pls???
+
+Scout : [2, 2] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 3] --> [2, 4]
+
+pls???
+
+Scout : [2, 3] --> [2, 4]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 4)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+Player 0 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 18
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 19
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+HELLO?
+
+pls???
+
+SEED 20
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Creating Board
+
+pls???
+
+Initializing Players
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 1:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+Scout : [2, 4]
+
+pls???
+
+----------------------------------
+
+pls???
+
+----------------------------------
+
+pls???
+
+Player 2:
+
+pls???
+
+Combat Points: 0
+
+pls???
+
+Colony : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+Scout : [2, 0]
+
+pls???
+
+----------------------------------
+
+pls???
+
+TURN 0
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+Scout : [2, 4] --> [2, 3]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+Scout : [2, 0] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 1
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+Scout : [2, 3] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+Scout : [2, 1] --> [2, 2]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 2)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 2
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 3
+
+pls???
+
+Player 1 Scout 4
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 2 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 4
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 2
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+Scout : [2, 2] --> [2, 1]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 3
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+Scout : [2, 1] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+Battle at (2, 0)
+
+pls???
+
+In Combat:
+
+pls???
+
+Player 0 Scout 3
+
+pls???
+
+Player 0 Scout 4
+
+pls???
+
+Player 1 Scout 2
+
+pls???
+
+Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Scout 3
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Scout 2
+
+pls???
+
+Threshold: 3
+
+pls???
+
+Player 0 Rolled A 3
+
+pls???
+
+They Hit
+
+pls???
+
+Scout Destroyed
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 2 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Colony Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 1 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout2
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 0 Has Died
+
+pls???
+
+--------------------------------------
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 1 Won
+
+pls???
+
+--------------------------------------
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 5
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 6
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 7
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 8
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [2, 0] --> [3, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+TURN 9
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+BEGINNING OF MOVEMENT PHASE
+
+pls???
+
+---------------------------------
+
+pls???
+
+Movement 1
+
+pls???
+
+--------------------
+
+pls???
+
+Player 0 is moving
+
+pls???
+
+Scout : [3, 0] --> [2, 0]
+
+pls???
+
+--------------------
+
+pls???
+
+--------------------
+
+pls???
+
+Player 1 is moving
+
+pls???
+
+--------------------
+
+pls???
+
+---------------------------------
+
+pls???
+
+END OF MOVEMENT PHASE
+
+pls???
+
+START OF COMBAT PHASE
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+------------------------------------------------------
+
+pls???
+
+--------------------------------------
+
+pls???
+
+MAX TURNS REACHED
+
+pls???
+
+TIE GAME
+
+pls???
+
+--------------------------------------
+
+pls???
+
+-----------------------------------------------------------------------------------
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 0 Won
+
+pls???
+
+--------------------------------------
+
+pls???
+
+-----------------------------------------------------------------------------------
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 2
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 8
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 10
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 3
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 3 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 4
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 1 Scout 4 Shoots at Player 0 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 1 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Colony Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 1 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 0 Has Died
+
+pls???
+
+--------------------------------------
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 1 Won
+
+pls???
+
+--------------------------------------
+
+pls???
+
+-----------------------------------------------------------------------------------
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 7
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 9
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 5
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 6
+
+pls???
+
+They Miss
+
+pls???
+
+-------
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 3 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+-------
+
+pls???
+
+Player 0 Scout 4 Shoots at Player 1 Colony 1
+
+pls???
+
+Threshold: 2
+
+pls???
+
+Player 0 Rolled A 1
+
+pls???
+
+They Hit
+
+pls???
+
+Colony Destroyed
+
+pls???
+
+-------
+
+pls???
+
+Battle Is Over
+
+pls???
+
+Player 0 Units Win!
+
+pls???
+
+Survivors
+
+pls???
+
+------------------------
+
+pls???
+
+Scout3
+
+pls???
+
+Scout4
+
+pls???
+
+------------------------
+
+pls???
+
+END OF COMBAT PHASE
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 1 Has Died
+
+pls???
+
+--------------------------------------
+
+pls???
+
+--------------------------------------
+
+pls???
+
+Player 0 Won
+
+pls???
+
+--------------------------------------
+
+pls???
+
+-----------------------------------------------------------------------------------
