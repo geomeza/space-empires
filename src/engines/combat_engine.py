@@ -1,5 +1,5 @@
 import random
-
+import math
 
 class CombatEngine:
 
@@ -36,8 +36,8 @@ class CombatEngine:
             else:
                 self.order = 0
         else:
+            self.dice_roll = math.ceil(10*random.random())
             return
-            self.order = random.randint(0, self.game.max_dice- 1)
         self.dice_roll = self.dice[self.dice_rolls][self.order]
 
     def find_battles(self):
