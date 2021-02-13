@@ -28,12 +28,13 @@ for game_num in range(1,21):
     random.seed(game_num)
 
     first_few_die_rolls = [math.ceil(10*random.random()) for _ in range(100)]
-    print('first few die rolls of game {}'.format(game_num))
+    print('first few die rolls of game {}'.format(game_num - 1))
     print('\t',first_few_die_rolls[:7],'\n')
-    if game_num== 9:
+    if game_num== 11:
         nums.reverse()
     new_game = Game(planets=[], logging=False, dice_rolls= first_few_die_rolls, invalidation=True, level = 1, filename = "21-02-05-flanker-vs-berserker.txt")
-    new_game.log('SEED '+ str(game_num))
+    new_game.log('-----------------------------------------------------------------------------------')
+    new_game.log('SEED '+ str(game_num)+ 'GAME' + str(game_num-1))
     new_game.log('-----------------------------------------------------------------------------------')
     strategy_1 = LevelOneFlankerStrategy(player_num=nums[0])
     strategy_2 = LevelOneBerserkerStrategy(player_num=nums[1])
@@ -51,9 +52,8 @@ for game_num in range(1,21):
     if new_game.winner_name == 'berserk':
         berserk_wins += 1
     else:
-        flankers.append(game_num)
+        flankers.append(game_num-1)
         flanker_wins += 1
-    new_game.log('-----------------------------------------------------------------------------------')
 
 print('Flanker Vs Berserker')
 print('Flanker won', round((flanker_wins/20) * 100,2),'Percent of the matches')

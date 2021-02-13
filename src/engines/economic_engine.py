@@ -39,6 +39,7 @@ class EconomicEngine:
             player.pay(maintenance)
             self.game.log('Player '+ str(player.player_num) + ' payed '+
                     str(maintenance)+ ' in maintenance!')
+            self.game.log('PLAYER '+ str(player.player_num) + ' NOW HAS '+ str(player.cp))
             self.purchase(player)
             player.set_colony_builders()
             player.reset_shipyard_buying_stat()

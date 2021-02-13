@@ -12,7 +12,7 @@ class Game:
 
     def __init__(self, **kwargs):
         self.logger = None
-        self.level = None
+        self.level = 0
         self.filename = None
         self.invalidation = True
         self.players = []
@@ -22,7 +22,7 @@ class Game:
         self.board = None
         self.planets = []
         self.turn_count = 0
-        self.max_turns = 10
+        self.max_turns =5
         self.phase = 'Bruh Moment'
         self.winner = 'None'
         self.logging = True
@@ -38,12 +38,10 @@ class Game:
         self.__dict__.update(kwargs)
         self.check_level()
         if self.filename is not None:
-            print('GONNA LOG')
             self.logger = Logger(self.filename)
-            self.logger.log('HELLO?')
 
     def check_level(self):
-        if self.level is not None:
+        if self.level > 0:
             if self.level == 1:
                 self.planets = []
                 self.scouts_only = True
@@ -51,11 +49,16 @@ class Game:
                 self.movement_rounds = 1
                 self.screens = False
                 self.shipyards_cleared = False
+            if self.level == 2:
+                self.planets = []
+                self.scouts_only = True
+                self.banned_phases = []
+                self.movement_rounds = 1
+                self.screens = False
+                self.shipyards_cleared = True
 
     def log(self, string):
         if self.logger is not None:
-            print('Should Log something')
-            self.logger.log('\npls???\n')
             self.logger.log(string)
         if self.logging:
             print(string)
@@ -91,10 +94,21 @@ class Game:
         for unit in self.players[player_num - 1].units:
             self.log(str(unit.name) + ' : '+ str(unit.coords))
 
+    def adjust_starting_and_colony_income(self, starting, colony_income):
+        for player in self.players:
+            player.cp = 10
+            for unit in player.units:
+                if unit.name == 'Colony':
+                    unit.capacity = 20
+
     def complete_turn(self):
         if self.turn_count < self.max_turns:
             self.log('TURN '+ str(self.turn_count))
             self.log('------------------------------------------------------')
+            if self.turn_count == 0 and self.level == 2:
+                self.adjust_starting_and_colony_income(10,20)
+                self.complete_economic_phase()
+                self.banned_phases = ['economic']
             if 'movement' not in self.banned_phases:
                 self.complete_movement_phase()
             self.remove_dead_players()
@@ -116,6 +130,7 @@ class Game:
                 self.log('--------------------------------------')
                 self.log('Player '+str(self.winner.player_num)+ ' Won By Default')
                 self.log('--------------------------------------')
+                self.logger.close_file()
             else:
                 self.winner = len(self.players) + 5
                 self.winner_name = 'TIE'
@@ -123,6 +138,7 @@ class Game:
                 self.log('MAX TURNS REACHED')
                 self.log('TIE GAME')
                 self.log('--------------------------------------')
+                self.logger.close_file()
 
     def complete_movement_phase(self):
         self.movement_engine.complete_movement_phase()
@@ -167,6 +183,7 @@ class Game:
             self.log('--------------------------------------')
             self.log('Player '+ str(player.player_num)+ ' Won')
             self.log('--------------------------------------')
+            self.logger.close_file()
 
     def default_win(self):
         units = [len(player.units) for player in self.players]

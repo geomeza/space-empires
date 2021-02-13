@@ -1,0 +1,8409 @@
+-----------------------------------------------------------------------------------
+SEED 1 GAME 0
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout6
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 4
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 4
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 1
+They Hit
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 2
+They Hit
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 2
+They Hit
+Colony Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+--------------------------------------
+Player 1 Has Died
+--------------------------------------
+--------------------------------------
+Player 0 Won
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 2 GAME 1
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 3 GAME 2
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 8
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Shipyard 3
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 5
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+Colony Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+--------------------------------------
+Player 0 Has Died
+--------------------------------------
+--------------------------------------
+Player 1 Won
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 4 GAME 3
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 2
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 2
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 5 GAME 4
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 6 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 6 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 6 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout6
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 3
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 2
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 3
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 5
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 5
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 5
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 5
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 5
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 5
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+-------
+Player 1 Scout 9 Shoots at Player 0 Colony 1
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+Colony Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+--------------------------------------
+Player 0 Has Died
+--------------------------------------
+--------------------------------------
+Player 1 Won
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 6 GAME 5
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Shipyard 3
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 3
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 3
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 3
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 4
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 7 GAME 6
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout6
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 8 GAME 7
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 2
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 9 GAME 8
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 2
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 10 GAME 9
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 9
+Threshold: 1
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout6
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 11 GAME 10
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 6 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 8
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 12 GAME 11
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 13 GAME 12
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 4
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 14 GAME 13
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 2
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 15 GAME 14
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 16 GAME 15
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 6 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Shipyard 2
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 17 GAME 16
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 8
+Player 0 Scout 9
+Player 0 Scout 7
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 4
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 4
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 2
+They Hit
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 2
+They Hit
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 1
+They Hit
+Colony Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout7
+------------------------
+END OF COMBAT PHASE
+--------------------------------------
+Player 1 Has Died
+--------------------------------------
+--------------------------------------
+Player 0 Won
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 18 GAME 17
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout6
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 2
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 3
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 6 Shoots at Player 1 Shipyard 4
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Shipyard 5
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 1
+They Hit
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 2
+They Hit
+-------
+Player 0 Scout 7 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Colony 1
+Threshold: 2
+Player 0 Rolled A 2
+They Hit
+Colony Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+--------------------------------------
+Player 1 Has Died
+--------------------------------------
+--------------------------------------
+Player 0 Won
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 19 GAME 18
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 6 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 4)
+In Combat:
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 9
+Player 1 Colony 1
+-------
+Player 1 Shipyard 2 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------
+-----------------------------------------------------------------------------------
+SEED 20 GAME 19
+-----------------------------------------------------------------------------------
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Shipyard : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+Scout : [2, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Shipyard : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+Scout : [2, 4]
+----------------------------------
+TURN 0
+------------------------------------------------------
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 30
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 27
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 1 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 30
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 27
+---------
+Player 1 Payed For:
+Level: 2 Of move Technology
+---------
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+Scout : [2, 0] --> [2, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+Scout : [2, 4] --> [2, 3]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+Scout : [2, 1] --> [2, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+Scout : [2, 3] --> [2, 2]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 2)
+In Combat:
+Player 0 Scout 6
+Player 0 Scout 7
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Scout 6
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+-------
+Player 0 Scout 6 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 6 Shoots at Player 0 Scout 6
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 7 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 6
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 7
+Threshold: 3
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 7 Shoots at Player 0 Scout 9
+Threshold: 1
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout7
+Scout8
+Scout9
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (2, 0)
+In Combat:
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 7
+Player 1 Scout 8
+Player 1 Scout 9
+Player 0 Colony 1
+-------
+Player 0 Shipyard 2 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Shipyard 3 Shoots at Player 1 Scout 7
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 4 Shoots at Player 1 Scout 8
+Threshold: 3
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Shipyard 5 Shoots at Player 1 Scout 9
+Threshold: 3
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Shipyard2
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
+------------------------
+END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
+--------------------------------------
+MAX TURNS REACHED
+TIE GAME
+--------------------------------------

@@ -26,10 +26,11 @@ class Unit:
                 del self.route[0]
             else:
                 direction = [0,0]
+        directions = [[1, 0],[-1, 0],[0, 1],[0, -1],[0,0]]
         test_x = self.coords[0] + direction[0]
         test_y = self.coords[1] + direction[1]
         distance = round(self.game.utility.distance(self.coords, [test_x, test_y]),3)
-        if  distance != 1.0 and distance != 1.414 and distance != 0:
+        if direction not in directions:
             if self.game.invalidation:
                 if self.game.logging:
                     print('Player made invalid move')
@@ -43,6 +44,7 @@ class Unit:
             return
         if test_y < 0 or test_y > grid_size[1] - 1:
             if self.game.invalidation:
+                print('NAHHHH BRUHHHH', direction, [test_x,test_y], self.coords)
                 if self.game.logging:
                     print('Player made invalid move')
                 self.player.self_destruct()

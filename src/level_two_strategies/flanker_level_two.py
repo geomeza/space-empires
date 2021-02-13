@@ -5,9 +5,13 @@ class LevelOneFlankerStrategy:
 
     def __init__(self, player_num):
         self.player_index = player_num
-        self.name = 'flanker'
+        self.name = 'flanker_two'
         self.flank_direction = (1,0)
         self.flank_index = None
+
+    def decide_purchases(self, game_state):
+        home_coords= game_state['players'][self.player_index]['home_coords']
+        return {'units': [{'type': 'Scout', 'coords': home_coords}], 'technology': ['movement']}
 
     def decide_ship_movement(self, unit_index, hidden_game_state):
         myself = hidden_game_state['players'][self.player_index]

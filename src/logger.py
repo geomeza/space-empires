@@ -13,3 +13,6 @@ class Logger:
 
     def log(self, string):
         self.logging_file.write(string + '\n')
+
+    def close_file(self):
+        self.logging_file.close()
