@@ -28,6 +28,8 @@ movement_indices = []
 for i in range(2):
     nums = [0,1]
     for game_num in range(1,21):
+        # if game_num != 11:
+        #     continue
         random.seed(game_num)
         if game_num == 11:
             nums.reverse()

@@ -16,7 +16,7 @@ class Scout(Unit):
 
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)
-        self.strength = self.strength + tech_lvls['atk']
-        self.defense += tech_lvls['def']
-        self.movement = tech_lvls['move']
+        # self.strength = self.strength + tech_lvls['atk']
+        # self.defense += tech_lvls['def']
+        # self.movement = tech_lvls['move']
         self.maint = 1

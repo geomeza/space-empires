@@ -170,7 +170,7 @@ Scout Destroyed
 -------
 -------
 Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 1
 They Hit
 Scout Destroyed
@@ -698,7 +698,7 @@ Scout Destroyed
 -------
 -------
 Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 1
 They Hit
 Scout Destroyed
@@ -1588,19 +1588,19 @@ Scout Destroyed
 -------
 -------
 Player 0 Scout 7 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 5
 They Miss
 -------
 -------
 Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 10
 They Miss
 -------
 -------
 Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 9
 They Miss
 -------
@@ -1612,19 +1612,19 @@ They Miss
 -------
 -------
 Player 0 Scout 7 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 3
 They Miss
 -------
 -------
 Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 6
 They Miss
 -------
 -------
 Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 3
 They Miss
 -------
@@ -1637,80 +1637,8 @@ Scout Destroyed
 -------
 -------
 Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 2
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 10
-They Miss
--------
--------
-Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 9
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 9
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 2
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 4
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 8
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 9
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 1
 They Hit
 Scout Destroyed
 -------
@@ -1769,38 +1697,38 @@ Player 1 Colony 1
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 8
 Threshold: 3
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 6
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 2
+Player 1 Rolled A 3
 They Hit
 Scout Destroyed
 -------
 -------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 9
+They Miss
+-------
+-------
 Player 0 Scout 9 Shoots at Player 1 Shipyard 2
 Threshold: 3
-Player 0 Rolled A 5
+Player 0 Rolled A 9
 They Miss
 -------
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 9
 Threshold: 3
-Player 1 Rolled A 1
+Player 1 Rolled A 2
 They Hit
 Scout Destroyed
 -------
@@ -2163,150 +2091,47 @@ Scout Destroyed
 -------
 -------
 Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 7
 They Miss
 -------
 -------
 Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 2
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 3
-Threshold: 3
-Player 1 Rolled A 1
 They Hit
-Shipyard Destroyed
--------
--------
-Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 9
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 4
-Threshold: 3
-Player 1 Rolled A 3
-They Hit
-Shipyard Destroyed
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 10
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 5
-Threshold: 3
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 5
-Threshold: 3
-Player 1 Rolled A 10
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 6
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 5
-Threshold: 3
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 5
-Threshold: 3
-Player 1 Rolled A 10
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 7
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 5
-Threshold: 3
-Player 1 Rolled A 10
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 9
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 5
-Threshold: 3
-Player 1 Rolled A 3
-They Hit
-Shipyard Destroyed
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Colony 1
-Threshold: 2
-Player 1 Rolled A 4
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Colony 1
-Threshold: 2
-Player 1 Rolled A 2
-They Hit
--------
-Player 1 Scout 9 Shoots at Player 0 Colony 1
-Threshold: 2
-Player 1 Rolled A 2
-They Hit
--------
-Player 1 Scout 9 Shoots at Player 0 Colony 1
-Threshold: 2
-Player 1 Rolled A 1
-They Hit
-Colony Destroyed
+Scout Destroyed
 -------
 Battle Is Over
 Player 0 Units Win!
 Survivors
 ------------------------
-Scout9
+Shipyard3
+Shipyard4
+Shipyard5
+Colony1
 ------------------------
 END OF COMBAT PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+--------------------
+--------------------
+Player 1 is moving
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+------------------------------------------------------
 --------------------------------------
-Player 0 Has Died
---------------------------------------
---------------------------------------
-Player 1 Won
+MAX TURNS REACHED
+TIE GAME
 --------------------------------------
 -----------------------------------------------------------------------------------
 SEED 6 GAME 5
@@ -2673,19 +2498,19 @@ They Miss
 -------
 -------
 Player 0 Shipyard 3 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 3
 They Miss
 -------
 -------
 Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 10
 They Miss
 -------
 -------
 Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 6
 They Miss
 -------
@@ -2698,13 +2523,13 @@ Shipyard Destroyed
 -------
 -------
 Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 7
 They Miss
 -------
 -------
 Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 4
 They Miss
 -------
@@ -2716,13 +2541,13 @@ They Miss
 -------
 -------
 Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 10
 They Miss
 -------
 -------
 Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 6
 They Miss
 -------
@@ -2734,13 +2559,13 @@ They Miss
 -------
 -------
 Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 7
 They Miss
 -------
 -------
 Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 9
 They Miss
 -------
@@ -2752,7 +2577,7 @@ They Miss
 -------
 -------
 Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 1
 They Hit
 Scout Destroyed
@@ -2947,13 +2772,13 @@ Scout Destroyed
 -------
 -------
 Player 0 Scout 7 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 6
 They Miss
 -------
 -------
 Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 1
 They Hit
 Scout Destroyed
@@ -3306,13 +3131,13 @@ They Miss
 -------
 -------
 Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 5
 They Miss
 -------
 -------
 Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 5
 They Miss
 -------
@@ -3324,33 +3149,8 @@ They Miss
 -------
 -------
 Player 0 Scout 8 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 2
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 9
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 8
-Threshold: 3
-Player 1 Rolled A 1
-They Hit
-Scout Destroyed
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 3
-Player 1 Rolled A 1
 They Hit
 Scout Destroyed
 -------
@@ -3358,6 +3158,7 @@ Battle Is Over
 Player 0 Units Win!
 Survivors
 ------------------------
+Scout8
 Scout9
 ------------------------
 END OF COMBAT PHASE
@@ -3369,10 +3170,11 @@ BEGINNING OF MOVEMENT PHASE
 Movement 1
 --------------------
 Player 0 is moving
+Scout : [2, 2] --> [2, 3]
+Scout : [2, 2] --> [2, 3]
 --------------------
 --------------------
 Player 1 is moving
-Scout : [2, 2] --> [2, 1]
 --------------------
 ---------------------------------
 END OF MOVEMENT PHASE
@@ -3386,76 +3188,49 @@ BEGINNING OF MOVEMENT PHASE
 Movement 1
 --------------------
 Player 0 is moving
+Scout : [2, 3] --> [2, 4]
+Scout : [2, 3] --> [2, 4]
 --------------------
 --------------------
 Player 1 is moving
-Scout : [2, 1] --> [2, 0]
 --------------------
 ---------------------------------
 END OF MOVEMENT PHASE
 START OF COMBAT PHASE
-Battle at (2, 0)
+Battle at (2, 4)
 In Combat:
-Player 0 Shipyard 2
-Player 0 Shipyard 3
-Player 0 Shipyard 4
-Player 0 Shipyard 5
-Player 1 Scout 9
-Player 0 Colony 1
+Player 1 Shipyard 2
+Player 1 Shipyard 3
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 0 Scout 8
+Player 0 Scout 9
+Player 1 Colony 1
 -------
-Player 0 Shipyard 2 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 0 Shipyard 3 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 5
-They Miss
--------
--------
-Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 10
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 4
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 2
+Player 1 Shipyard 2 Shoots at Player 0 Scout 8
 Threshold: 3
-Player 1 Rolled A 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 3 Shoots at Player 0 Scout 8
+Threshold: 3
+Player 1 Rolled A 1
 They Hit
-Shipyard Destroyed
+Scout Destroyed
 -------
 -------
-Player 0 Shipyard 3 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 10
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 1
+Player 1 Shipyard 4 Shoots at Player 0 Scout 9
+Threshold: 3
+Player 1 Rolled A 3
 They Hit
 Scout Destroyed
 -------
 Battle Is Over
-Player 0 Units Win!
+Player 1 Units Win!
 Survivors
 ------------------------
+Shipyard2
 Shipyard3
 Shipyard4
 Shipyard5
@@ -3761,25 +3536,25 @@ Player 1 Scout 9
 Player 0 Colony 1
 -------
 Player 0 Shipyard 2 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 6
 They Miss
 -------
 -------
 Player 0 Shipyard 3 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 10
 They Miss
 -------
 -------
 Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 6
 They Miss
 -------
 -------
 Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 8
 They Miss
 -------
@@ -3791,44 +3566,14 @@ They Miss
 -------
 -------
 Player 0 Shipyard 2 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 8
 They Miss
 -------
 -------
 Player 0 Shipyard 3 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 2
-They Miss
--------
--------
-Player 0 Shipyard 4 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 3
-They Miss
--------
--------
-Player 0 Shipyard 5 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 7
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Shipyard 2
-Threshold: 3
-Player 1 Rolled A 8
-They Miss
--------
--------
-Player 0 Shipyard 2 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 5
-They Miss
--------
--------
-Player 0 Shipyard 3 Shoots at Player 1 Scout 9
-Threshold: 1
-Player 0 Rolled A 1
 They Hit
 Scout Destroyed
 -------
@@ -4054,13 +3799,13 @@ They Miss
 -------
 -------
 Player 0 Scout 6 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 10
 They Miss
 -------
 -------
 Player 0 Scout 7 Shoots at Player 1 Scout 9
-Threshold: 1
+Threshold: 2
 Player 0 Rolled A 1
 They Hit
 Scout Destroyed
@@ -4497,7 +4242,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 1
 They Hit
 Scout Destroyed
@@ -4816,7 +4561,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 10
 They Miss
 -------
@@ -4829,7 +4574,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
@@ -4890,25 +4635,25 @@ Player 0 Scout 9
 Player 1 Colony 1
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 7
 They Miss
 -------
 -------
 Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 4
 They Miss
 -------
 -------
 Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 5
 They Miss
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
@@ -4921,7 +4666,7 @@ Shipyard Destroyed
 -------
 -------
 Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 1
 They Hit
 Scout Destroyed
@@ -5125,76 +4870,22 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 8 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 8
 They Miss
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 2
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 8
-Threshold: 3
-Player 0 Rolled A 6
-They Miss
--------
--------
-Player 1 Scout 8 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 3
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 3
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 8
-Threshold: 3
-Player 0 Rolled A 5
-They Miss
--------
--------
-Player 1 Scout 8 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 8
-Threshold: 3
-Player 0 Rolled A 1
-They Hit
-Scout Destroyed
--------
--------
-Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 3
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Scout 9
-Threshold: 3
-Player 0 Rolled A 2
 They Hit
 Scout Destroyed
 -------
 Battle Is Over
-Player 0 Units Win!
+Player 1 Units Win!
 Survivors
 ------------------------
+Scout8
 Scout9
 ------------------------
 END OF COMBAT PHASE
@@ -5206,10 +4897,11 @@ BEGINNING OF MOVEMENT PHASE
 Movement 1
 --------------------
 Player 0 is moving
-Scout : [2, 2] --> [2, 3]
 --------------------
 --------------------
 Player 1 is moving
+Scout : [2, 2] --> [2, 1]
+Scout : [2, 2] --> [2, 1]
 --------------------
 ---------------------------------
 END OF MOVEMENT PHASE
@@ -5223,270 +4915,51 @@ BEGINNING OF MOVEMENT PHASE
 Movement 1
 --------------------
 Player 0 is moving
-Scout : [2, 3] --> [2, 4]
 --------------------
 --------------------
 Player 1 is moving
+Scout : [2, 1] --> [2, 0]
+Scout : [2, 1] --> [2, 0]
 --------------------
 ---------------------------------
 END OF MOVEMENT PHASE
 START OF COMBAT PHASE
-Battle at (2, 4)
+Battle at (2, 0)
 In Combat:
-Player 1 Shipyard 2
-Player 1 Shipyard 3
-Player 1 Shipyard 4
-Player 1 Shipyard 5
-Player 0 Scout 9
-Player 1 Colony 1
+Player 0 Shipyard 2
+Player 0 Shipyard 3
+Player 0 Shipyard 4
+Player 0 Shipyard 5
+Player 1 Scout 8
+Player 1 Scout 9
+Player 0 Colony 1
 -------
-Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Player 0 Shipyard 2 Shoots at Player 1 Scout 8
 Threshold: 3
-Player 0 Rolled A 8
+Player 0 Rolled A 6
 They Miss
 -------
 -------
-Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 10
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 8
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 3
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 2
-Threshold: 3
-Player 0 Rolled A 5
-They Miss
--------
--------
-Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 8
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 6
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 5
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 4
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 2
-Threshold: 3
-Player 0 Rolled A 5
-They Miss
--------
--------
-Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 4
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 2
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 8
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 2
-Threshold: 3
-Player 0 Rolled A 10
-They Miss
--------
--------
-Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 6
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 8
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 2
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 2
-Threshold: 3
-Player 0 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 5
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 2
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 3
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 6
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 2
+Player 0 Shipyard 3 Shoots at Player 1 Scout 8
 Threshold: 3
 Player 0 Rolled A 3
 They Hit
-Shipyard Destroyed
+Scout Destroyed
 -------
 -------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 5
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 4
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 3
-Threshold: 3
-Player 0 Rolled A 2
-They Hit
-Shipyard Destroyed
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 5
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 3
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 4
+Player 0 Shipyard 4 Shoots at Player 1 Scout 9
 Threshold: 3
 Player 0 Rolled A 3
-They Hit
-Shipyard Destroyed
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 2
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 5
-Threshold: 3
-Player 0 Rolled A 4
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 1
 They Hit
 Scout Destroyed
 -------
 Battle Is Over
-Player 1 Units Win!
+Player 0 Units Win!
 Survivors
 ------------------------
+Shipyard2
+Shipyard3
+Shipyard4
 Shipyard5
 Colony1
 ------------------------
@@ -5806,7 +5279,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 6
 They Miss
 -------
@@ -5818,112 +5291,8 @@ They Miss
 -------
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 2
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 2
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 4
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 2
-Threshold: 3
-Player 0 Rolled A 1
-They Hit
-Shipyard Destroyed
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 3
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 10
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 5
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 3
-Threshold: 3
-Player 0 Rolled A 10
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 5
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 9
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 3
-Threshold: 3
-Player 0 Rolled A 7
-They Miss
--------
--------
-Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 2
-They Miss
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 6
-They Miss
--------
--------
-Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 7
-They Miss
--------
--------
-Player 0 Scout 9 Shoots at Player 1 Shipyard 3
-Threshold: 3
-Player 0 Rolled A 2
-They Hit
-Shipyard Destroyed
--------
--------
-Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
-Player 1 Rolled A 1
 They Hit
 Scout Destroyed
 -------
@@ -5931,6 +5300,8 @@ Battle Is Over
 Player 1 Units Win!
 Survivors
 ------------------------
+Shipyard2
+Shipyard3
 Shipyard4
 Shipyard5
 Colony1
@@ -6161,7 +5532,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 3
 They Miss
 -------
@@ -6174,7 +5545,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
@@ -6186,7 +5557,7 @@ They Miss
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 8
 They Miss
 -------
@@ -6247,25 +5618,25 @@ Player 0 Scout 9
 Player 1 Colony 1
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 10
 They Miss
 -------
 -------
 Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 6
 They Miss
 -------
 -------
 Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 3
 They Miss
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 5
 They Miss
 -------
@@ -6277,7 +5648,7 @@ They Miss
 -------
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 1
 They Hit
 Scout Destroyed
@@ -6535,13 +5906,13 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 8 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
@@ -6553,7 +5924,7 @@ They Miss
 -------
 -------
 Player 1 Scout 7 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 1
 They Hit
 Scout Destroyed
@@ -6994,7 +6365,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 8
 They Miss
 -------
@@ -7012,25 +6383,25 @@ They Miss
 -------
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 3
 They Miss
 -------
 -------
 Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 6
 They Miss
 -------
 -------
 Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 7
 They Miss
 -------
@@ -7049,19 +6420,19 @@ Shipyard Destroyed
 -------
 -------
 Player 1 Shipyard 3 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 10
 They Miss
 -------
 -------
 Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 5
 They Miss
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 10
 They Miss
 -------
@@ -7080,13 +6451,13 @@ They Miss
 -------
 -------
 Player 1 Shipyard 4 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 10
 They Miss
 -------
@@ -7105,7 +6476,7 @@ They Miss
 -------
 -------
 Player 1 Shipyard 5 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 1
 They Hit
 Scout Destroyed
@@ -7914,7 +7285,7 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 4
 They Miss
 -------
@@ -7926,7 +7297,7 @@ They Miss
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 6
 They Miss
 -------
@@ -7987,7 +7358,7 @@ Player 0 Scout 9
 Player 1 Colony 1
 -------
 Player 1 Shipyard 2 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 1
 They Hit
 Scout Destroyed
@@ -8245,13 +7616,13 @@ Scout Destroyed
 -------
 -------
 Player 1 Scout 8 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 4
 They Miss
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 10
 They Miss
 -------
@@ -8263,19 +7634,19 @@ They Miss
 -------
 -------
 Player 1 Scout 7 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 5
 They Miss
 -------
 -------
 Player 1 Scout 8 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 7
 They Miss
 -------
 -------
 Player 1 Scout 9 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 9
 They Miss
 -------
@@ -8287,7 +7658,7 @@ They Miss
 -------
 -------
 Player 1 Scout 7 Shoots at Player 0 Scout 9
-Threshold: 1
+Threshold: 2
 Player 1 Rolled A 1
 They Hit
 Scout Destroyed
