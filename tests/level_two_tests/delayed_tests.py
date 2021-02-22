@@ -31,7 +31,7 @@ second_delayed_count = 0
 for i in range(2):
     nums = [0,1]
     for game_num in range(1000):
-        # print(game_num)
+        print(game_num)
         # if game_num != 11:
         #     continue
         # random.seed(game_num)

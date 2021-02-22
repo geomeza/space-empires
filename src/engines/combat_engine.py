@@ -104,7 +104,8 @@ class CombatEngine:
         unit_info = [self.game.unit_state(unit)
                      for unit in self.enemies if unit.alive]
         units = [unit for unit in units if unit.alive]
-        decision = player.strategy.decide_which_unit_to_attack(
+        ##NONE IS PLACEHOLDER FOR HIDDEN COMBAT GAME STATE
+        decision = player.strategy.decide_which_unit_to_attack(None, 
             self.get_combat_state(), tuple(attacker.coords), units.index(attacker))
         psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
         chosen_enemy = None
@@ -131,6 +132,10 @@ class CombatEngine:
                     if unit1.player.player_num > unit2.player.player_num:
                         units[i], units[j] = units[j], units[i]
         return units
+
+    # def supremacy(self, units):
+    #     return sorted(units,key = lambda unit:
+    #     (unit.tactics,-unit.player.player_num,-unit.unit_num),reverse=True)
 
     def unit_shot(self, attacker, defender):
         self.roll_dice()

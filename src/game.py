@@ -21,7 +21,7 @@ class Game:
         self.board_size = [5,5]
         self.board = None
         self.planets = []
-        self.turn_count = 0
+        self.turn_count = 1
         self.max_turns = 20
         self.phase = 'Bruh Moment'
         self.winner = 'None'
@@ -105,7 +105,7 @@ class Game:
         if self.turn_count < self.max_turns:
             self.log('TURN '+ str(self.turn_count))
             self.log('------------------------------------------------------')
-            if self.turn_count == 0 and self.level == 2:
+            if self.turn_count == 1 and self.level == 2:
                 self.adjust_starting_and_colony_income(10,20)
                 self.complete_economic_phase()
                 self.banned_phases = ['economic']
