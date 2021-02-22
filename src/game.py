@@ -22,7 +22,7 @@ class Game:
         self.board = None
         self.planets = []
         self.turn_count = 0
-        self.max_turns =5
+        self.max_turns = 20
         self.phase = 'Bruh Moment'
         self.winner = 'None'
         self.logging = True
@@ -130,7 +130,7 @@ class Game:
                 self.log('--------------------------------------')
                 self.log('Player '+str(self.winner.player_num)+ ' Won By Default')
                 self.log('--------------------------------------')
-                self.logger.close_file()
+                self.close()
             else:
                 self.winner = len(self.players) + 5
                 self.winner_name = 'TIE'
@@ -138,7 +138,7 @@ class Game:
                 self.log('MAX TURNS REACHED')
                 self.log('TIE GAME')
                 self.log('--------------------------------------')
-                self.logger.close_file()
+                self.close()
 
     def complete_movement_phase(self):
         self.movement_engine.complete_movement_phase()
@@ -183,7 +183,12 @@ class Game:
             self.log('--------------------------------------')
             self.log('Player '+ str(player.player_num)+ ' Won')
             self.log('--------------------------------------')
+            self.close()
+
+    def close(self):
+        if self.filename is not None:
             self.logger.close_file()
+            return
 
     def default_win(self):
         units = [len(player.units) for player in self.players]
