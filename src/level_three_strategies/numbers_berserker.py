@@ -33,7 +33,7 @@ class NumbersBerserkerStrategy:
                 smallest_distance_to_opponent = dist
         return best_translation
 
-    def decide_which_unit_to_attack(self, combat_state, coords, attacker_index):
+    def decide_which_unit_to_attack(self, hidden_game_state_for_combat, combat_state, coords, attacker_index):
         # attack opponent's first ship in combat order
 
         combat_order = combat_state[coords]

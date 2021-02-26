@@ -22,7 +22,7 @@ class Game:
         self.board = None
         self.planets = []
         self.turn_count = 1
-        self.max_turns = 20
+        self.max_turns = 100
         self.phase = 'Bruh Moment'
         self.winner = 'None'
         self.logging = True
@@ -43,6 +43,7 @@ class Game:
     def check_level(self):
         if self.level > 0:
             if self.level == 1:
+                self.max_turns = 20
                 self.planets = []
                 self.scouts_only = True
                 self.banned_phases = ['economic']
@@ -50,10 +51,20 @@ class Game:
                 self.screens = False
                 self.shipyards_cleared = False
             if self.level == 2:
+                self.max_turns = 20
                 self.planets = []
                 self.scouts_only = True
                 self.banned_phases = []
                 self.movement_rounds = 1
+                self.screens = False
+                self.shipyards_cleared = True
+            if self.level == 3:
+                self.max_turns = 100
+                self.planets = []
+                self.scouts_only = True
+                self.banned_phases = []
+                self.board_size = [7,7]
+                self.movement_rounds = 3
                 self.screens = False
                 self.shipyards_cleared = True
 

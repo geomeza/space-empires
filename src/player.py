@@ -20,6 +20,7 @@ class Player:
         self.game = game
         self.units = []
         self.cp = 0
+        self.unit_count = 0
 
     def build_unit(self, unit_name, coords, pay=True):
         colony = self.find_colony(coords)
@@ -34,10 +35,11 @@ class Player:
         #         return False
         ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
             'atk', 'def', 'move']}
-        new_unit = unit_name(coords, len(self.units) + 1,
+        new_unit = unit_name(coords, self.unit_count + 1,
                              self, ship_tech, self.game, self.game.turn_count)
         if pay:
             self.cp -= new_unit.cost
+        self.unit_count += 1
         self.units.append(new_unit)
 
     def find_colony(self, coords):
@@ -50,17 +52,17 @@ class Player:
         ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
             'atk', 'def']}
         if col_type == 'Home':
-            home_colony = Colony(coords, len(
-                self.units) + 1, self, ship_tech, self.game, self.game.turn_count, colony_type='Home')
+            home_colony = Colony(coords, self.unit_count + 1, self, ship_tech, self.game, self.game.turn_count, colony_type='Home')
             self.units.append(home_colony)
         else:
-            new_colony = Colony(coords, len(self.units) + 1, self, ship_tech,
+            new_colony = Colony(coords, self.unit_count + 1, self, ship_tech,
                                 self.game, self.game.turn_count, colony_type='Normal')
             self.game.board.grid[tuple(coords)].planet.colonize(
                 self, new_colony)
             self.units.append(new_colony)
             if colony_ship is not None:
                 colony_ship.destroy()
+        self.unit_count+= 1
 
     def initialize_units(self):
         self.build_colony(self.home_coords, col_type='Home')
@@ -156,3 +158,9 @@ class Player:
         for unit in self.units:
             if unit.name == 'Colony':
                 unit.one_shipyard_bought = False
+
+    def reset_movements(self):
+        for unit in self.units:
+            if unit.brought_into_fight:
+                unit.brought_into_fight = False
+                unit.moveable = True

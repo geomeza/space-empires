@@ -61,3 +61,6 @@ class Board:
             if len(board_space.units) >= 2:
                 board.update({coords: board_space.units})
         return board
+
+    def get_space_units(self, coords):
+        return self.grid[tuple(coords)].units

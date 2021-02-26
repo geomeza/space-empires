@@ -291,3 +291,17 @@ class CombatEngine:
     # def screen_units(self, units):
     #     players = set([unit.player for unit in units])
     #     counts = {player: }
+
+    def check_occupace(self, coords):
+        space_units = self.board.get_space_units(coords)
+        passives = False
+        self.reset_stats()
+        self.sort_units(space_units, space_units[0].player)
+        if len(space_units) == 1 or len(self.enemies) == 0:
+            passives = True
+        self.reset_stats()
+        if not passives:
+            for unit in space_units:
+                if unit.can_atk and unit.moveable:
+                    unit.moveable = False
+                    unit.brought_into_fight = True
