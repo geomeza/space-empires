@@ -5,7 +5,7 @@ class Colony(Unit):
     name = 'Colony'
     tactics = 0
     defense = 1
-    armor = 3
+    armor = 4
     capacity = 3
     moveable = False
     maint = None
@@ -16,7 +16,7 @@ class Colony(Unit):
     
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created, colony_type = 'Normal'):
         super().__init__(coords, unit_num, player, tech_lvls, game, turn_created)
-        self.capacity_dict = {'Normal': [1,2], 'Home': [10,15]}
+        self.capacity_dict = {'Normal': [1,2,3], 'Home': [5, 10,15]}
         self.base = None
         self.shipyards = []
         self.builders = 0
@@ -44,4 +44,8 @@ class Colony(Unit):
     def set_builders(self):
         self.builders = 0
         for shipyard in self.shipyards:
-            self.builders += shipyard.build_capacity
+            if shipyard.alive:
+                self.builders += shipyard.build_capacity
+            else:
+                if shipyard in self.shipyards:
+                    self.shipyards.remove(shipyard)

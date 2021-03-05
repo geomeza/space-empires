@@ -54,6 +54,22 @@ class CombatEngine:
         self.combat_state = potential_battles
         return potential_battles
 
+    def remove_colony(self, units):
+        colony = None
+        colony_shipyards = None
+        for unit in units:
+            if unit.name == 'Colony':
+                colony = unit
+                colony_shipyards = unit.shipyards
+        if colony is None:
+            return units
+        if len(colony_shipyards) > 0:
+            if colony in units:
+                units.remove(colony)
+            return units
+        else:
+            return units
+
     def complete_combat_phase(self):
         self.game.phase = 'Combat'
         self.game.log('START OF COMBAT PHASE')
@@ -61,10 +77,19 @@ class CombatEngine:
         for coords, units in battles.items():
             self.game.log('Battle at '+ str(coords))
             self.over = False
-            self.battle(units)
+            self.battle(self.remove_colony(units))
             self.reset_stats()
             self.board.update(self.game.players)
         self.board.update(self.game.players)
+        second_battles = self.find_battles()
+        if len(second_battles) > 0:
+            for coords, units in second_battles.items():
+                self.game.log('Battle at '+ str(coords))
+                self.over = False
+                self.battle(self.remove_colony(units))
+                self.reset_stats()
+                self.board.update(self.game.players)
+            self.board.update(self.game.players)
         self.game.log('END OF COMBAT PHASE')
 
     def sort_units(self, units, player):
@@ -105,7 +130,7 @@ class CombatEngine:
                      for unit in self.enemies if unit.alive]
         units = [unit for unit in units if unit.alive]
         ##NONE IS PLACEHOLDER FOR HIDDEN COMBAT GAME STATE
-        decision = player.strategy.decide_which_unit_to_attack(None, 
+        decision = player.strategy.decide_which_unit_to_attack( self.game.hidden_game_state_for_combat(player.player_num, units), 
             self.get_combat_state(), tuple(attacker.coords), units.index(attacker))
         psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
         chosen_enemy = None

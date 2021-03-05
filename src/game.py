@@ -253,7 +253,15 @@ class Game:
         state = {}
         state['home_coords'] = player.home_coords
         state['player_num'] = player.player_num
-        state['units'] = [{'coords': unit.coords} for unit in player.units]
+        state['units'] = [{'coords': unit.coords, 'unit_num': unit.unit_num} for unit in player.units]
+        return state
+
+    def hidden_combat_player_state(self, player, units_in_combat):
+        units_in_combat = [unit.unit_num for unit in units_in_combat if unit.player.player_num == player.player_num]
+        state = {}
+        state['home_coords'] = player.home_coords
+        state['player_num'] = player.player_num
+        state['units'] = [self.unit_state(unit) if unit.unit_num in units_in_combat else {'coords': unit.coords, 'unit_num': unit.unit_num} for unit in player.units]
         return state
 
 
@@ -266,6 +274,35 @@ class Game:
         state['player_whose_turn'] = self.current_player
         state['players'] = [self.player_state(
             player) if player.player_num == wanted else self.hidden_player_state(player) for player in self.players]
+        state['unit_data'] = {
+            'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5},
+            'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4},
+            'Cruiser': {'cp_cost': 12, 'hullsize': 2, 'shipsize_needed': 2},
+            'Destroyer': {'cp_cost': 9, 'hullsize': 1, 'shipsize_needed': 2},
+            'Dreadnaught': {'cp_cost': 24, 'hullsize': 3, 'shipsize_needed': 6},
+            'Scout': {'cp_cost': 6, 'hullsize': 1, 'shipsize_needed': 1},
+            'Shipyard': {'cp_cost': 3, 'hullsize': 1, 'shipsize_needed': 1},
+            'Decoy': {'cp_cost': 1, 'hullsize': 0, 'shipsize_needed': 1},
+            'Colonyship': {'cp_cost': 8, 'hullsize': 1, 'shipsize_needed': 1},
+            'Base': {'cp_cost': 12, 'hullsize': 3, 'shipsize_needed': 2}}
+        state['technology_data'] = {
+            'shipsize': [0, 10, 15, 20, 25, 30],
+            'attack': [20, 30, 40],
+            'defense': [20, 30, 40],
+            'movement': [0, 20, 30, 40, 40, 40],
+            'shipyard': [0, 20, 30]}
+        state['winner'] = self.winner
+        return state
+
+    def hidden_game_state_for_combat(self, wanted = None, units = None):
+        state = {}
+        state['board_size'] = self.board.size
+        state['turn'] = self.turn_count
+        state['phase'] = self.phase
+        state['round'] = self.movement_engine.movement_phase
+        state['player_whose_turn'] = self.current_player
+        state['players'] = [self.player_state(
+            player) if player.player_num == wanted else self.hidden_combat_player_state(player, units) for player in self.players]
         state['unit_data'] = {
             'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5},
             'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4},

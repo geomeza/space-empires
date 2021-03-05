@@ -18,6 +18,15 @@ class NumbersBerserkerStrategy:
         opponent_index = 1 - self.player_index
         opponent = hidden_game_state['players'][opponent_index]
         unit = myself['units'][unit_index]
+
+        home_coords= tuple(hidden_game_state['players'][self.player_index]['home_coords'])
+        units = myself['units']
+        scouts = [unit for unit in units if unit['type'] == 'Scout' and tuple(unit['coords']) != home_coords]
+        num_units = len(scouts)
+
+        # if len(scouts) < 15:
+        #     return (0,0)
+
         x_unit, y_unit = unit['coords']
         x_opp, y_opp = opponent['home_coords']
         translations = [(0,0), (1,0), (-1,0), (0,1), (0,-1)]
