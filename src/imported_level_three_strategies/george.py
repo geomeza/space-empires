@@ -28,7 +28,7 @@ class GeorgeStrategyLevel3:
             myself['cp'] -= game_state['technology_data']['attack'][attack_level]
         while myself['cp'] >= 6:
             if scouts_bought == len(shipyards):
-                break;
+                break
             purchases['units'].append({'type': 'Scout', 'coords': home_coords})
             myself['cp'] -= 6
             scouts_bought += 1

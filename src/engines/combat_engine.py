@@ -63,7 +63,8 @@ class CombatEngine:
                 colony_shipyards = unit.shipyards
         if colony is None:
             return units
-        if len(colony_shipyards) > 0:
+        enem_units = [(unit.name, unit.player.player_num) for unit in units if unit.player.player_num == colony.player.player_num and unit.alive and unit.name != 'Colony']
+        if len(colony_shipyards) > 0 or len(enem_units) > 0:
             if colony in units:
                 units.remove(colony)
             return units

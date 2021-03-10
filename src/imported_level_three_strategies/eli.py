@@ -5,7 +5,7 @@ class ElijahStrategyLevel3:
     def __init__(self, player_index):
         self.player_index = player_index
         self.name = 'Eli'
-        self.priorities = ["Colony", "Shipyard", "Scout"]
+        self.priorities = ["Shipyard", "Scout", 'Colony']
 
     def decide_ship_movement(self, unit_index, hidden_game_state):
         enemy = hidden_game_state['players'][1-self.player_index]
@@ -34,6 +34,6 @@ class ElijahStrategyLevel3:
         player = game_state['players'][self.player_index]
         cp = player['cp']
         home_coords = game_state['players'][self.player_index]['home_coords']
-        sy_capacity = len([i for i in player['units'] if i['type'] == 'ShipYard'])
+        sy_capacity = len([i for i in player['units'] if i['type'] == 'Shipyard'])
         amt = min(sy_capacity, cp//scout_price)
         return {'technology': [], 'units': [{'type': 'Scout', 'coords': home_coords}] * amt}

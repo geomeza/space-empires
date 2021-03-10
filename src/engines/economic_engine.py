@@ -50,6 +50,7 @@ class EconomicEngine:
         self.game.log('END OF ECONOMIC PHASE')
 
     def purchase(self, player):
+        player.set_colony_builders()
         purchases = player.strategy.decide_purchases(self.game.hidden_game_state(player.player_num))
         ship_objects = [Scout, Destroyer, Dreadnaught,
                         ColonyShip, Cruiser, Battleship, ShipYard, Decoy]
@@ -63,7 +64,6 @@ class EconomicEngine:
         for unit in purchases['units']:
             ship = ship_objects[ship_names.index(unit['type'])]
             if ship.cost <= player.cp:
-                player.set_colony_builders()
                 ship_coords = [unit['coords'][0], unit['coords'][1]]
                 coords = player.check_colony(ship.hull_size, ship, ship_coords)
                 if coords is not None:
@@ -72,8 +72,9 @@ class EconomicEngine:
                         self.game.log('PLAYER '+ str(player.player_num)+
                               ' BOUGHT A: '+ str(ship.name))
             else:
-                if self.game.logging:
-                    print('Could not afford to buy', ship.name)
+                if self.game.invalidation:
+                    raise Exception('dummy buy')
+                self.game.log('Could not afford to buy '+ ship.name)
 
     def remove_ship(self, player):
         removal = player.strategy.decide_removal(self.game.hidden_game_state(player.player_num))

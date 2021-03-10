@@ -29,6 +29,8 @@ class Utility:
                     'Level: '+ str(player.tech_lvls[tech_type]) + ' Of '+ str(tech_type)+  ' Technology')
                 self.game.log('---------')
             else:
+                if self.game.invalidation:
+                    raise Exception('dummy buy')
                 if self.game.logging:
                     print('---------')
                     print('Player', player.player_num, 'could not afford:')
@@ -36,6 +38,8 @@ class Utility:
                         'Level:', player.tech_lvls[tech_type] + 1, ' Of', tech_type, 'Technology')
                     print('---------')
         else:
+            if self.game.invalidation:
+                    raise Exception('dummy buy')
             if self.game.logging:
                 print(tech_type, 'TECHNOLOGY MAXED OUT')
 

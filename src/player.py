@@ -149,6 +149,7 @@ class Player:
                 return val.planet
 
     def self_destruct(self):
+        raise Exception('dummy')
         unit = self.units[0]
         if unit.name == 'Colony' and unit.colony_type == 'Home':
             self.units[0].destroy()

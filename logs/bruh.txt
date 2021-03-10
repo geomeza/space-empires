@@ -1,0 +1,2834 @@
+Creating Board
+Initializing Players
+----------------------------------
+Player 1:
+Combat Points: 0
+Colony : [3, 0]
+Scout : [3, 0]
+Scout : [3, 0]
+Scout : [3, 0]
+Shipyard : [3, 0]
+Shipyard : [3, 0]
+Shipyard : [3, 0]
+Shipyard : [3, 0]
+----------------------------------
+----------------------------------
+Player 2:
+Combat Points: 0
+Colony : [3, 6]
+Scout : [3, 6]
+Scout : [3, 6]
+Scout : [3, 6]
+Shipyard : [3, 6]
+Shipyard : [3, 6]
+Shipyard : [3, 6]
+Shipyard : [3, 6]
+----------------------------------
+TURN 1
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 20
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 17
+PLAYER 0 HAS 17 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 20
+--------------
+Player 1 payed 3 in maintenance!
+PLAYER 1 NOW HAS 17
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 5 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 2
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 37
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 34
+---------
+Player 0 Payed For:
+Level: 1 Of def Technology
+---------
+PLAYER 0 HAS 14 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 25
+--------------
+Player 1 payed 5 in maintenance!
+PLAYER 1 NOW HAS 20
+---------
+Player 1 Payed For:
+Level: 1 Of atk Technology
+---------
+PLAYER 1 HAS 0 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 3
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 34
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 31
+---------
+Player 0 Payed For:
+Level: 1 Of atk Technology
+---------
+PLAYER 0 HAS 11 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 20
+--------------
+Player 1 payed 5 in maintenance!
+PLAYER 1 NOW HAS 15
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 3 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 4
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 31
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 28
+PLAYER 0 HAS 28 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 23
+--------------
+Player 1 payed 7 in maintenance!
+PLAYER 1 NOW HAS 16
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 4 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 5
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+Scout12 : [3, 6] --> [4, 6]
+Scout13 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+Scout12 : [4, 6] --> [4, 6]
+Scout13 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+Scout12 : [4, 6] --> [4, 6]
+Scout13 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 48
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 45
+---------
+Player 0 Payed For:
+Level: 2 Of def Technology
+---------
+PLAYER 0 HAS 15 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 24
+--------------
+Player 1 payed 9 in maintenance!
+PLAYER 1 NOW HAS 15
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 3 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 6
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+Scout12 : [4, 6] --> [4, 6]
+Scout13 : [4, 6] --> [4, 6]
+Scout14 : [3, 6] --> [4, 6]
+Scout15 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+Scout12 : [4, 6] --> [4, 6]
+Scout13 : [4, 6] --> [4, 6]
+Scout14 : [4, 6] --> [4, 6]
+Scout15 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+Scout12 : [4, 6] --> [4, 6]
+Scout13 : [4, 6] --> [4, 6]
+Scout14 : [4, 6] --> [4, 6]
+Scout15 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 35
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 32
+---------
+Player 0 Payed For:
+Level: 2 Of atk Technology
+---------
+PLAYER 0 HAS 2 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 23
+--------------
+Player 1 payed 11 in maintenance!
+PLAYER 1 NOW HAS 12
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 0 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 7
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 6]
+Scout12 : [4, 6] --> [4, 6]
+Scout13 : [4, 6] --> [4, 6]
+Scout14 : [4, 6] --> [4, 6]
+Scout15 : [4, 6] --> [4, 6]
+Scout16 : [3, 6] --> [4, 6]
+Scout17 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 6] --> [4, 5]
+Scout12 : [4, 6] --> [4, 5]
+Scout13 : [4, 6] --> [4, 5]
+Scout14 : [4, 6] --> [4, 5]
+Scout15 : [4, 6] --> [4, 5]
+Scout16 : [4, 6] --> [4, 5]
+Scout17 : [4, 6] --> [4, 5]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 5] --> [4, 4]
+Scout12 : [4, 5] --> [4, 4]
+Scout13 : [4, 5] --> [4, 4]
+Scout14 : [4, 5] --> [4, 4]
+Scout15 : [4, 5] --> [4, 4]
+Scout16 : [4, 5] --> [4, 4]
+Scout17 : [4, 5] --> [4, 4]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 22
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 19
+PLAYER 0 HAS 19 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 20
+--------------
+Player 1 payed 13 in maintenance!
+PLAYER 1 NOW HAS 7
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 8
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 4] --> [4, 3]
+Scout12 : [4, 4] --> [4, 3]
+Scout13 : [4, 4] --> [4, 3]
+Scout14 : [4, 4] --> [4, 3]
+Scout15 : [4, 4] --> [4, 3]
+Scout16 : [4, 4] --> [4, 3]
+Scout17 : [4, 4] --> [4, 3]
+Scout18 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 0]
+Scout2 : [3, 0] --> [3, 0]
+Scout3 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 3] --> [4, 2]
+Scout12 : [4, 3] --> [4, 2]
+Scout13 : [4, 3] --> [4, 2]
+Scout14 : [4, 3] --> [4, 2]
+Scout15 : [4, 3] --> [4, 2]
+Scout16 : [4, 3] --> [4, 2]
+Scout17 : [4, 3] --> [4, 2]
+Scout18 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [3, 0] --> [3, 1]
+Scout2 : [3, 0] --> [3, 1]
+Scout3 : [3, 0] --> [3, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 2] --> [4, 1]
+Scout12 : [4, 2] --> [4, 1]
+Scout13 : [4, 2] --> [4, 1]
+Scout14 : [4, 2] --> [4, 1]
+Scout15 : [4, 2] --> [4, 1]
+Scout16 : [4, 2] --> [4, 1]
+Scout17 : [4, 2] --> [4, 1]
+Scout18 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 39
+--------------
+Player 0 payed 3 in maintenance!
+PLAYER 0 NOW HAS 36
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 12 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 21
+--------------
+Player 1 payed 14 in maintenance!
+PLAYER 1 NOW HAS 7
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 9
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout1 : [3, 1] --> [4, 1]
+Scout2 : [3, 1] --> [4, 1]
+Scout3 : [3, 1] --> [4, 1]
+Scout8 : [3, 0] --> [4, 0]
+Scout9 : [3, 0] --> [4, 0]
+Scout10 : [3, 0] --> [4, 0]
+Scout11 : [3, 0] --> [4, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 1] --> [4, 1]
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [3, 6] --> [3, 6]
+Scout19 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout1 : [4, 1] --> [4, 1]
+Scout2 : [4, 1] --> [4, 1]
+Scout3 : [4, 1] --> [4, 1]
+Scout8 : [4, 0] --> [4, 1]
+Scout9 : [4, 0] --> [4, 1]
+Scout10 : [4, 0] --> [4, 1]
+Scout11 : [4, 0] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 1] --> [4, 1]
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [3, 6] --> [3, 6]
+Scout19 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout1 : [4, 1] --> [4, 1]
+Scout2 : [4, 1] --> [4, 1]
+Scout3 : [4, 1] --> [4, 1]
+Scout8 : [4, 1] --> [4, 1]
+Scout9 : [4, 1] --> [4, 1]
+Scout10 : [4, 1] --> [4, 1]
+Scout11 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout11 : [4, 1] --> [4, 1]
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [3, 6] --> [3, 6]
+Scout19 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (4, 1)
+In Combat:
+Player 0 Scout 1
+Player 0 Scout 2
+Player 0 Scout 3
+Player 0 Scout 8
+Player 0 Scout 9
+Player 0 Scout 10
+Player 0 Scout 11
+Player 1 Scout 11
+Player 1 Scout 12
+Player 1 Scout 13
+Player 1 Scout 14
+Player 1 Scout 15
+Player 1 Scout 16
+Player 1 Scout 17
+-------
+Player 0 Scout 1 Shoots at Player 1 Scout 11
+Threshold: 3
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 2 Shoots at Player 1 Scout 11
+Threshold: 3
+Player 0 Rolled A 4
+They Miss
+-------
+-------
+Player 0 Scout 3 Shoots at Player 1 Scout 11
+Threshold: 3
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 11
+Threshold: 5
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 11
+Threshold: 5
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 10 Shoots at Player 1 Scout 12
+Threshold: 5
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 11 Shoots at Player 1 Scout 12
+Threshold: 5
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 12 Shoots at Player 0 Scout 1
+Threshold: 4
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 13 Shoots at Player 0 Scout 1
+Threshold: 4
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 14 Shoots at Player 0 Scout 2
+Threshold: 4
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 15 Shoots at Player 0 Scout 3
+Threshold: 4
+Player 1 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 16 Shoots at Player 0 Scout 8
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 17 Shoots at Player 0 Scout 8
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 8 Shoots at Player 1 Scout 12
+Threshold: 5
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 9 Shoots at Player 1 Scout 13
+Threshold: 5
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 10 Shoots at Player 1 Scout 13
+Threshold: 5
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 11 Shoots at Player 1 Scout 13
+Threshold: 5
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 13 Shoots at Player 0 Scout 8
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 14 Shoots at Player 0 Scout 8
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 15 Shoots at Player 0 Scout 9
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 16 Shoots at Player 0 Scout 9
+Threshold: 2
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 1 Scout 17 Shoots at Player 0 Scout 9
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 10 Shoots at Player 1 Scout 13
+Threshold: 5
+Player 0 Rolled A 5
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 11 Shoots at Player 1 Scout 14
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 15 Shoots at Player 0 Scout 10
+Threshold: 2
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 16 Shoots at Player 0 Scout 10
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 17 Shoots at Player 0 Scout 10
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 11 Shoots at Player 1 Scout 15
+Threshold: 5
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 16 Shoots at Player 0 Scout 11
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 17 Shoots at Player 0 Scout 11
+Threshold: 2
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 11 Shoots at Player 1 Scout 16
+Threshold: 5
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 17 Shoots at Player 0 Scout 11
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout17
+------------------------
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 32
+--------------
+Player 0 payed 0 in maintenance!
+PLAYER 0 NOW HAS 32
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 8 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 21
+--------------
+Player 1 payed 9 in maintenance!
+PLAYER 1 NOW HAS 12
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 0 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 10
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout12 : [3, 0] --> [4, 0]
+Scout13 : [3, 0] --> [4, 0]
+Scout14 : [3, 0] --> [4, 0]
+Scout15 : [3, 0] --> [4, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [3, 6] --> [3, 6]
+Scout19 : [3, 6] --> [3, 6]
+Scout20 : [3, 6] --> [3, 6]
+Scout21 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout12 : [4, 0] --> [4, 1]
+Scout13 : [4, 0] --> [4, 1]
+Scout14 : [4, 0] --> [4, 1]
+Scout15 : [4, 0] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [3, 6] --> [3, 6]
+Scout19 : [3, 6] --> [3, 6]
+Scout20 : [3, 6] --> [3, 6]
+Scout21 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [3, 6] --> [3, 6]
+Scout19 : [3, 6] --> [3, 6]
+Scout20 : [3, 6] --> [3, 6]
+Scout21 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (4, 1)
+In Combat:
+Player 0 Scout 12
+Player 0 Scout 13
+Player 0 Scout 14
+Player 0 Scout 15
+Player 1 Scout 17
+-------
+Player 0 Scout 12 Shoots at Player 1 Scout 17
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout12
+Scout13
+Scout14
+Scout15
+------------------------
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 28
+--------------
+Player 0 payed 4 in maintenance!
+PLAYER 0 NOW HAS 24
+PLAYER 0 HAS 24 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 20
+--------------
+Player 1 payed 10 in maintenance!
+PLAYER 1 NOW HAS 10
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 4 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 11
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [3, 6] --> [4, 6]
+Scout19 : [3, 6] --> [4, 6]
+Scout20 : [3, 6] --> [4, 6]
+Scout21 : [3, 6] --> [4, 6]
+Scout22 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 6] --> [4, 6]
+Scout19 : [4, 6] --> [4, 6]
+Scout20 : [4, 6] --> [4, 6]
+Scout21 : [4, 6] --> [4, 6]
+Scout22 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 6] --> [4, 6]
+Scout19 : [4, 6] --> [4, 6]
+Scout20 : [4, 6] --> [4, 6]
+Scout21 : [4, 6] --> [4, 6]
+Scout22 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 44
+--------------
+Player 0 payed 4 in maintenance!
+PLAYER 0 NOW HAS 40
+PLAYER 0 HAS 40 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 24
+--------------
+Player 1 payed 11 in maintenance!
+PLAYER 1 NOW HAS 13
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 12
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 6] --> [4, 6]
+Scout19 : [4, 6] --> [4, 6]
+Scout20 : [4, 6] --> [4, 6]
+Scout21 : [4, 6] --> [4, 6]
+Scout22 : [4, 6] --> [4, 6]
+Scout23 : [3, 6] --> [4, 6]
+Scout24 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 6] --> [4, 5]
+Scout19 : [4, 6] --> [4, 5]
+Scout20 : [4, 6] --> [4, 5]
+Scout21 : [4, 6] --> [4, 5]
+Scout22 : [4, 6] --> [4, 5]
+Scout23 : [4, 6] --> [4, 5]
+Scout24 : [4, 6] --> [4, 5]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 5] --> [4, 4]
+Scout19 : [4, 5] --> [4, 4]
+Scout20 : [4, 5] --> [4, 4]
+Scout21 : [4, 5] --> [4, 4]
+Scout22 : [4, 5] --> [4, 4]
+Scout23 : [4, 5] --> [4, 4]
+Scout24 : [4, 5] --> [4, 4]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 60
+--------------
+Player 0 payed 4 in maintenance!
+PLAYER 0 NOW HAS 56
+PLAYER 0 HAS 56 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 21
+--------------
+Player 1 payed 13 in maintenance!
+PLAYER 1 NOW HAS 8
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 2 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 13
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 4] --> [4, 3]
+Scout19 : [4, 4] --> [4, 3]
+Scout20 : [4, 4] --> [4, 3]
+Scout21 : [4, 4] --> [4, 3]
+Scout22 : [4, 4] --> [4, 3]
+Scout23 : [4, 4] --> [4, 3]
+Scout24 : [4, 4] --> [4, 3]
+Scout25 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 1]
+Scout13 : [4, 1] --> [4, 1]
+Scout14 : [4, 1] --> [4, 1]
+Scout15 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 3] --> [4, 2]
+Scout19 : [4, 3] --> [4, 2]
+Scout20 : [4, 3] --> [4, 2]
+Scout21 : [4, 3] --> [4, 2]
+Scout22 : [4, 3] --> [4, 2]
+Scout23 : [4, 3] --> [4, 2]
+Scout24 : [4, 3] --> [4, 2]
+Scout25 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout12 : [4, 1] --> [4, 2]
+Scout13 : [4, 1] --> [4, 2]
+Scout14 : [4, 1] --> [4, 2]
+Scout15 : [4, 1] --> [4, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout18 : [4, 2] --> [4, 2]
+Scout19 : [4, 2] --> [4, 2]
+Scout20 : [4, 2] --> [4, 2]
+Scout21 : [4, 2] --> [4, 2]
+Scout22 : [4, 2] --> [4, 2]
+Scout23 : [4, 2] --> [4, 2]
+Scout24 : [4, 2] --> [4, 2]
+Scout25 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (4, 2)
+In Combat:
+Player 0 Scout 12
+Player 0 Scout 13
+Player 0 Scout 14
+Player 0 Scout 15
+Player 1 Scout 18
+Player 1 Scout 19
+Player 1 Scout 20
+Player 1 Scout 21
+Player 1 Scout 22
+Player 1 Scout 23
+Player 1 Scout 24
+-------
+Player 0 Scout 12 Shoots at Player 1 Scout 18
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 13 Shoots at Player 1 Scout 19
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 14 Shoots at Player 1 Scout 20
+Threshold: 5
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 15 Shoots at Player 1 Scout 20
+Threshold: 5
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 21 Shoots at Player 0 Scout 12
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 22 Shoots at Player 0 Scout 12
+Threshold: 2
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 23 Shoots at Player 0 Scout 12
+Threshold: 2
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 24 Shoots at Player 0 Scout 12
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 13 Shoots at Player 1 Scout 21
+Threshold: 5
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 14 Shoots at Player 1 Scout 22
+Threshold: 5
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 15 Shoots at Player 1 Scout 22
+Threshold: 5
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 22 Shoots at Player 0 Scout 13
+Threshold: 2
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 23 Shoots at Player 0 Scout 13
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 24 Shoots at Player 0 Scout 14
+Threshold: 2
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 0 Scout 14 Shoots at Player 1 Scout 22
+Threshold: 5
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 15 Shoots at Player 1 Scout 23
+Threshold: 5
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 23 Shoots at Player 0 Scout 14
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 24 Shoots at Player 0 Scout 14
+Threshold: 2
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 14 Shoots at Player 1 Scout 23
+Threshold: 5
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 15 Shoots at Player 1 Scout 23
+Threshold: 5
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 23 Shoots at Player 0 Scout 14
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 24 Shoots at Player 0 Scout 15
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 0 Scout 15 Shoots at Player 1 Scout 23
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 24 Shoots at Player 0 Scout 15
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout24
+------------------------
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 76
+--------------
+Player 0 payed 0 in maintenance!
+PLAYER 0 NOW HAS 76
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 52 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 22
+--------------
+Player 1 payed 8 in maintenance!
+PLAYER 1 NOW HAS 14
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 2 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 14
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout16 : [3, 0] --> [3, 1]
+Scout17 : [3, 0] --> [3, 1]
+Scout18 : [3, 0] --> [3, 1]
+Scout19 : [3, 0] --> [3, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout24 : [4, 2] --> [4, 1]
+Scout25 : [3, 6] --> [3, 6]
+Scout26 : [3, 6] --> [3, 6]
+Scout27 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout16 : [3, 1] --> [4, 1]
+Scout17 : [3, 1] --> [4, 1]
+Scout18 : [3, 1] --> [4, 1]
+Scout19 : [3, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout24 : [4, 1] --> [4, 1]
+Scout25 : [3, 6] --> [3, 6]
+Scout26 : [3, 6] --> [3, 6]
+Scout27 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout24 : [4, 1] --> [4, 1]
+Scout25 : [3, 6] --> [3, 6]
+Scout26 : [3, 6] --> [3, 6]
+Scout27 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (4, 1)
+In Combat:
+Player 0 Scout 16
+Player 0 Scout 17
+Player 0 Scout 18
+Player 0 Scout 19
+Player 1 Scout 24
+-------
+Player 0 Scout 16 Shoots at Player 1 Scout 24
+Threshold: 5
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 17 Shoots at Player 1 Scout 24
+Threshold: 5
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout16
+Scout17
+Scout18
+Scout19
+------------------------
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 72
+--------------
+Player 0 payed 4 in maintenance!
+PLAYER 0 NOW HAS 68
+PLAYER 0 HAS 68 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 22
+--------------
+Player 1 payed 9 in maintenance!
+PLAYER 1 NOW HAS 13
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 1 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 15
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [3, 6] --> [4, 6]
+Scout26 : [3, 6] --> [4, 6]
+Scout27 : [3, 6] --> [4, 6]
+Scout28 : [3, 6] --> [4, 6]
+Scout29 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 6] --> [4, 6]
+Scout26 : [4, 6] --> [4, 6]
+Scout27 : [4, 6] --> [4, 6]
+Scout28 : [4, 6] --> [4, 6]
+Scout29 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 6] --> [4, 6]
+Scout26 : [4, 6] --> [4, 6]
+Scout27 : [4, 6] --> [4, 6]
+Scout28 : [4, 6] --> [4, 6]
+Scout29 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 88
+--------------
+Player 0 payed 4 in maintenance!
+PLAYER 0 NOW HAS 84
+PLAYER 0 HAS 84 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 21
+--------------
+Player 1 payed 11 in maintenance!
+PLAYER 1 NOW HAS 10
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 4 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 16
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 6] --> [4, 6]
+Scout26 : [4, 6] --> [4, 6]
+Scout27 : [4, 6] --> [4, 6]
+Scout28 : [4, 6] --> [4, 6]
+Scout29 : [4, 6] --> [4, 6]
+Scout30 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 6] --> [4, 5]
+Scout26 : [4, 6] --> [4, 5]
+Scout27 : [4, 6] --> [4, 5]
+Scout28 : [4, 6] --> [4, 5]
+Scout29 : [4, 6] --> [4, 5]
+Scout30 : [4, 6] --> [4, 5]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 5] --> [4, 4]
+Scout26 : [4, 5] --> [4, 4]
+Scout27 : [4, 5] --> [4, 4]
+Scout28 : [4, 5] --> [4, 4]
+Scout29 : [4, 5] --> [4, 4]
+Scout30 : [4, 5] --> [4, 4]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 104
+--------------
+Player 0 payed 4 in maintenance!
+PLAYER 0 NOW HAS 100
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 76 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 24
+--------------
+Player 1 payed 12 in maintenance!
+PLAYER 1 NOW HAS 12
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 0 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 17
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+Scout20 : [3, 0] --> [3, 0]
+Scout21 : [3, 0] --> [3, 0]
+Scout22 : [3, 0] --> [3, 0]
+Scout23 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 4] --> [4, 3]
+Scout26 : [4, 4] --> [4, 3]
+Scout27 : [4, 4] --> [4, 3]
+Scout28 : [4, 4] --> [4, 3]
+Scout29 : [4, 4] --> [4, 3]
+Scout30 : [4, 4] --> [4, 3]
+Scout31 : [3, 6] --> [3, 6]
+Scout32 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 1]
+Scout17 : [4, 1] --> [4, 1]
+Scout18 : [4, 1] --> [4, 1]
+Scout19 : [4, 1] --> [4, 1]
+Scout20 : [3, 0] --> [3, 0]
+Scout21 : [3, 0] --> [3, 0]
+Scout22 : [3, 0] --> [3, 0]
+Scout23 : [3, 0] --> [3, 0]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 3] --> [4, 2]
+Scout26 : [4, 3] --> [4, 2]
+Scout27 : [4, 3] --> [4, 2]
+Scout28 : [4, 3] --> [4, 2]
+Scout29 : [4, 3] --> [4, 2]
+Scout30 : [4, 3] --> [4, 2]
+Scout31 : [3, 6] --> [3, 6]
+Scout32 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout16 : [4, 1] --> [4, 2]
+Scout17 : [4, 1] --> [4, 2]
+Scout18 : [4, 1] --> [4, 2]
+Scout19 : [4, 1] --> [4, 2]
+Scout20 : [3, 0] --> [3, 1]
+Scout21 : [3, 0] --> [3, 1]
+Scout22 : [3, 0] --> [3, 1]
+Scout23 : [3, 0] --> [3, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout25 : [4, 2] --> [4, 2]
+Scout26 : [4, 2] --> [4, 2]
+Scout27 : [4, 2] --> [4, 2]
+Scout28 : [4, 2] --> [4, 2]
+Scout29 : [4, 2] --> [4, 2]
+Scout30 : [4, 2] --> [4, 2]
+Scout31 : [3, 6] --> [3, 6]
+Scout32 : [3, 6] --> [3, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (4, 2)
+In Combat:
+Player 0 Scout 16
+Player 0 Scout 17
+Player 0 Scout 18
+Player 0 Scout 19
+Player 1 Scout 25
+Player 1 Scout 26
+Player 1 Scout 27
+Player 1 Scout 28
+Player 1 Scout 29
+Player 1 Scout 30
+-------
+Player 0 Scout 16 Shoots at Player 1 Scout 25
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 17 Shoots at Player 1 Scout 26
+Threshold: 5
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 18 Shoots at Player 1 Scout 26
+Threshold: 5
+Player 0 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 19 Shoots at Player 1 Scout 27
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+-------
+Player 1 Scout 28 Shoots at Player 0 Scout 16
+Threshold: 2
+Player 1 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 29 Shoots at Player 0 Scout 16
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 30 Shoots at Player 0 Scout 16
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 17 Shoots at Player 1 Scout 28
+Threshold: 5
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 18 Shoots at Player 1 Scout 28
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 19 Shoots at Player 1 Scout 29
+Threshold: 5
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Scout 29 Shoots at Player 0 Scout 17
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 30 Shoots at Player 0 Scout 17
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 18 Shoots at Player 1 Scout 29
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 19 Shoots at Player 1 Scout 30
+Threshold: 5
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 30 Shoots at Player 0 Scout 18
+Threshold: 2
+Player 1 Rolled A 2
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 19 Shoots at Player 1 Scout 30
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout19
+------------------------
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 96
+--------------
+Player 0 payed 5 in maintenance!
+PLAYER 0 NOW HAS 91
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 67 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 20
+--------------
+Player 1 payed 8 in maintenance!
+PLAYER 1 NOW HAS 12
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 0 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 18
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout19 : [4, 2] --> [4, 3]
+Scout20 : [3, 1] --> [3, 2]
+Scout21 : [3, 1] --> [3, 2]
+Scout22 : [3, 1] --> [3, 2]
+Scout23 : [3, 1] --> [3, 2]
+Scout24 : [3, 0] --> [3, 1]
+Scout25 : [3, 0] --> [3, 1]
+Scout26 : [3, 0] --> [3, 1]
+Scout27 : [3, 0] --> [3, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout31 : [3, 6] --> [4, 6]
+Scout32 : [3, 6] --> [4, 6]
+Scout33 : [3, 6] --> [4, 6]
+Scout34 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout19 : [4, 3] --> [4, 4]
+Scout20 : [3, 2] --> [3, 3]
+Scout21 : [3, 2] --> [3, 3]
+Scout22 : [3, 2] --> [3, 3]
+Scout23 : [3, 2] --> [3, 3]
+Scout24 : [3, 1] --> [3, 2]
+Scout25 : [3, 1] --> [3, 2]
+Scout26 : [3, 1] --> [3, 2]
+Scout27 : [3, 1] --> [3, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout31 : [4, 6] --> [4, 6]
+Scout32 : [4, 6] --> [4, 6]
+Scout33 : [4, 6] --> [4, 6]
+Scout34 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout19 : [4, 4] --> [4, 5]
+Scout20 : [3, 3] --> [3, 4]
+Scout21 : [3, 3] --> [3, 4]
+Scout22 : [3, 3] --> [3, 4]
+Scout23 : [3, 3] --> [3, 4]
+Scout24 : [3, 2] --> [3, 3]
+Scout25 : [3, 2] --> [3, 3]
+Scout26 : [3, 2] --> [3, 3]
+Scout27 : [3, 2] --> [3, 3]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout31 : [4, 6] --> [4, 6]
+Scout32 : [4, 6] --> [4, 6]
+Scout33 : [4, 6] --> [4, 6]
+Scout34 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+END OF COMBAT PHASE
+BEGINNING OF ECONOMIC PHASE
+----------------------------
+--------------
+Added 20 Combat Points from Colonies to Player 0
+New Total: 87
+--------------
+Player 0 payed 9 in maintenance!
+PLAYER 0 NOW HAS 78
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 BOUGHT A: Scout
+PLAYER 0 HAS 54 LEFT
+--------------
+Added 20 Combat Points from Colonies to Player 1
+New Total: 20
+--------------
+Player 1 payed 10 in maintenance!
+PLAYER 1 NOW HAS 10
+PLAYER 1 BOUGHT A: Scout
+PLAYER 1 HAS 4 LEFT
+----------------------------
+END OF ECONOMIC PHASE
+------------------------------------------------------
+TURN 19
+------------------------------------------------------
+BEGINNING OF MOVEMENT PHASE
+---------------------------------
+Movement 1
+--------------------
+Player 0 is moving
+Scout19 : [4, 5] --> [4, 6]
+Scout20 : [3, 4] --> [3, 5]
+Scout21 : [3, 4] --> [3, 5]
+Scout22 : [3, 4] --> [3, 5]
+Scout23 : [3, 4] --> [3, 5]
+Scout24 : [3, 3] --> [3, 4]
+Scout25 : [3, 3] --> [3, 4]
+Scout26 : [3, 3] --> [3, 4]
+Scout27 : [3, 3] --> [3, 4]
+Scout28 : [3, 0] --> [3, 1]
+Scout29 : [3, 0] --> [3, 1]
+Scout30 : [3, 0] --> [3, 1]
+Scout31 : [3, 0] --> [3, 1]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout31 : [4, 6] --> [4, 6]
+Scout32 : [4, 6] --> [4, 6]
+Scout33 : [4, 6] --> [4, 6]
+Scout34 : [4, 6] --> [4, 6]
+Scout35 : [3, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 2
+--------------------
+Player 0 is moving
+Scout19 : [4, 6] --> [4, 6]
+Scout20 : [3, 5] --> [3, 6]
+Scout21 : [3, 5] --> [3, 6]
+Scout22 : [3, 5] --> [3, 6]
+Scout23 : [3, 5] --> [3, 6]
+Scout24 : [3, 4] --> [3, 5]
+Scout25 : [3, 4] --> [3, 5]
+Scout26 : [3, 4] --> [3, 5]
+Scout27 : [3, 4] --> [3, 5]
+Scout28 : [3, 1] --> [3, 2]
+Scout29 : [3, 1] --> [3, 2]
+Scout30 : [3, 1] --> [3, 2]
+Scout31 : [3, 1] --> [3, 2]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout31 : [4, 6] --> [4, 6]
+Scout32 : [4, 6] --> [4, 6]
+Scout33 : [4, 6] --> [4, 6]
+Scout34 : [4, 6] --> [4, 6]
+Scout35 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+Movement 3
+--------------------
+Player 0 is moving
+Scout19 : [4, 6] --> [4, 6]
+Scout20 : [3, 6] --> [3, 6]
+Scout21 : [3, 6] --> [3, 6]
+Scout22 : [3, 6] --> [3, 6]
+Scout23 : [3, 6] --> [3, 6]
+Scout24 : [3, 5] --> [3, 6]
+Scout25 : [3, 5] --> [3, 6]
+Scout26 : [3, 5] --> [3, 6]
+Scout27 : [3, 5] --> [3, 6]
+Scout28 : [3, 2] --> [3, 3]
+Scout29 : [3, 2] --> [3, 3]
+Scout30 : [3, 2] --> [3, 3]
+Scout31 : [3, 2] --> [3, 3]
+--------------------
+--------------------
+Player 1 is moving
+Scout1 : [3, 6] --> [3, 6]
+Scout2 : [3, 6] --> [3, 6]
+Scout3 : [3, 6] --> [3, 6]
+Scout8 : [3, 6] --> [3, 6]
+Scout9 : [3, 6] --> [3, 6]
+Scout10 : [3, 6] --> [3, 6]
+Scout31 : [4, 6] --> [4, 6]
+Scout32 : [4, 6] --> [4, 6]
+Scout33 : [4, 6] --> [4, 6]
+Scout34 : [4, 6] --> [4, 6]
+Scout35 : [4, 6] --> [4, 6]
+--------------------
+---------------------------------
+END OF MOVEMENT PHASE
+START OF COMBAT PHASE
+Battle at (3, 6)
+In Combat:
+Player 1 Shipyard 4
+Player 1 Shipyard 5
+Player 1 Shipyard 6
+Player 1 Shipyard 7
+Player 0 Scout 20
+Player 0 Scout 21
+Player 0 Scout 22
+Player 0 Scout 23
+Player 0 Scout 24
+Player 0 Scout 25
+Player 0 Scout 26
+Player 0 Scout 27
+Player 1 Scout 1
+Player 1 Scout 2
+Player 1 Scout 3
+Player 1 Scout 8
+Player 1 Scout 9
+Player 1 Scout 10
+-------
+Player 1 Shipyard 4 Shoots at Player 0 Scout 20
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 5 Shoots at Player 0 Scout 20
+Threshold: 1
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Shipyard 6 Shoots at Player 0 Scout 20
+Threshold: 1
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 1 Shipyard 7 Shoots at Player 0 Scout 20
+Threshold: 1
+Player 1 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 20 Shoots at Player 1 Shipyard 4
+Threshold: 5
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 21 Shoots at Player 1 Shipyard 4
+Threshold: 5
+Player 0 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 22 Shoots at Player 1 Shipyard 5
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 23 Shoots at Player 1 Shipyard 6
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 24 Shoots at Player 1 Shipyard 7
+Threshold: 5
+Player 0 Rolled A 2
+They Hit
+Shipyard Destroyed
+-------
+-------
+Player 0 Scout 25 Shoots at Player 1 Scout 1
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 26 Shoots at Player 1 Scout 2
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 27 Shoots at Player 1 Scout 3
+Threshold: 5
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 1 Scout 3 Shoots at Player 0 Scout 20
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 8 Shoots at Player 0 Scout 20
+Threshold: 1
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 9 Shoots at Player 0 Scout 20
+Threshold: 1
+Player 1 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 10 Shoots at Player 0 Scout 20
+Threshold: 2
+Player 1 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 20 Shoots at Player 1 Scout 3
+Threshold: 5
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 21 Shoots at Player 1 Scout 3
+Threshold: 5
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 22 Shoots at Player 1 Scout 3
+Threshold: 5
+Player 0 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 23 Shoots at Player 1 Scout 8
+Threshold: 5
+Player 0 Rolled A 3
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 24 Shoots at Player 1 Scout 9
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+-------
+Player 0 Scout 25 Shoots at Player 1 Scout 10
+Threshold: 5
+Player 0 Rolled A 4
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout20
+Scout21
+Scout22
+Scout23
+Scout24
+Scout25
+Scout26
+Scout27
+------------------------
+Battle at (4, 6)
+In Combat:
+Player 0 Scout 19
+Player 1 Scout 31
+Player 1 Scout 32
+Player 1 Scout 33
+Player 1 Scout 34
+Player 1 Scout 35
+-------
+Player 0 Scout 19 Shoots at Player 1 Scout 31
+Threshold: 5
+Player 0 Rolled A 6
+They Miss
+-------
+-------
+Player 1 Scout 31 Shoots at Player 0 Scout 19
+Threshold: 2
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 32 Shoots at Player 0 Scout 19
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 33 Shoots at Player 0 Scout 19
+Threshold: 2
+Player 1 Rolled A 4
+They Miss
+-------
+-------
+Player 1 Scout 34 Shoots at Player 0 Scout 19
+Threshold: 2
+Player 1 Rolled A 9
+They Miss
+-------
+-------
+Player 1 Scout 35 Shoots at Player 0 Scout 19
+Threshold: 2
+Player 1 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 19 Shoots at Player 1 Scout 31
+Threshold: 5
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 1 Scout 31 Shoots at Player 0 Scout 19
+Threshold: 2
+Player 1 Rolled A 3
+They Miss
+-------
+-------
+Player 1 Scout 32 Shoots at Player 0 Scout 19
+Threshold: 2
+Player 1 Rolled A 1
+They Hit
+Scout Destroyed
+-------
+Battle Is Over
+Player 1 Units Win!
+Survivors
+------------------------
+Scout31
+Scout32
+Scout33
+Scout34
+Scout35
+------------------------
+Battle at (3, 6)
+In Combat:
+Player 0 Scout 20
+Player 0 Scout 21
+Player 0 Scout 22
+Player 0 Scout 23
+Player 0 Scout 24
+Player 0 Scout 25
+Player 0 Scout 26
+Player 0 Scout 27
+Player 1 Colony 1
+-------
+Player 0 Scout 20 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 21 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 22 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 23 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 1
+They Hit
+-------
+Player 0 Scout 24 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 25 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 3
+They Hit
+-------
+Player 0 Scout 26 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 5
+They Miss
+-------
+-------
+Player 0 Scout 27 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 20 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 10
+They Miss
+-------
+-------
+Player 0 Scout 21 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 9
+They Miss
+-------
+-------
+Player 0 Scout 22 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 1
+They Hit
+-------
+Player 0 Scout 23 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 24 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 7
+They Miss
+-------
+-------
+Player 0 Scout 25 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 8
+They Miss
+-------
+-------
+Player 0 Scout 26 Shoots at Player 1 Colony 1
+Threshold: 4
+Player 0 Rolled A 1
+They Hit
+Colony Destroyed
+-------
+Battle Is Over
+Player 0 Units Win!
+Survivors
+------------------------
+Scout20
+Scout21
+Scout22
+Scout23
+Scout24
+Scout25
+Scout26
+Scout27
+------------------------
+END OF COMBAT PHASE
+--------------------------------------
+Player 1 Has Died
+--------------------------------------
+--------------------------------------
+Player 0 Won
+--------------------------------------
