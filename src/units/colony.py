@@ -40,6 +40,7 @@ class Colony(Unit):
         self.alive = False
         if self in self.player.units:
             self.player.units.remove(self)
+        self.game.death_order.append([self.player.player_num, self.player.strategy.name])
 
     def set_builders(self):
         self.builders = 0

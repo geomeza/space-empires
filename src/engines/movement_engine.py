@@ -49,9 +49,9 @@ class MovementEngine:
                         break
                     if unit.name == 'Colonyship':
                         self.game.combat_engine.colonize(unit.coords)
-                    self.game.log(unit.name+ ' : '+ str(before_coords)+ ' --> '+ str(unit.coords))
+                    self.game.log(unit.name+str(unit.unit_num) +  ' : '+ str(before_coords)+ ' --> '+ str(unit.coords))
             elif unit.brought_into_fight:
-                self.game.log(unit.name+ ' : '+ str(unit.coords)+ ' --> '+ str(unit.coords))
+                self.game.log(unit.name+ str(unit.unit_num) +' : '+ str(unit.coords)+ ' --> '+ str(unit.coords))
 
     def generate_movement_state(self):
         movement_dict = {}

@@ -35,7 +35,7 @@ class Player:
         #         return False
         ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
             'atk', 'def', 'move']}
-        new_unit = unit_name(coords, self.unit_count + 1,
+        new_unit = unit_name(coords, self.unit_count,
                              self, ship_tech, self.game, self.game.turn_count)
         if pay:
             self.cp -= new_unit.cost
@@ -71,6 +71,8 @@ class Player:
         self.home_planet = home_planet
         self.game.board.planets.append(home_planet)
         self.game.board.grid[tuple(self.home_coords)].planet = home_planet
+        for i in range(3):
+            self.build_unit(Scout, self.home_coords, pay=False)
         if not self.game.scouts_only and not self.game.shipyards_cleared:
             for i in range(3):
                 self.build_unit(ColonyShip, self.home_coords, pay=False)
@@ -78,8 +80,6 @@ class Player:
             for i in range(4):
                 self.build_unit(ShipYard, self.home_coords, pay=False)
             self.units[0].set_builders()
-        for i in range(3):
-            self.build_unit(Scout, self.home_coords, pay=False)
 
     def check_colony(self, build_size, ship, coords):
         for unit in self.units:

@@ -63,10 +63,10 @@ class EconomicEngine:
         for unit in purchases['units']:
             ship = ship_objects[ship_names.index(unit['type'])]
             if ship.cost <= player.cp:
+                player.set_colony_builders()
                 ship_coords = [unit['coords'][0], unit['coords'][1]]
                 coords = player.check_colony(ship.hull_size, ship, ship_coords)
                 if coords is not None:
-                    player.set_colony_builders()
                     builder = player.build_unit(ship, coords, pay=True)
                     if builder is not False:
                         self.game.log('PLAYER '+ str(player.player_num)+

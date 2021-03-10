@@ -137,6 +137,7 @@ class CombatEngine:
         for unit in units:
             if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player']:
                 chosen_enemy = unit
+                return chosen_enemy
         return chosen_enemy
 
     def hit_threshold(self, attacker, defender):
@@ -156,6 +157,9 @@ class CombatEngine:
                 elif (unit1.tactics) == (unit2.tactics):
                     if unit1.player.player_num > unit2.player.player_num:
                         units[i], units[j] = units[j], units[i]
+                    elif unit1.player.player_num == unit2.player.player_num:
+                        if unit1.unit_num > unit2.unit_num:
+                            units[i], units[j] = units[j], units[i]
         return units
 
     # def supremacy(self, units):

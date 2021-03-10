@@ -37,6 +37,7 @@ class Game:
         self.shipyards_cleared = True
         self.__dict__.update(kwargs)
         self.check_level()
+        self.death_order = []
         if self.filename is not None:
             self.logger = Logger(self.filename)
 
@@ -113,6 +114,8 @@ class Game:
                     unit.capacity = 20
 
     def complete_turn(self):
+        self.death_order = []
+        self.first_colony_destroyed = None
         if self.turn_count < self.max_turns:
             self.log('TURN '+ str(self.turn_count))
             self.log('------------------------------------------------------')
@@ -195,6 +198,17 @@ class Game:
             self.log('Player '+ str(player.player_num)+ ' Won')
             self.log('--------------------------------------')
             self.close()
+        elif len(self.players) == 0:
+            player_name = self.death_order[-1][1]
+            player_num = self.death_order[-1][0]
+            self.winner_name = player_name
+            self.winner = player_num
+            self.complete = True
+            self.log('--------------------------------------')
+            self.log('Player '+ str(player_num)+ ' Won')
+            self.log('--------------------------------------')
+            self.close()
+
 
     def close(self):
         if self.filename is not None:

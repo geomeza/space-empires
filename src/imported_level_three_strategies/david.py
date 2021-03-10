@@ -8,9 +8,10 @@ class DavidStrategyLevel3:
         ship_coords = game_state['players'][self.player_index]['units'][ship_index]['coords']
         my_home=game_state['players'][self.player_index]["home_coords"]
         their_home = game_state['players'][self.player_index-1]['home_coords']
-        
         if ship_coords == my_home:
           if (game_state["turn"]-2)%5==0 and (ship_index%2==1 or (ship_index==2 and game_state["turn"]==2)):
+            #   if game_state['turn'] == 2:
+            #     print(target, game_state['turn'], game_state['round'])
             # print(str(game_state["turn"])+","+str(ship_index))
             target=my_home
           elif (game_state["turn"]-2)%8==0  and ship_index%2==0:
@@ -26,8 +27,6 @@ class DavidStrategyLevel3:
               target=their_home
           else:
             target=their_home
-
-        
         return(self.move_to_target(ship_coords,target))
         # if game_state["turn"]==2:
         #   if my_home[1]==0:

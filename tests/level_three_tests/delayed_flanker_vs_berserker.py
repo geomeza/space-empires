@@ -23,8 +23,8 @@ riley = RileyStrategyLevel3
 david = DavidStrategyLevel3
 colby = ColbySiegeStrategyLevel3
 
-strats = [colby, george, riley, eli, david, berserker]
-# strats = [colby, eli]
+# strats = [colby, george, riley, eli, david, berserker]
+strats = [george, riley]
 bruh = open(os.path.join('logs', 'bruh.txt'), 'a+')
 bruh.truncate(0)
 
@@ -48,6 +48,7 @@ def sort_counts(first_name, second_name, result):
     elif result == 'TIE':
         return 'tie'
 
+david_wins = []
 
 for i in range(len(strats)):
     for j in range(i+1, len(strats)):
@@ -61,13 +62,20 @@ for i in range(len(strats)):
             result = winner[1]
             if matchup is None:
                 matchup = winner[0]
+            if sort_counts(first, second, result) == 'first':
+                print(_)
+                david_wins.append(_)
             results[sort_counts(first, second, result)] += 1
         strats_to_test.reverse()
         for _ in range(50):
+            # print(_ + 51)
             winner = run_game(strats_to_test[0], strats_to_test[1],_+51)
             first = winner[0][1]
             second = winner[0][0]
             result = winner[1]
+            if sort_counts(first, second, result) == 'first':
+                print(_+50)
+                david_wins.append(_+50)
             results[sort_counts(first, second, result)] += 1
         print('-----------------------------------------')
         print(matchup[0],"VS",matchup[1])
@@ -75,3 +83,4 @@ for i in range(len(strats)):
         print(matchup[1],'WINS:', results['second']/100)
         print('TIES', results['tie']/100)
         print('-----------------------------------------')
+        print(david_wins)
