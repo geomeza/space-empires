@@ -20,9 +20,24 @@ class Player:
         self.game = game
         self.units = []
         self.cp = 0
-        self.unit_count = 0
+        # self.unit_count = 0
+        self.num_counter = {
+        'Battleship': 1,
+        'Battlecruiser': 1,
+        'Cruiser': 1,
+        'Destroyer': 1,
+        'Dreadnaught': 1,
+        'Scout': 1,
+        'Shipyard': 1,
+        'Decoy': 1,
+        'Colonyship': 1,
+        'Base': 1,
+        'Colony': 1,
+        'Homeworld': 1
+    }
 
     def build_unit(self, unit_name, coords, pay=True):
+        count = self.num_counter[unit_name.name]
         colony = self.find_colony(coords)
         if unit_name.name == 'Base':
             if colony.base is not None:
@@ -35,16 +50,17 @@ class Player:
         #         return False
         ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
             'atk', 'def', 'move']}
-        new_unit = unit_name(coords, self.unit_count,
+        new_unit = unit_name(coords, count,
                              self, ship_tech, self.game, self.game.turn_count)
         if pay:
             self.cp -= new_unit.cost
-        self.unit_count += 1
+        self.num_counter[unit_name.name] += 1
+        # self.unit_count += 1
         self.units.append(new_unit)
 
     def find_colony(self, coords):
         for unit in self.units:
-            if unit.name == 'Colony':
+            if unit.name == 'Colony' or unit.name == 'Homeworld':
                 if unit.coords == coords:
                     return unit
 
@@ -52,17 +68,19 @@ class Player:
         ship_tech = {key: val for key, val in self.tech_lvls.items() if key in [
             'atk', 'def']}
         if col_type == 'Home':
-            home_colony = Colony(coords, self.unit_count + 1, self, ship_tech, self.game, self.game.turn_count, colony_type='Home')
+            home_colony = Colony(coords, 1, self, ship_tech, self.game, self.game.turn_count, colony_type='Home')
             self.units.append(home_colony)
         else:
-            new_colony = Colony(coords, self.unit_count + 1, self, ship_tech,
+            count = self.num_counter['Colony']
+            new_colony = Colony(coords, count, self, ship_tech,
                                 self.game, self.game.turn_count, colony_type='Normal')
             self.game.board.grid[tuple(coords)].planet.colonize(
                 self, new_colony)
             self.units.append(new_colony)
             if colony_ship is not None:
                 colony_ship.destroy()
-        self.unit_count+= 1
+        self.num_counter['Colony'] += 1
+        # self.unit_count+= 1
 
     def initialize_units(self):
         self.build_colony(self.home_coords, col_type='Home')

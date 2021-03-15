@@ -23,6 +23,7 @@ class Colony(Unit):
         self.colony_type = colony_type
         self.defense += tech_lvls['def']
         if colony_type == 'Home':
+            self.alt_name = 'Homeworld'
             self.capacity = 20
 
     def hit(self):

@@ -24,7 +24,7 @@ david = DavidStrategyLevel3
 colby = ColbySiegeStrategyLevel3
 
 # strats = [colby, george, riley, eli, david, berserker]
-strats = [colby, george]
+strats = [colby, riley]
 bruh = open(os.path.join('logs', 'bruh.txt'), 'a+')
 bruh.truncate(0)
 
@@ -32,7 +32,7 @@ def run_game(strategy_1, strategy_2, game_num):
     strategy_1 = strategy_1(0)
     strategy_2 = strategy_2(1)
     random.seed(game_num)
-    if game_num == 46:
+    if game_num == 1:
         new_game = Game(invalidation = False, logging = False, dice_rolls = 'random', level = 3, default = False, filename = 'bruh.txt')
     else:
         new_game = Game(invalidation = False, logging = False, dice_rolls = 'random', level = 3, default = False)
@@ -58,28 +58,28 @@ for i in range(len(strats)):
         results = {'first': 0, 'second': 0, 'tie': 0}
         strats_to_test = [strats[i], strats[j]]
         matchup = None
-        for _ in range(50):
+        for _ in range(1):
             winner = run_game(strats_to_test[0], strats_to_test[1],_+1)
             first = winner[0][0]
             second = winner[0][1]
             result = winner[1]
             if matchup is None:
                 matchup = winner[0]
-            if sort_counts(first, second, result) == 'tie':
+            if sort_counts(first, second, result) == 'first':
                 print(_)
                 david_wins.append(_)
             results[sort_counts(first, second, result)] += 1
         strats_to_test.reverse()
-        for _ in range(50):
-            # print(_ + 51)
-            winner = run_game(strats_to_test[0], strats_to_test[1],_+51)
-            first = winner[0][1]
-            second = winner[0][0]
-            result = winner[1]
-            if sort_counts(first, second, result) == 'tie':
-                print(_+50)
-                david_wins.append(_+50)
-            results[sort_counts(first, second, result)] += 1
+        # for _ in range(50):
+        #     # print(_ + 51)
+        #     winner = run_game(strats_to_test[0], strats_to_test[1],_+51)
+        #     first = winner[0][1]
+        #     second = winner[0][0]
+        #     result = winner[1]
+        #     if sort_counts(first, second, result) == 'first':
+        #         print(_+50)
+        #         david_wins.append(_+50)
+        #     results[sort_counts(first, second, result)] += 1
         print('-----------------------------------------')
         print(matchup[0],"VS",matchup[1])
         print(matchup[0],'WINS:', results['first']/100)

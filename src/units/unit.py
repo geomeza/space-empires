@@ -3,6 +3,9 @@ class Unit:
     can_atk = True
     instant_ko = False
     brought_into_fight = False
+    alt_name = None
+    attacking = False
+    
 
     def __init__(self, coords, unit_num, player, tech_lvls, game, turn_created):
         self.coords = coords

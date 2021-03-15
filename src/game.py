@@ -11,6 +11,7 @@ import sys
 class Game:
 
     def __init__(self, **kwargs):
+        self.justin_is_weird = False
         self.logger = None
         self.level = 0
         self.filename = None
@@ -63,7 +64,11 @@ class Game:
                 self.max_turns = 100
                 self.planets = []
                 self.scouts_only = True
-                self.banned_phases = []
+                if self.justin_is_weird:
+                    self.banned_phases = ['economic']
+                    self.max_turns = 6
+                else:
+                    self.banned_phases = []
                 self.board_size = [7,7]
                 self.movement_rounds = 3
                 self.screens = False
@@ -81,7 +86,7 @@ class Game:
         self.players.append(new_player)
 
     def create_assets(self, planets):
-        self.log('Creating Board')
+        # self.log('Creating Board')
         self.board = Board(self.board_size, self, planets)
         self.utility = Utility(True, self)
         self.economic_engine = EconomicEngine(self.board, self)
@@ -90,21 +95,29 @@ class Game:
 
     def initialize_game(self):
         self.create_assets(self.planets)
-        self.log('Initializing Players')
+        # self.log('Initializing Players')
         for player in self.players:
             player.cp = 0
             player.initialize_units()
         self.board.update(self.players)
-        for s in range(len(self.players)):
-            self.log('----------------------------------')
-            self.log('Player '+str( s + 1)+ ':')
-            self.log('Combat Points: '+ str(self.players[s].cp))
-            self.show_unit_coords(s+1)
-            self.log('----------------------------------')
+        # for s in range(len(self.players)):
+            # self.log('----------------------------------')
+            # self.log('Player '+str( s + 1)+ ':')
+            # self.log('Combat Points: '+ str(self.players[s].cp))
+            # self.show_unit_coords(s+1)
+            # self.log('----------------------------------')
 
-    def show_unit_coords(self, player_num):
-        for unit in self.players[player_num - 1].units:
-            self.log(str(unit.name) + ' : '+ str(unit.coords))
+    def show_unit_coords(self):
+        self.log('\n')
+        for player in self.players:
+            for unit in player.units:
+                if unit.alt_name == 'Homeworld' and unit.alive:
+                    self.log('\t\tPlayer '+str(unit.player.player_num + 1)+' '+'Homeworld' +' '+str(
+                            unit.unit_num)+ ': '+ str(tuple(unit.coords)))
+                elif unit.alive:
+                    self.log('\t\tPlayer '+str(unit.player.player_num + 1)+' '+str(unit.name) +' '+str(
+                            unit.unit_num)+ ': '+ str(tuple(unit.coords)))
+            self.log('\n')
 
     def adjust_starting_and_colony_income(self, starting, colony_income):
         for player in self.players:
@@ -117,8 +130,8 @@ class Game:
         self.death_order = []
         self.first_colony_destroyed = None
         if self.turn_count < self.max_turns:
-            self.log('TURN '+ str(self.turn_count))
-            self.log('------------------------------------------------------')
+            # self.log('TURN '+ str(self.turn_count))
+            # self.log('------------------------------------------------------')
             if self.turn_count == 1 and self.level == 2:
                 self.adjust_starting_and_colony_income(10,20)
                 self.complete_economic_phase()
@@ -136,7 +149,7 @@ class Game:
             if 'economic' not in self.banned_phases:
                 self.complete_economic_phase()
             self.turn_count += 1
-            self.log('------------------------------------------------------')
+            # self.log('------------------------------------------------------')
         else:
             self.complete = True
             if self.default:
@@ -146,13 +159,16 @@ class Game:
                 self.log('--------------------------------------')
                 self.close()
             else:
-                self.winner = len(self.players) + 5
-                self.winner_name = 'TIE'
-                self.log('--------------------------------------')
-                self.log('MAX TURNS REACHED')
-                self.log('TIE GAME')
-                self.log('--------------------------------------')
-                self.close()
+                if not self.justin_is_weird:
+                    self.winner = len(self.players) + 5
+                    self.winner_name = 'TIE'
+                    self.log('--------------------------------------')
+                    self.log('MAX TURNS REACHED')
+                    self.log('TIE GAME')
+                    self.log('--------------------------------------')
+                    self.close()
+                else: 
+                    self.close()
 
     def complete_movement_phase(self):
         self.movement_engine.complete_movement_phase()
@@ -267,7 +283,7 @@ class Game:
         state = {}
         state['home_coords'] = player.home_coords
         state['player_num'] = player.player_num
-        state['units'] = [{'coords': unit.coords, 'unit_num': unit.unit_num} for unit in player.units]
+        state['units'] = [{'coords': unit.coords, 'num': unit.unit_num} for unit in player.units]
         return state
 
     def hidden_combat_player_state(self, player, units_in_combat):
@@ -275,7 +291,7 @@ class Game:
         state = {}
         state['home_coords'] = player.home_coords
         state['player_num'] = player.player_num
-        state['units'] = [self.unit_state(unit) if unit.unit_num in units_in_combat else {'coords': unit.coords, 'unit_num': unit.unit_num} for unit in player.units]
+        state['units'] = [self.unit_state(unit) if unit.unit_num in units_in_combat else {'coords': unit.coords, 'num': unit.unit_num} for unit in player.units]
         return state
 
 
@@ -343,7 +359,7 @@ class Game:
         state['player'] = unit.player.player_num
         state['type'] = unit.name
         state['tactics'] = unit.tactics
-        state['unit_num'] = unit.unit_num
+        state['num'] = unit.unit_num
         state['coords'] = unit.coords
         state['maint'] = unit.maint
         state['alive'] = unit.alive

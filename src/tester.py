@@ -23,14 +23,14 @@ from logger import Logger
 # with open(os.path.join('logs', 'bruh.txt'), 'a+') as f:
 #     sys.stdout = f # Change the standard output to the file we created.
 
-new_game = Game(logging=True, die_rolls='random', invalidation=False, scouts_only = False, movement_rounds = 3, screens = False, planets = [[0,2]])
-strategy_1 = CustomStrategy(player_num=0)
-strategy_2 = NewCustomStrategy(player_num=1)
-new_game.add_player(strategy_1, [4, 1])
-new_game.add_player(strategy_2, [3, 2])
-new_game.initialize_game()
+# new_game = Game(logging=True, die_rolls='random', invalidation=False, scouts_only = False, movement_rounds = 3, screens = False, planets = [[0,2]])
+# strategy_1 = CustomStrategy(player_num=0)
+# strategy_2 = NewCustomStrategy(player_num=1)
+# new_game.add_player(strategy_1, [4, 1])
+# new_game.add_player(strategy_2, [3, 2])
+# new_game.initialize_game()
 
-new_game.complete_many_turns(2)
+# new_game.complete_many_turns(2)
 # import sys
 # path_to_datasets = 'C:/Users/mezag/Documents/Github/space-empires/'
 # filename = 'logs/bruh.txt' 
@@ -100,3 +100,22 @@ new_game.complete_many_turns(2)
 # logger.log('\n Bruh Moment')
 
 # logger.log('\n Bruh Moment')
+
+class BruhXD:
+    moment = True
+
+    def __init__(self,name,  num, second_num, moment= True):
+        self.name = name
+        self.num = num
+        self.second_num = second_num
+        self.moment = moment
+
+
+bruh_one= BruhXD('fiurst', 1,2,True)
+bruh_two = BruhXD('seconfd', 1,2,False)
+bruh_three = BruhXD('turd', 2,2,True)
+
+bruhs = [bruh_one, bruh_two, bruh_three]
+
+sorted_bruhs = sorted(bruhs, key = lambda bruh: (bruh.num, bruh.second_num, bruh.moment))
+print([burh.name for burh in sorted_bruhs])

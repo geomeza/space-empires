@@ -12,6 +12,9 @@ class Logger:
         return open(os.path.join('logs', self.file_name), 'a+')
 
     def log(self, string):
+        if string == '\n':
+            self.logging_file.write(string)
+            return
         self.logging_file.write(string + '\n')
 
     def close_file(self):
