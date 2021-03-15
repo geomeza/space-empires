@@ -1,6 +1,7 @@
 import random
 import math
 
+
 class CombatEngine:
 
     def __init__(self, board, game):
@@ -20,7 +21,7 @@ class CombatEngine:
 
     def make_dice(self):
         max_roll = self.game.max_dice
-        ascending = [i for i in range(1,max_roll + 1)]
+        ascending = [i for i in range(1, max_roll + 1)]
         descending = ascending[:]
         descending.reverse()
         if isinstance(self.game.dice_rolls, list):
@@ -63,7 +64,8 @@ class CombatEngine:
                 colony_shipyards = unit.shipyards
         if colony is None:
             return units
-        enem_units = [(unit.name, unit.player.player_num) for unit in units if unit.player.player_num == colony.player.player_num and unit.alive and unit.name != 'Colony']
+        enem_units = [(unit.name, unit.player.player_num) for unit in units if unit.player.player_num ==
+                      colony.player.player_num and unit.alive and unit.name != 'Colony']
         if len(colony_shipyards) > 0 or len(enem_units) > 0:
             if colony in units:
                 units.remove(colony)
@@ -79,7 +81,7 @@ class CombatEngine:
         while len(battles) > 0:
             self.log_battles(battles)
             for coords, units in battles.items():
-                self.game.log('\n\tCombat at '+ str(coords))
+                self.game.log('\n\tCombat at ' + str(coords))
                 self.over = False
                 self.battle(self.remove_colony(units))
                 self.reset_stats()
@@ -97,10 +99,8 @@ class CombatEngine:
             self.game.log('\n')
             sorted_units = self.supremacy(self.remove_colony(units))
             for unit in sorted_units:
-                self.game.log('\t\t\tPlayer '+str(unit.player.player_num + 1)+' '+str(unit.name) +' '+str(
-                            unit.unit_num))
-
-
+                self.game.log('\t\t\tPlayer '+str(unit.player.player_num + 1)+' '+str(unit.name) + ' '+str(
+                    unit.unit_num))
 
     def sort_units(self, units, player):
         self.enemies = []
@@ -134,7 +134,7 @@ class CombatEngine:
             self.over = True
             return
 
-    def get_ship_from_decision(self, unit_type, unit_num, player,units):
+    def get_ship_from_decision(self, unit_type, unit_num, player, units):
         enem_units = [unit for unit in units if unit.player != player]
         for unit in enem_units:
             if unit_type == unit.name:
@@ -146,11 +146,12 @@ class CombatEngine:
         unit_info = [self.game.unit_state(unit)
                      for unit in self.enemies if unit.alive]
         units = [unit for unit in units if unit.alive]
-        ##NONE IS PLACEHOLDER FOR HIDDEN COMBAT GAME STATE
-        decision = player.strategy.decide_which_unit_to_attack( 
-            self.get_combat_state(),self.game.hidden_game_state_for_combat(player.player_num, units), tuple(attacker.coords), attacker.name, units.index(attacker))
+        # NONE IS PLACEHOLDER FOR HIDDEN COMBAT GAME STATE
+        decision = player.strategy.decide_which_unit_to_attack(
+            self.get_combat_state(), self.game.hidden_game_state_for_combat(player.player_num, units), tuple(attacker.coords), attacker.name, units.index(attacker))
         # psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
-        chosen_enemy = self.get_ship_from_decision(decision[0], decision[1], player, units)
+        chosen_enemy = self.get_ship_from_decision(
+            decision[0], decision[1], player, units)
         # for unit in units:
         #     if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player']:
         #         chosen_enemy = unit
@@ -161,7 +162,8 @@ class CombatEngine:
         return (attacker.strength + attacker.tech_lvls['atk']) - (defender.defense + defender.tech_lvls['def'])
 
     def supremacy(self, units):
-        sorted_units = sorted(units, key = lambda unit: (unit.tactics, not unit.attacking, -1*unit.unit_num), reverse=True)
+        sorted_units = sorted(units, key=lambda unit: (
+            unit.tactics, not unit.attacking, -1*unit.unit_num), reverse=True)
         return sorted_units
 
     def unit_shot(self, attacker, defender):
@@ -169,16 +171,19 @@ class CombatEngine:
         hit_threshold = self.hit_threshold(attacker, defender)
         # self.game.log('-------')
         self.game.log('\n')
-        self.game.log('\t\tAttacker: Player '+ str(attacker.player.player_num+1) +" "+ attacker.name+" "+ str(attacker.unit_num))
-        self.game.log('\t\tDefender: Player '+ str(defender.player.player_num+1)+ " "+ defender.name+ " "+ str(defender.unit_num))
+        self.game.log('\t\tAttacker: Player ' + str(attacker.player.player_num +
+                                                    1) + " " + attacker.name+" " + str(attacker.unit_num))
+        self.game.log('\t\tDefender: Player ' + str(defender.player.player_num +
+                                                    1) + " " + defender.name + " " + str(defender.unit_num))
         # self.game.log('Threshold: '+ str(hit_threshold))
-        self.game.log('\t\tDie Roll: '+ str(self.dice_roll))
+        self.game.log('\t\tDie Roll: ' + str(self.dice_roll))
         if self.dice_roll <= hit_threshold or self.dice_roll == 1:
             self.game.log('\t\tHit!')
             defender.hit()
             if not defender.alive:
                 self.dead_ships.append(defender)
-                self.game.log('\t\tPlayer '+ str(defender.player.player_num+1)+ " "+ defender.name+ " "+ str(defender.unit_num)+ ' was destroyed')
+                self.game.log('\t\tPlayer ' + str(defender.player.player_num+1) + " " +
+                              defender.name + " " + str(defender.unit_num) + ' was destroyed')
                 # self.game.log('-------')
         else:
             self.game.log('\t\t(Miss)')
@@ -216,7 +221,7 @@ class CombatEngine:
             self.battle_order = self.supremacy(self.units)
             # self.game.log('In Combat:')
             # for unit in self.battle_order:
-            #     self.game.log('Player '+ str(unit.player.player_num)+ " "+ 
+            #     self.game.log('Player '+ str(unit.player.player_num)+ " "+
             #             unit.name+ " "+ str(unit.unit_num))
             while not self.over:
                 self.battle_order = self.supremacy(self.units)
@@ -256,10 +261,10 @@ class CombatEngine:
                 for unit in board_space.units:
                     if unit.name == 'Colonyship':
                         if player.strategy.will_colonize_planet(unit.coords, self.game.hidden_game_state(player.player_num)):
-                                player.build_colony(
-                                    unit.coords, col_type='Normal', colony_ship=unit)
-                                self.game.log('Player '+ str(player.player_num)+
-                                        ' colonized a planet at '+ str(unit.coords))
+                            player.build_colony(
+                                unit.coords, col_type='Normal', colony_ship=unit)
+                            self.game.log('Player ' + str(player.player_num) +
+                                          ' colonized a planet at ' + str(unit.coords))
         else:
             return
 
@@ -289,11 +294,11 @@ class CombatEngine:
             ordered_units = [unit for unit in ordered_units if unit.alive]
             unit_dicts = [{'player': unit.player.player_num,
                            'num': unit.unit_num,
-                             'type' : unit.name,
-                            'technology' : {techs[translations.index(
-                              tech)]: unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()},
-                            'hits_left': unit.armor,
-                            'turn_created' : unit.turn_created} for unit in ordered_units]
+                           'type': unit.name,
+                           'technology': {techs[translations.index(
+                               tech)]: unit.tech_lvls[tech] for tech in unit.tech_lvls.keys()},
+                           'hits_left': unit.armor,
+                           'turn_created': unit.turn_created} for unit in ordered_units]
             state.update({coords: unit_dicts})
         return state
 

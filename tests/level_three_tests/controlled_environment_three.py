@@ -44,7 +44,7 @@ def run_game(strategy_1, strategy_2, game_num):
     new_game.run_until_complete()
     return 
 
-winner = run_game(berserker_new, stationed, 2)
+winner = run_game(berserker_new, stationed, 5)
 
 # def sort_counts(first_name, second_name, result):
 #     if result == first_name:
