@@ -17,7 +17,7 @@ BEGINNING OF TURN 1 MOVEMENT PHASE
 
 	Ending Unit Locations
 
-		Player 1 Homeworld 1: (3, 0)
+		Player 1 Homeworld: (3, 0)
 		Player 1 Scout 1: (3, 3)
 		Player 1 Scout 2: (3, 3)
 		Player 1 Scout 3: (3, 3)
@@ -26,7 +26,7 @@ BEGINNING OF TURN 1 MOVEMENT PHASE
 		Player 1 Shipyard 3: (3, 0)
 		Player 1 Shipyard 4: (3, 0)
 
-		Player 2 Homeworld 1: (3, 6)
+		Player 2 Homeworld: (3, 6)
 		Player 2 Scout 1: (3, 6)
 		Player 2 Scout 2: (3, 6)
 		Player 2 Scout 3: (3, 6)
@@ -60,7 +60,7 @@ BEGINNING OF TURN 2 MOVEMENT PHASE
 
 	Ending Unit Locations
 
-		Player 1 Homeworld 1: (3, 0)
+		Player 1 Homeworld: (3, 0)
 		Player 1 Scout 1: (3, 6)
 		Player 1 Scout 2: (3, 6)
 		Player 1 Scout 3: (3, 6)
@@ -69,7 +69,7 @@ BEGINNING OF TURN 2 MOVEMENT PHASE
 		Player 1 Shipyard 3: (3, 0)
 		Player 1 Shipyard 4: (3, 0)
 
-		Player 2 Homeworld 1: (3, 6)
+		Player 2 Homeworld: (3, 6)
 		Player 2 Scout 1: (3, 6)
 		Player 2 Scout 2: (3, 6)
 		Player 2 Scout 3: (3, 6)
@@ -101,76 +101,102 @@ BEGINNING OF TURN 2 COMBAT PHASE
 
 		Attacker: Player 2 Shipyard 1
 		Defender: Player 1 Scout 1
+		Miss Threshold: 3
 		Die Roll: 7
 		(Miss)
 
 		Attacker: Player 2 Shipyard 2
 		Defender: Player 1 Scout 1
+		Miss Threshold: 3
 		Die Roll: 8
 		(Miss)
 
 		Attacker: Player 2 Shipyard 3
 		Defender: Player 1 Scout 1
+		Miss Threshold: 3
 		Die Roll: 8
 		(Miss)
 
 		Attacker: Player 2 Shipyard 4
 		Defender: Player 1 Scout 1
+		Miss Threshold: 3
 		Die Roll: 10
 		(Miss)
 
 		Attacker: Player 2 Scout 1
 		Defender: Player 1 Scout 1
+		Miss Threshold: 3
 		Die Roll: 8
 		(Miss)
 
 		Attacker: Player 2 Scout 2
 		Defender: Player 1 Scout 1
+		Miss Threshold: 3
 		Die Roll: 10
 		(Miss)
 
 		Attacker: Player 2 Scout 3
 		Defender: Player 1 Scout 1
+		Miss Threshold: 3
 		Die Roll: 1
 		Hit!
 		Player 1 Scout 1 was destroyed
 
 		Attacker: Player 1 Scout 2
 		Defender: Player 2 Shipyard 1
+		Miss Threshold: 3
 		Die Roll: 5
 		(Miss)
 
 		Attacker: Player 1 Scout 3
 		Defender: Player 2 Shipyard 1
+		Miss Threshold: 3
 		Die Roll: 10
 		(Miss)
 
 		Attacker: Player 2 Shipyard 1
 		Defender: Player 1 Scout 2
+		Miss Threshold: 3
 		Die Roll: 7
 		(Miss)
 
 		Attacker: Player 2 Shipyard 2
 		Defender: Player 1 Scout 2
+		Miss Threshold: 3
 		Die Roll: 10
 		(Miss)
 
 		Attacker: Player 2 Shipyard 3
 		Defender: Player 1 Scout 2
+		Miss Threshold: 3
 		Die Roll: 2
 		Hit!
 		Player 1 Scout 2 was destroyed
 
 		Attacker: Player 2 Shipyard 4
 		Defender: Player 1 Scout 3
+		Miss Threshold: 3
 		Die Roll: 5
 		(Miss)
 
 		Attacker: Player 2 Scout 1
 		Defender: Player 1 Scout 3
+		Miss Threshold: 3
 		Die Roll: 3
 		Hit!
 		Player 1 Scout 3 was destroyed
+
+	Survivors:
+
+		(3, 6)
+
+			Player 2 Shipyard 1
+			Player 2 Shipyard 2
+			Player 2 Shipyard 3
+			Player 2 Shipyard 4
+			Player 2 Scout 1
+			Player 2 Scout 2
+			Player 2 Scout 3
 
 END OF TURN 2 COMBAT PHASE
 
@@ -184,13 +210,13 @@ BEGINNING OF TURN 3 MOVEMENT PHASE
 
 	Ending Unit Locations
 
-		Player 1 Homeworld 1: (3, 0)
+		Player 1 Homeworld: (3, 0)
 		Player 1 Shipyard 1: (3, 0)
 		Player 1 Shipyard 2: (3, 0)
 		Player 1 Shipyard 3: (3, 0)
 		Player 1 Shipyard 4: (3, 0)
 
-		Player 2 Homeworld 1: (3, 6)
+		Player 2 Homeworld: (3, 6)
 		Player 2 Scout 1: (3, 6)
 		Player 2 Scout 2: (3, 6)
 		Player 2 Scout 3: (3, 6)
@@ -215,13 +241,13 @@ BEGINNING OF TURN 4 MOVEMENT PHASE
 
 	Ending Unit Locations
 
-		Player 1 Homeworld 1: (3, 0)
+		Player 1 Homeworld: (3, 0)
 		Player 1 Shipyard 1: (3, 0)
 		Player 1 Shipyard 2: (3, 0)
 		Player 1 Shipyard 3: (3, 0)
 		Player 1 Shipyard 4: (3, 0)
 
-		Player 2 Homeworld 1: (3, 6)
+		Player 2 Homeworld: (3, 6)
 		Player 2 Scout 1: (3, 6)
 		Player 2 Scout 2: (3, 6)
 		Player 2 Scout 3: (3, 6)
@@ -246,13 +272,13 @@ BEGINNING OF TURN 5 MOVEMENT PHASE
 
 	Ending Unit Locations
 
-		Player 1 Homeworld 1: (3, 0)
+		Player 1 Homeworld: (3, 0)
 		Player 1 Shipyard 1: (3, 0)
 		Player 1 Shipyard 2: (3, 0)
 		Player 1 Shipyard 3: (3, 0)
 		Player 1 Shipyard 4: (3, 0)
 
-		Player 2 Homeworld 1: (3, 6)
+		Player 2 Homeworld: (3, 6)
 		Player 2 Scout 1: (3, 6)
 		Player 2 Scout 2: (3, 6)
 		Player 2 Scout 3: (3, 6)

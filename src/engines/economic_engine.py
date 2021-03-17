@@ -17,7 +17,6 @@ class EconomicEngine:
         self.current_player = None
 
     def complete_economic_phase(self):
-        self.game.phase = 'Economic'
         self.game.log('BEGINNING OF ECONOMIC PHASE')
         self.game.log('----------------------------')
         for player in self.game.players:

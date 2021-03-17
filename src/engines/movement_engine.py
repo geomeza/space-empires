@@ -8,7 +8,6 @@ class MovementEngine:
         self.movement_phase = None
 
     def complete_movement_phase(self):
-        self.game.phase = 'Movement'
         if self.game.turn_count != 1:
             self.game.log('\n')
         self.game.log('BEGINNING OF TURN ' +
@@ -57,7 +56,7 @@ class MovementEngine:
                     if unit.name == 'Colonyship':
                         self.game.combat_engine.colonize(unit.coords)
                     if before_coords != unit.coords:
-                        self.game.log('\t\tPlayer '+str(unit.player.player_num + 1)+' '+unit.name+' '+str(
+                        self.game.log('\t\tPlayer '+str(unit.player.player_num)+' '+unit.name+' '+str(
                             unit.unit_num) + ': ' + str(tuple(before_coords)) + ' -> ' + str(tuple(unit.coords)))
             # elif unit.brought_into_fight:
             #     self.game.log(unit.name+ str(unit.unit_num) +' : '+ str(unit.coords)+ ' --> '+ str(unit.coords))

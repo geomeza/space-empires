@@ -11,17 +11,25 @@ class BerserkerStrategy:
                 if unit['coords'] != (3,6):
                     return (0,1)
 
-    def decide_which_unit_to_attack(self, combat_state, game_state, coords, attacker_type, attacker_num):
+    def decide_which_unit_to_attack(self, combat_state, game_state,coords, attacker_type, attacker_num):
         # attack the first opposing ship that's not a Homeworld or Colony
 
         for unit in combat_state[coords]:
             if unit['player'] != self.player_number:
                 if unit['type'] not in ['Homeworld', 'Colony']:
-                    return (unit['type'], unit['num'])
+                    return {
+                        'player': unit['player'],
+                        'type': unit['type'],
+                        'number': unit['num']
+                    }
 
         for unit in combat_state[coords]:
             if unit['player'] != self.player_number:
-                return (unit['type'], unit['num'])
+                return {
+                    'player': unit['player'],
+                    'type': unit['type'],
+                    'number': unit['num']
+                }
 
 class StationaryStrategy:
 
@@ -38,8 +46,16 @@ class StationaryStrategy:
         for unit in combat_state[coords]:
             if unit['player'] != self.player_number:
                 if unit['type'] not in ['Homeworld', 'Colony']:
-                    return (unit['type'], unit['num'])
+                    return {
+                        'player': unit['player'],
+                        'type': unit['type'],
+                        'number': unit['num']
+                    }
 
         for unit in combat_state[coords]:
             if unit['player'] != self.player_number:
-                return (unit['type'], unit['num'])
+                return {
+                    'player': unit['player'],
+                    'type': unit['type'],
+                    'number': unit['num']
+                }

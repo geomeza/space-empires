@@ -33,8 +33,8 @@ bruh = open(os.path.join('logs', 'bruh.txt'), 'a+')
 bruh.truncate(0)
 
 def run_game(strategy_1, strategy_2, game_num):
-    strategy_1 = strategy_1(0)
-    strategy_2 = strategy_2(1)
+    strategy_1 = strategy_1(1)
+    strategy_2 = strategy_2(2)
     random.seed(game_num)
     new_game = Game(invalidation = False, logging = False, dice_rolls = 'random', level = 3, default = False, filename = 'bruh.txt', justin_is_weird = True)
     new_game.add_player(strategy_1, [3,0])

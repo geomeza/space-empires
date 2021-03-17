@@ -12,6 +12,7 @@ class Game:
 
     def __init__(self, **kwargs):
         self.justin_is_weird = False
+        self.phases = ['movement', 'combat', 'economic']
         self.logger = None
         self.level = 0
         self.filename = None
@@ -24,7 +25,7 @@ class Game:
         self.planets = []
         self.turn_count = 1
         self.max_turns = 100
-        self.phase = 'Bruh Moment'
+        self.phase = 'economic'
         self.winner = 'None'
         self.logging = True
         self.dice_rolls = 'descending'
@@ -41,6 +42,8 @@ class Game:
         self.death_order = []
         if self.filename is not None:
             self.logger = Logger(self.filename)
+        if len(self.banned_phases) == len(self.phases):
+            raise Exception('Bruh you banned the game')
 
     def check_level(self):
         if self.level > 0:
@@ -80,9 +83,11 @@ class Game:
         if self.logging:
             print(string)
 
+    # @classmethod
+    # def from_state_dict(state):
 
     def add_player(self, strategy, coords):
-        new_player = Player(strategy, len(self.players), coords, self)
+        new_player = Player(strategy, len(self.players)+1, coords, self)
         self.players.append(new_player)
 
     def create_assets(self, planets):
@@ -112,10 +117,9 @@ class Game:
         for player in self.players:
             for unit in player.units:
                 if unit.alt_name == 'Homeworld' and unit.alive:
-                    self.log('\t\tPlayer '+str(unit.player.player_num + 1)+' '+'Homeworld' +' '+str(
-                            unit.unit_num)+ ': '+ str(tuple(unit.coords)))
+                    self.log('\t\tPlayer '+str(unit.player.player_num)+' '+'Homeworld'+ ': '+ str(tuple(unit.coords)))
                 elif unit.alive:
-                    self.log('\t\tPlayer '+str(unit.player.player_num + 1)+' '+str(unit.name) +' '+str(
+                    self.log('\t\tPlayer '+str(unit.player.player_num)+' '+str(unit.name) +' '+str(
                             unit.unit_num)+ ': '+ str(tuple(unit.coords)))
             self.log('\n')
 
@@ -130,26 +134,20 @@ class Game:
         self.death_order = []
         self.first_colony_destroyed = None
         if self.turn_count < self.max_turns:
-            # self.log('TURN '+ str(self.turn_count))
-            # self.log('------------------------------------------------------')
             if self.turn_count == 1 and self.level == 2:
                 self.adjust_starting_and_colony_income(10,20)
                 self.complete_economic_phase()
+                self.phase = 'combat'
                 self.banned_phases = ['economic']
-            if 'movement' not in self.banned_phases:
-                self.complete_movement_phase()
-            self.remove_dead_players()
-            if self.complete:
-                return
-            if 'combat' not in self.banned_phases:
-                self.complete_combat_phase()
-            self.remove_dead_players()
-            if self.complete:
-                return
-            if 'economic' not in self.banned_phases:
-                self.complete_economic_phase()
+            phase_turns = self.phases.index(self.phase) - len(self.banned_phases)
+            if self.turn_count > 1:
+                phase_turns = self.phases.index(self.phase) - len(self.banned_phases)
+            for i in range(phase_turns+1):
+                self.complete_next_phase()
+                self.remove_dead_players()
+                if self.complete:
+                    return
             self.turn_count += 1
-            # self.log('------------------------------------------------------')
         else:
             self.complete = True
             if self.default:
@@ -169,6 +167,17 @@ class Game:
                     self.close()
                 else: 
                     self.close()
+
+    def complete_next_phase(self):
+        phase_functions = [self.complete_movement_phase, self.complete_combat_phase, self.complete_economic_phase]
+        current_index = self.phases.index(self.phase)
+        while self.phases[current_index] in self.banned_phases:
+            current_index += 1
+            if current_index == len(self.phases):
+                current_index = 0
+        self.phase = self.phases[current_index+1]
+        phase_functions[current_index]()
+        return
 
     def complete_movement_phase(self):
         self.movement_engine.complete_movement_phase()
@@ -242,9 +251,9 @@ class Game:
         state['turn'] = self.turn_count
         state['phase'] = self.phase
         state['round'] = self.movement_engine.movement_phase
-        state['player_whose_turn'] = self.current_player
-        state['players'] = [self.player_state(
-            player) for player in self.players]
+        state['current_player'] = self.current_player
+        state['players'] = {player.player_num:self.player_state(
+            player) for player in self.players}
         state['planets'] = [planet.coords for planet in self.board.planets]
         state['unit_data'] = {
         'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5, 'tactics': 5, 'attack': 5, 'defense': 2, 'maintenance': 3},
@@ -301,9 +310,9 @@ class Game:
         state['turn'] = self.turn_count
         state['phase'] = self.phase
         state['round'] = self.movement_engine.movement_phase
-        state['player_whose_turn'] = self.current_player
-        state['players'] = [self.player_state(
-            player) if player.player_num == wanted else self.hidden_player_state(player) for player in self.players]
+        state['current_player'] = self.current_player
+        state['players'] = {player.player_num : self.player_state(
+            player) if player.player_num == wanted else self.hidden_player_state(player) for player in self.players}
         state['unit_data'] = {
             'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5},
             'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4},
@@ -330,9 +339,9 @@ class Game:
         state['turn'] = self.turn_count
         state['phase'] = self.phase
         state['round'] = self.movement_engine.movement_phase
-        state['player_whose_turn'] = self.current_player
-        state['players'] = [self.player_state(
-            player) if player.player_num == wanted else self.hidden_combat_player_state(player, units) for player in self.players]
+        state['current_player'] = self.current_player
+        state['players'] = {player.player_num:self.player_state(
+            player) if player.player_num == wanted else self.hidden_combat_player_state(player, units) for player in self.players}
         state['unit_data'] = {
             'Battleship': {'cp_cost': 20, 'hullsize': 3, 'shipsize_needed': 5},
             'Battlecruiser': {'cp_cost': 15, 'hullsize': 2, 'shipsize_needed': 4},

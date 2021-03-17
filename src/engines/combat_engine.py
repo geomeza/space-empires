@@ -74,7 +74,6 @@ class CombatEngine:
             return units
 
     def complete_combat_phase(self):
-        self.game.phase = 'Combat'
         self.game.log('\nBEGINNING OF TURN ' +
                       str(self.game.turn_count) + ' COMBAT PHASE')
         battles = self.find_battles()
@@ -99,7 +98,7 @@ class CombatEngine:
             self.game.log('\n')
             sorted_units = self.supremacy(self.remove_colony(units))
             for unit in sorted_units:
-                self.game.log('\t\t\tPlayer '+str(unit.player.player_num + 1)+' '+str(unit.name) + ' '+str(
+                self.game.log('\t\t\tPlayer '+str(unit.player.player_num)+' '+str(unit.name) + ' '+str(
                     unit.unit_num))
 
     def sort_units(self, units, player):
@@ -134,10 +133,11 @@ class CombatEngine:
             self.over = True
             return
 
-    def get_ship_from_decision(self, unit_type, unit_num, player, units):
-        enem_units = [unit for unit in units if unit.player != player]
+    def get_ship_from_decision(self, units, choosing_player, chosen_player, chosen_type, unit_num):
+        enem_player = self.game.players[chosen_player-1]
+        enem_units = [unit for unit in units if unit.player == enem_player]
         for unit in enem_units:
-            if unit_type == unit.name:
+            if chosen_type == unit.name:
                 if unit.unit_num == unit_num:
                     return unit
 
@@ -150,8 +150,10 @@ class CombatEngine:
         decision = player.strategy.decide_which_unit_to_attack(
             self.get_combat_state(), self.game.hidden_game_state_for_combat(player.player_num, units), tuple(attacker.coords), attacker.name, units.index(attacker))
         # psuedo_ship = self.get_combat_state()[tuple(attacker.coords)][decision]
-        chosen_enemy = self.get_ship_from_decision(
-            decision[0], decision[1], player, units)
+        chosen_player = decision['player']
+        chosen_type = decision['type']
+        chosen_num = decision['number']
+        chosen_enemy = self.get_ship_from_decision(units, player, chosen_player, chosen_type, chosen_num)
         # for unit in units:
         #     if unit.unit_num == psuedo_ship['unit'] and unit.player.player_num == psuedo_ship['player']:
         #         chosen_enemy = unit
@@ -163,7 +165,7 @@ class CombatEngine:
 
     def supremacy(self, units):
         sorted_units = sorted(units, key=lambda unit: (
-            unit.tactics, not unit.attacking, -1*unit.unit_num), reverse=True)
+            unit.tactics, not unit.attacking, -1*unit.player.player_num,-1*unit.unit_num), reverse=True)
         return sorted_units
 
     def unit_shot(self, attacker, defender):
@@ -171,18 +173,19 @@ class CombatEngine:
         hit_threshold = self.hit_threshold(attacker, defender)
         # self.game.log('-------')
         self.game.log('\n')
-        self.game.log('\t\tAttacker: Player ' + str(attacker.player.player_num +
-                                                    1) + " " + attacker.name+" " + str(attacker.unit_num))
-        self.game.log('\t\tDefender: Player ' + str(defender.player.player_num +
-                                                    1) + " " + defender.name + " " + str(defender.unit_num))
+        self.game.log('\t\tAttacker: Player ' + str(attacker.player.player_num
+                                                    ) + " " + attacker.name+" " + str(attacker.unit_num))
+        self.game.log('\t\tDefender: Player ' + str(defender.player.player_num
+                                                    ) + " " + defender.name + " " + str(defender.unit_num))
         # self.game.log('Threshold: '+ str(hit_threshold))
+        self.game.log('\t\tMiss Threshold: ' + str(hit_threshold))
         self.game.log('\t\tDie Roll: ' + str(self.dice_roll))
         if self.dice_roll <= hit_threshold or self.dice_roll == 1:
             self.game.log('\t\tHit!')
             defender.hit()
             if not defender.alive:
                 self.dead_ships.append(defender)
-                self.game.log('\t\tPlayer ' + str(defender.player.player_num+1) + " " +
+                self.game.log('\t\tPlayer ' + str(defender.player.player_num) + " " +
                               defender.name + " " + str(defender.unit_num) + ' was destroyed')
                 # self.game.log('-------')
         else:
@@ -238,16 +241,16 @@ class CombatEngine:
                         if self.over:
                             if len(self.units) >= 1:
                                 self.remove_dead_ships(self.units)
-                                # unit_choice = self.units[0]
-                                # self.game.log('Battle Is Over')
-                                # self.game.log(
-                                #     'Player '+ str(unit_choice.player.player_num)+ ' Units Win!')
-                                # self.game.log('Survivors')
-                                # self.game.log('------------------------')
-                                # for unit in self.units:
-                                #     if unit.alive:
-                                #         self.game.log(unit.name+ str(unit.unit_num))
-                                # self.game.log('------------------------')
+                                self.units = self.supremacy(self.units)
+                                self.game.log('\n')
+                                self.game.log('\tSurvivors:')
+                                self.game.log('\n')
+                                self.game.log('\t\t' + str(tuple(self.units[0].coords)))
+                                self.game.log('\n')
+                                for unit in self.units:
+                                    if unit.alive:
+                                        self.game.log('\t\t\tPlayer ' + str(unit.player.player_num) + " " +
+                              unit.name + " " + str(unit.unit_num))
                                 return
                 self.units = self.remove_dead_ships(self.units)
 
